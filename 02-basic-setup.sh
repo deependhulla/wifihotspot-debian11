@@ -56,6 +56,7 @@ echo "alias ll='ls -l --color=auto'" >> /etc/bash.bashrc
 echo "alias ls='ls --color=auto'" >> /etc/bash.bashrc
 echo "alias mv='mv -i'" >> /etc/bash.bashrc
 echo "alias rm='rm -i'" >> /etc/bash.bashrc
+echo "export EDITOR=vi" >> /etc/bash.bashrc
 
 ## for using crontab via vi editor
 export EDITOR=vi
