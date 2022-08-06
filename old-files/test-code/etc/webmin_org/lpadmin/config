@@ -1,0 +1,17 @@
+spool_dir=/var/spool/cups
+stop_cmd=/etc/init.d/cupsys stop
+gs_fontpath=
+sort_mode=0
+gs_path=gs
+iface_perms=755
+gs_lib=
+smbclient_path=smbclient
+iface_arg=
+print_style=cups
+show_status=0
+display_mode=0
+show_jobs=0
+model_path=/usr/share/foomatic/db /usr/share/ppd
+driver_style=cups
+start_cmd=/etc/init.d/cupsys start
+iface_owner=lp:lp

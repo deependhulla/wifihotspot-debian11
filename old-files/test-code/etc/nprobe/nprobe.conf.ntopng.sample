@@ -1,0 +1,68 @@
+#
+#         This is a sample configuration file for using nProbe in combination with ntopng,
+#        exporting flows over ZMQ from nProbe to ntopng.
+#        You can enable this configuration by renaming this file to nprobe.conf and restarting
+#        the nprobe service.
+#
+#
+#       -i|--interface
+#        Specifies the physical network interface that nProbe will use to perform the
+#        monitoring. To disable monitoring from physical interfaces and use nProbe in
+#        collector-only mode specify -i=none and use the -3|--collector-port option.
+#
+-i=none
+# -i=eth1
+#
+#
+#       -3|--collector-port
+#	Specifies the port that is being used by a NetFlow exporter to send NetFlow to nProbe.
+#	Multiple NetFlow exporters can symultaneously send data to nProbe using the same port.
+#	If you are processing traffic from an interface with -i please comment this option.
+#
+--collector-port=6363
+#
+#
+#       --zmq
+#        Specifies the ZMQ endpoint for delivering flows to ZMQ subscribers.
+#
+--zmq=tcp://*:5556
+#
+#        Note: by default ntopng is the connection initiator, this does not work if nprobe is 
+#        in a private network protected by a firewall. In this case it is necessary to revert 
+#        the configuration by swapping the roles and configuring ntopng as collector (using the
+#        the trailing 'c' in the endpoint), and nProbe as connection initiator (by adding the 
+#        --zmq-probe-mode option).
+#
+# --zmq=tcp://127.0.0.1:5556
+# --zmq-probe-mode
+#        
+#
+#       -n|--collector
+#        Specifies the NetFlow collector that will be used by nProbe to send the monitored
+#        flows in Netflow format. This should be disabled when exporting flows over ZMQ by
+#        specifying -n=none
+#
+-n=none
+#
+#
+#       --flow-templ|-T
+#        Specifies the flow template. For best results, please use @NTOPNG@ as template 
+#        when exporting flows towards ntopng
+#
+-T=@NTOPNG@
+#
+#
+#       -G|--daemon-mode
+#        This parameter causes nProbe to become a daemon, a task which runs in background
+#        without connection to a specific terminal. This option is ignored when nProbe is
+#        controlled with systemd (e.g. systemctl start nprobe)
+#
+# -G
+#
+#
+#       -g|--pid-file
+#        Specifies the path where the PID (process ID) is saved. This option is ignored when
+#        nProbe is controlled with systemd (e.g. systemctl start nprobe).
+#
+-G=/var/run/nprobe.pid
+

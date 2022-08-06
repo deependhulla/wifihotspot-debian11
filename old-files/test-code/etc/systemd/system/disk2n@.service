@@ -1,0 +1,26 @@
+[Unit]
+Description=disk2n ultra-high-speed traffic replay on %I
+After=network.target syslog.target pf_ring.service cluster.service
+Wants=pf_ring.service cluster.service
+PartOf=pf_ring.service cluster.service
+
+[Service]
+Type=simple
+
+SyslogIdentifier=disk2n
+
+ExecStartPre=/bin/sh -c '/bin/echo "$(/bin/date) disk2n %i StartPre" >> /var/log/ntop-systemd.log'
+ExecStartPre=/bin/sh -c '/bin/sed "/-P.*$\\|--daemon.*\\|--pid.*/s/^/#/" /etc/disk2n/disk2n-%i.conf > /run/disk2n-%i.conf'
+
+ExecStart=/usr/bin/stdbuf -oL /usr/bin/disk2n /run/disk2n-%i.conf
+
+ExecStartPost=/bin/sh -c '/bin/echo "$(/bin/date) disk2n %i StartPost" >> /var/log/ntop-systemd.log'
+
+ExecStopPost=-/bin/rm -rf /run/disk2n-%i.conf
+ExecStopPost=/bin/sh -c '/bin/echo "$(/bin/date) disk2n %i StopPost" >> /var/log/ntop-systemd.log'
+
+Restart=on-abnormal
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

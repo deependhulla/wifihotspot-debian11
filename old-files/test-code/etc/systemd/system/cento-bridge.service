@@ -1,0 +1,24 @@
+[Unit]
+Description=100Gbps bridge and NetFlow v5/v9/IPFIX probe for IPv4/v6
+After=network.target syslog.target pf_ring.service cluster.service
+Wants=pf_ring.service cluster.service
+PartOf=pf_ring.service cluster.service
+
+[Service]
+Type=simple
+
+ExecStartPre=/bin/sh -c '/bin/echo "$(/bin/date) cento-bridge StartPre" >> /var/log/ntop-systemd.log'
+ExecStartPre=/bin/sh -c '/bin/sed "/-p.*$\\|--daemon.*\\|--pid-file.*/s/^/#/" /etc/cento/cento-bridge.conf > /run/cento-bridge.conf'
+
+ExecStart=/usr/bin/cento-bridge /run/cento-bridge.conf
+
+ExecStartPost=/bin/sh -c '/bin/echo "$(/bin/date) cento-bridge StartPost" >> /var/log/ntop-systemd.log'
+
+ExecStopPost=-/bin/rm -rf /run/cento-bridge.conf
+ExecStopPost=/bin/sh -c '/bin/echo "$(/bin/date) cento-bridge StopPost" >> /var/log/ntop-systemd.log'
+
+Restart=on-abnormal
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

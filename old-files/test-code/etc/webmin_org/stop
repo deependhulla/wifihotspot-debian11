@@ -1,0 +1,15 @@
+#!/bin/sh
+echo Stopping Webmin server in /usr/share/webmin
+pidfile=`grep "^pidfile=" /etc/webmin/miniserv.conf | sed -e 's/pidfile=//g'`
+pid=`cat $pidfile`
+if [ "$pid" != "" ]; then
+  kill $pid || exit 1
+  touch /var/webmin/stop-flag
+  if [ "$1" = "--kill" ]; then
+    sleep 2
+    (kill -9 -- -$pid || kill -9 $pid) 2>/dev/null
+  fi
+  exit 0
+else
+  exit 1
+fi

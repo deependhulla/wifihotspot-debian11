@@ -1,0 +1,2 @@
+MAILTO=""
+*/5 * * * * /usr/local/webadmin/wifidirect/work-for-all-active-mac.sh

@@ -1,0 +1,21 @@
+[Unit]
+Description=PF_RING ZC cluster services
+After=network.target syslog.target pf_ring.service
+Requires=pf_ring.service
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+
+ExecStartPre=/bin/sh -c '/bin/echo "$(/bin/date) cluster StartPre" >> /var/log/ntop-systemd.log'
+
+ExecStart=/usr/bin/clusterctl start-if-enabled
+
+ExecStartPost=/bin/sh -c '/bin/echo "$(/bin/date) cluster StartPost" >> /var/log/ntop-systemd.log'
+
+ExecStop=/usr/bin/clusterctl stop
+ExecStopPost=/bin/sh -c '/bin/echo "$(/bin/date) cluster StopPost" >> /var/log/ntop-systemd.log'
+
+[Install]
+WantedBy=multi-user.target
+

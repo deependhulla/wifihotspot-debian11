@@ -1,0 +1,31 @@
+$ttl 300
+clubemerald.in.     IN      SOA     ns1.technomail.in. deepen.technoinfotech.com (
+                        2018031019
+                        1080
+                        360
+                        6048
+                        3840 )
+clubemerald.in.     IN      NS      ns1.technomail.in.
+clubemerald.in.     IN      NS      ns2.technoinfotech.co.in.
+clubemerald.in.     IN      NS      ns3.technoinfotech.net.
+clubemerald.in.     IN      NS      ns4.technoinfotech.com.
+clubemerald.in.     IN      A       103.13.98.104
+www.clubemerald.in.     IN      A       103.13.98.104
+corporate.clubemerald.in.     IN      A       103.13.98.104
+idc.clubemerald.in.     IN      A       103.13.98.125
+online.clubemerald.in.     IN      A       103.13.98.105
+office.clubemerald.in.     IN      A      192.168.3.254
+wifi.clubemerald.in.     IN      A      172.16.0.254
+wifilogin.clubemerald.in.     IN      A      172.16.0.254
+newsletter.clubemerald.in. IN A     103.13.98.110
+office2.clubemerald.in. IN       CNAME   club.duckdns.org.
+app.clubemerald.in.	IN	A	213.163.66.139	
+clubemerald.in.     IN      MX      10 mx01.technomail.xyz.
+clubemerald.in.     IN      MX      20 mx2.technomail.in.
+clubemerald.in.     IN      MX      30 mx3.technomail.in.
+nvr1.clubemerald.in. IN       A   120.63.171.192
+nvr2.clubemerald.in. IN       A   120.63.171.192
+im.clubemerald.in. IN   A	120.63.171.192
+newsletter.clubemerald.in. MX       10 newsletter.clubemerald.in.
+clubemerald.in.     IN      TXT     "v=spf1 a mx ptr include:spf.technomail.in include:spf2.technomail.in -all"
+clubemerald.in.     IN      SPF     "v=spf1 a mx ptr include:spf.technomail.in include:spf2.technomail.in -all"

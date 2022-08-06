@@ -1,0 +1,40 @@
+[Unit]
+Description=n2disk ultra-high-speed traffic recorder with realtime indexing on %I
+After=network.target syslog.target pf_ring.service cluster.service
+Wants=pf_ring.service cluster.service
+PartOf=pf_ring.service cluster.service
+
+[Service]
+Type=simple
+
+# make sure n2disk is always shown as name even if other utilities are called (e.g., grep or stdbuf)
+SyslogIdentifier=n2disk
+EnvironmentFile=-/run/n2disk-%i.env
+
+ExecStartPre=/bin/sh -c '/bin/echo "$(/bin/date) n2disk %i StartPre" >> /var/log/ntop-systemd.log'
+
+# Prepare the proper executable depending on the license
+ExecStartPre=/bin/sh -c '/bin/echo "N2DISK_BINARY=n2disk" > /run/n2disk-%i.env'
+ExecStartPre=-/bin/sh -c '/usr/bin/n2disk1g --check-license | /bin/grep "Ok\\|Time-Limited" && /bin/echo "N2DISK_BINARY=n2disk1g" > /run/n2disk-%i.env || true'
+ExecStartPre=-/bin/sh -c '/usr/bin/n2disk5g --check-license | /bin/grep "Ok\\|Time-Limited" && /bin/echo "N2DISK_BINARY=n2disk5g" > /run/n2disk-%i.env || true'
+ExecStartPre=-/bin/sh -c '/usr/bin/n2disk --check-license | /bin/grep "Ok\\|Time-Limited" && /bin/echo "N2DISK_BINARY=n2disk" > /run/n2disk-%i.env || true'
+
+# PF_RING takes care of starting the Napatech service
+#ExecStartPre=/bin/sh -c '/bin/echo %i | grep -q napatech && ! /bin/pidof ntservice > /dev/null && /opt/napatech3/bin/ntstart.sh || true'
+
+# Prepare n2disk configuration file
+ExecStartPre=/bin/sh -c '/bin/sed "/-P.*$\\|--daemon.*\\|--pid.*/s/^/#/" /etc/n2disk/n2disk-%i.conf > /run/n2disk-%i.conf'
+
+ExecStart=/usr/bin/stdbuf -oL /usr/bin/${N2DISK_BINARY} /run/n2disk-%i.conf
+
+ExecStartPost=/bin/sh -c '/bin/echo "$(/bin/date) n2disk %i StartPost" >> /var/log/ntop-systemd.log'
+
+ExecStopPost=-/bin/rm -rf /run/n2disk-%i.env
+ExecStopPost=-/bin/rm -rf /run/n2disk-%i.conf
+ExecStopPost=/bin/sh -c '/bin/echo "$(/bin/date) n2disk %i StopPost" >> /var/log/ntop-systemd.log'
+
+Restart=on-abnormal
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

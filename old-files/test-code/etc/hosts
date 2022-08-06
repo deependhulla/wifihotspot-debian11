@@ -1,0 +1,10 @@
+127.0.0.1	localhost
+192.168.3.240	wifihotshot240.clubemerald.in	wifihotshot240
+192.168.3.241	wifihotshot1.clubemerald.in	wifihotshot1
+172.16.0.254	wifihotshot.clubemerald.in	wifihotshot
+172.16.0.254	wifi.clubemerald.in	wifi
+
+# The following lines are desirable for IPv6 capable hosts
+::1     localhost ip6-localhost ip6-loopback
+ff02::1 ip6-allnodes
+ff02::2 ip6-allrouters

@@ -1,0 +1,38 @@
+[Unit]
+Description=n2disk ultra-high-speed traffic recorder with realtime indexing on %I
+After=network.target syslog.target pf_ring.service cluster.service
+Wants=pf_ring.service cluster.service
+PartOf=pf_ring.service cluster.service
+BindsTo=ntopng.service
+
+[Service]
+Type=simple
+
+# make sure n2disk is always shown as name even if other utilities are called (e.g., grep or stdbuf)
+SyslogIdentifier=n2disk
+EnvironmentFile=-/run/n2disk-ntopng-%i.env
+
+ExecStartPre=/bin/sh -c '/bin/echo "$(/bin/date) n2disk %i StartPre" >> /var/log/ntop-systemd.log'
+
+# Prepare the proper executable depending on the license
+ExecStartPre=/bin/sh -c '/bin/echo "N2DISK_BINARY=n2disk" > /run/n2disk-ntopng-%i.env'
+ExecStartPre=-/bin/sh -c '/usr/bin/n2disk1g --check-license | /bin/grep "Ok\\|Time-Limited" && /bin/echo "N2DISK_BINARY=n2disk1g" > /run/n2disk-ntopng-%i.env || true'
+ExecStartPre=-/bin/sh -c '/usr/bin/n2disk5g --check-license | /bin/grep "Ok\\|Time-Limited" && /bin/echo "N2DISK_BINARY=n2disk5g" > /run/n2disk-ntopng-%i.env || true'
+ExecStartPre=-/bin/sh -c '/usr/bin/n2disk --check-license | /bin/grep "Ok\\|Time-Limited" && /bin/echo "N2DISK_BINARY=n2disk" > /run/n2disk-ntopng-%i.env || true'
+
+# Prepare n2disk configuration file
+ExecStartPre=/bin/sh -c '/bin/sed "/-P.*$\\|--daemon.*\\|--pid.*/s/^/#/" /etc/n2disk/n2disk-ntopng-%i.conf > /run/n2disk-ntopng-%i.conf'
+
+ExecStart=/usr/bin/stdbuf -oL /usr/bin/${N2DISK_BINARY} /run/n2disk-ntopng-%i.conf
+
+ExecStartPost=/bin/sh -c '/bin/echo "$(/bin/date) n2disk %i StartPost" >> /var/log/ntop-systemd.log'
+
+ExecStopPost=-/bin/rm -rf /run/n2disk-ntopng-%i.env
+ExecStopPost=-/bin/rm -rf /run/n2disk-ntopng-%i.conf
+ExecStopPost=/bin/sh -c '/bin/echo "$(/bin/date) n2disk %i StopPost" >> /var/log/ntop-systemd.log'
+
+Restart=on-abnormal
+RestartSec=5
+
+[Install]
+WantedBy=ntopng.service

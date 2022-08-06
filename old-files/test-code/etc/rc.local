@@ -1,0 +1,17 @@
+#!/bin/bash
+sysctl -w net.ipv6.conf.all.disable_ipv6=1 1>/dev/null
+sysctl -w net.ipv6.conf.default.disable_ipv6=1 1>/dev/null
+
+##for CCTV
+/usr/sbin/route add -net 192.168.2.0/24 gw 192.168.3.254
+
+/usr/local/webadmin/config/stop 1>/dev/null
+/usr/local/webadmin/config/start
+/usr/local/webadmin/wifidirect/startup-mac-open.sh 
+
+/etc/init.d/webmin stop 1>/dev/null
+/etc/init.d/webmin start
+
+#/usr/local/src/start-tola-isp.sh 
+
+exit 0

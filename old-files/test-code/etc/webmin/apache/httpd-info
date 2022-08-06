@@ -1,0 +1,5 @@
+mods=core mod_so mod_watchdog http_core mod_log_config mod_logio mod_version mod_unixd
+cmd=/usr/sbin/apache2
+fullversion=2.4.52
+time=1641245234
+version=2.452

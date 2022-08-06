@@ -1,0 +1,24 @@
+[Unit]
+Description=100Gbps NetFlow v5/v9/IPFIX probe for IPv4/v6 on %I
+After=network.target syslog.target redis.service pf_ring.service cluster.service
+Wants=pf_ring.service cluster.service
+PartOf=pf_ring.service cluster.service
+
+[Service]
+Type=simple
+
+ExecStartPre=/bin/sh -c '/bin/echo "$(/bin/date) cento %i StartPre" >> /var/log/ntop-systemd.log'
+ExecStartPre=/bin/sh -c '/bin/sed "/-p.*$\\|--daemon.*\\|--pid-file.*/s/^/#/" /etc/cento/cento-%i.conf > /run/cento-%i.conf'
+
+ExecStart=/usr/bin/cento /run/cento-%i.conf
+
+ExecStartPost=/bin/sh -c '/bin/echo "$(/bin/date) cento %i StartPost" >> /var/log/ntop-systemd.log'
+
+ExecStopPost=-/bin/rm -rf /run/cento-%i.conf
+ExecStopPost=/bin/sh -c '/bin/echo "$(/bin/date) cento %i StopPost" >> /var/log/ntop-systemd.log'
+
+Restart=on-abnormal
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,7 @@
+/var/log/n2disk/*.log {
+	daily
+	missingok
+	rotate 4
+	copytruncate
+}
+

@@ -1,0 +1,12 @@
+#
+# /etc/pam.d/npcapextract - authentication settings for npcapextract
+#
+# This file defines the authentication scheme for running pcap extractions
+# when npcapextract has the suid permission set.
+#
+
+# By default as example it uses the system authentication.
+auth	[success=1 default=ignore]	pam_unix.so nullok_secure
+
+auth	requisite			pam_deny.so
+auth	required			pam_permit.so

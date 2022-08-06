@@ -1,0 +1,6 @@
+auto=apache,squid,proftpd,wuftpd
+webalizer_conf=/etc/webalizer/webalizer.conf
+naked=0
+skip_old=0
+webalizer=/usr/bin/webalizer
+alt_conf=/etc/webalizer/webalizer.conf.sample

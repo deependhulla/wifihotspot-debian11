@@ -1,0 +1,7 @@
+start_cmd=/etc/init.d/syslog-ng start
+lines=20
+syslogng_conf=/etc/syslog-ng/syslog-ng.conf
+stop_cmd=/etc/init.d/syslog-ng stop
+syslogng_cmd=syslog-ng
+pid_file=/var/run/syslog-ng.pid
+compressed=1

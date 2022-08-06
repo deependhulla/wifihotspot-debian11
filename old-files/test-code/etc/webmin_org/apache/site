@@ -1,0 +1,6 @@
+size=729832
+version=2.451
+webmin=1.983
+path=/usr/sbin/apache2
+modules=core/2.451 mod_log_config/2.451 mod_actions/2.451 mod_alias/2.451 mod_auth_basic/2.451 mod_auth_digest/2.451 mod_authn_file/2.451 mod_authz_host/2.451 mod_autoindex/2.451 mod_cgi/2.451 mod_dir/2.451 mod_env/2.451 mod_include/2.451 mod_mime/2.451 mod_mpm_prefork/2.451 mod_negotiation/2.451 mod_proxy/2.451 mod_rewrite/2.451 mod_setenvif/2.451 mod_ssl/2.451 mod_status/2.451 mod_suexec/2.451 mod_dav/2.451 mod_php7/2.451
+fullversion=2.4.51

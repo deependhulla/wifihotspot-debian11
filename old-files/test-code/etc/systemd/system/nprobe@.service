@@ -1,0 +1,24 @@
+[Unit]
+Description=nprobe extensible NetFlow v5/v9/IPFIX probe/collector for IPv4/v6 on %I
+After=network.target syslog.target redis.service pf_ring.service cluster.service
+Wants=pf_ring.service cluster.service
+PartOf=pf_ring.service cluster.service
+
+[Service]
+Type=simple
+
+ExecStartPre=/bin/sh -c '/bin/echo "$(/bin/date) nprobe %i StartPre" >> /var/log/ntop-systemd.log'
+ExecStartPre=/bin/sh -c '/bin/sed "/-g.*$\\|-G.*\\|--daemon-mode.*\\|--pid-file.*/s/^/#/" /etc/nprobe/nprobe-%i.conf > /run/nprobe-%i.conf'
+
+ExecStart=/usr/bin/nprobe /run/nprobe-%i.conf
+
+ExecStartPost=/bin/sh -c '/bin/echo "$(/bin/date) nprobe %i StartPost" >> /var/log/ntop-systemd.log'
+
+ExecStopPost=-/bin/rm -rf /run/nprobe-%i.conf
+ExecStopPost=/bin/sh -c '/bin/echo "$(/bin/date) nprobe %i StopPost" >> /var/log/ntop-systemd.log'
+
+Restart=on-abnormal
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

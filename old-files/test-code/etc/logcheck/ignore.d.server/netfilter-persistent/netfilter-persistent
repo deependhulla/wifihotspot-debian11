@@ -1,0 +1,1 @@
+^\w{3} [ :[:digit:]]{11} [._[:alnum:]-]+ systemd\[1\]: netfilter-persistent\.service: Dependency Conflict(s|edBy)=(ip(6)?tables|ipset)\.service dropped, merged into netfilter-persistent\.service$

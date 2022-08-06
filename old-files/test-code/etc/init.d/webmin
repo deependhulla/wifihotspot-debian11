@@ -1,0 +1,82 @@
+#!/bin/sh
+# chkconfig: 235 99 10
+# description: web-based administration interface for Unix systems
+#
+### BEGIN INIT INFO
+# Provides:          webmin
+# Required-Start:    $local_fs $network $syslog
+# Required-Stop:     $local_fs $network
+# Default-Start:     2 3 4 5
+# Default-Stop:      0 1 6
+# Short-Description: web-based administration interface for Unix systems
+# Description:       Webmin is a web-based interface for system administration
+#                    for Unix. Using Webmin you can configure DNS, Samba, NFS,
+#                    local/remote filesystems and more using your web browser.
+### END INIT INFO
+
+PATH=/sbin:/usr/sbin:/bin:/usr/bin
+DESC="web-based administration interface for Unix systems"
+NAME=Webmin
+PIDFILE=/var/webmin/miniserv.pid
+SCRIPTNAME=/etc/init.d/$NAME
+START=/etc/webmin/start
+STOP=/etc/webmin/stop
+RELOAD=/etc/webmin/reload
+LOCKFILE=/var/lock/subsys/webmin
+CONFFILE=/etc/webmin/miniserv.conf
+
+case "$1" in
+start)
+	$START >/dev/null 2>&1 </dev/null
+	RETVAL=$?
+	if [ "$RETVAL" = "0" ]; then
+		touch $LOCKFILE >/dev/null 2>&1
+	fi
+	;;
+stop)
+	$STOP
+	RETVAL=$?
+	if [ "$RETVAL" = "0" ]; then
+		rm -f $LOCKFILE
+		pidfile=`grep "^pidfile=" $CONFFILE | sed -e 's/pidfile=//g'`
+		if [ "$pidfile" = "" ]; then
+			pidfile=$PIDFILE
+		fi
+		rm -f $pidfile
+	fi
+	;;
+status)
+	pidfile=`grep "^pidfile=" $CONFFILE | sed -e 's/pidfile=//g'`
+	if [ "$pidfile" = "" ]; then
+		pidfile=$PIDFILE
+	fi
+	if [ -s $pidfile ]; then
+		pid=`cat $pidfile`
+		kill -0 $pid >/dev/null 2>&1
+		if [ "$?" = "0" ]; then
+			echo "$NAME (pid $pid) is running"
+			RETVAL=0
+		else
+			echo "$NAME is stopped"
+			RETVAL=1
+		fi
+	else
+		echo "$NAME is stopped"
+		RETVAL=1
+	fi
+	;;
+restart)
+	$STOP ; $START
+	RETVAL=$?
+	;;
+reload|force-reload)
+	$RELOAD
+	RETVAL=$?
+	;;
+*)
+	echo "Usage: $0 {start|stop|restart|reload|force-reload|status}" >&2
+	RETVAL=1
+	;;
+esac
+exit $RETVAL
+
