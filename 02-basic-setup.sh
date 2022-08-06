@@ -59,6 +59,33 @@ echo "alias rm='rm -i'" >> /etc/bash.bashrc
 echo "export EDITOR=vi" >> /etc/bash.bashrc
 
 
+MYSQLPASSVPOP=`pwgen -c -1 8`
+echo $MYSQLPASSVPOP > /usr/local/src/mariadb-mydbadmin-pass
+echo "mydbadmin password in /usr/local/src/mairadb-mydbadmin-pass"
 
-files/etc-config-backup.sh
+echo "GRANT ALL PRIVILEGES ON *.* TO mydbadmin@localhost IDENTIFIED BY '$MYSQLPASSVPOP'" with grant option | mysql -uroot
+mysqladmin -uroot reload
+mysqladmin -uroot refresh
+
+
+
+
+### changing timezone to Asia Kolkata
+sed -i "s/;date.timezone =/date\.timezone \= \'Asia\/Kolkata\'/" /etc/php/7.4/apache2/php.ini
+sed -i "s/;date.timezone =/date\.timezone \= \'Asia\/Kolkata\'/" /etc/php/7.4/cli/php.ini
+##disable error
+sed -i "s/error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT/error_reporting = E_ERROR/" /etc/php/7.4/cli/php.ini
+sed -i "s/error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT/error_reporting = E_ERROR/" /etc/php/7.4/apache2/php.ini
+
+
+systemctl restart  apache2
+
+
+/bin/cp -p files/extra-files/etc-config-backup.sh /bin/
+## to check mialqueue if used for alerts
+/bin/cp -p files/extra-files/pfHandle /bin/
+
+## safe backup
+files/extra-files/etc-config-backup.sh
+
 echo ""

@@ -27,20 +27,37 @@ echo "iptables-persistent iptables-persistent/autosave_v6 boolean true" | debcon
 
 apt-get update
 apt-get -y upgrade
-apt-get -y install vim curl git software-properties-common dirmngr screen mc apt-transport-https lsb-release ca-certificates openssh-server iptraf-ng telnet iputils-ping debconf-utils pwgen xfsprogs iftop htop multitail net-tools elinks wget  mariadb-server php apache2 libapache2-mod-php php-mysql php-cli php-common php-imap php-ldap php-xml php-curl php-mbstring php-zip php-apcu php-gd php-imagick imagemagick mcrypt memcached php-memcached php-bcmath dbconfig-common libapache2-mod-php php-intl php-mysql php-intl libdbd-mysql-perl certbot python3-certbot-apache automysqlbackup php-mailparse 
+apt-get -y install vim curl git software-properties-common dirmngr screen mc apt-transport-https lsb-release ca-certificates openssh-server iptraf-ng telnet iputils-ping debconf-utils pwgen xfsprogs iftop htop multitail net-tools elinks wget  mariadb-server php apache2 libapache2-mod-php php-mysql php-cli php-common php-imap php-ldap php-xml php-curl php-mbstring php-zip php-apcu php-gd php-imagick imagemagick mcrypt memcached php-memcached php-bcmath dbconfig-common libapache2-mod-php php-intl php-mysql php-intl libdbd-mysql-perl certbot python3-certbot-apache automysqlbackup php-mailparse postfix iptables-persistent libimage-exiftool-perl build-essential gnupg2 zip rar unrar ftp poppler-utils tnef sudo whois libauthen-pam-perl libio-pty-perl libnet-ssleay-perl perl-openssl-defaults sendemail rsync mariadb-server perl-doc mysqltuner catdoc unzip tar imagemagick tesseract-ocr tesseract-ocr-eng poppler-utils exiv2 php-mail-mime 
+## to use more advance database storage type
 
-
-## postfix for basic use as default MTA and install build tool for any complication 
-## iptables is still usefull and other addon tools 
-apt-get -y install postfix iptables-persistent libimage-exiftool-perl build-essential gnupg2 zip rar unrar ftp poppler-utils tnef sudo whois
 
 ## install insstead of systemd-timesyncd for better time sync
 apt-get install chrony -y 2>/dev/null 1>/dev/null
-## -x option added to allow in LXC
+## -x option added to allow in LXC too
 echo 'DAEMON_OPTS="-F 1 -x "' >  /etc/default/chrony
 systemctl restart chrony
 systemctl restart rsyslog
 
+
+a2enmod actions > /dev/null 2>&1
+a2enmod proxy_fcgi > /dev/null 2>&1
+a2enmod fcgid > /dev/null 2>&1
+a2enmod alias > /dev/null 2>&1
+a2enmod suexec > /dev/null 2>&1
+a2enmod rewrite > /dev/null 2>&1
+a2enmod ssl > /dev/null 2>&1
+a2enmod actions > /dev/null 2>&1
+a2enmod include > /dev/null 2>&1
+a2enmod dav_fs > /dev/null 2>&1
+a2enmod dav > /dev/null 2>&1
+a2enmod auth_digest > /dev/null 2>&1
+a2enmod cgi > /dev/null 2>&1
+a2enmod headers > /dev/null 2>&1
+a2enmod proxy_http > /dev/null 2>&1
+
+## keep fpm disabled default if installed by mistake
+systemctl stop php.fpm  > /dev/null 2>&1
+systemctl disable php-fpm > /dev/null 2>&1
 
 ##### configure proper timezone
 #dpkg-reconfigure tzdata
