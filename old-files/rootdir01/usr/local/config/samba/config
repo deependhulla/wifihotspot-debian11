@@ -1,0 +1,17 @@
+samba_server=/usr/sbin/smbd
+samba_status_program=/usr/bin/smbstatus
+name_server=/usr/sbin/nmbd
+net=/usr/bin/net
+stop_cmd=/etc/rc.d/init.d/smb stop
+smbgroupedit=/usr/bin/smbgroupedit
+samba_password_program=/usr/bin/smbpasswd
+sort_mode=0
+smb_conf=/etc/samba/smb.conf
+start_cmd=/etc/rc.d/init.d/smb start
+smb_passwd=/etc/samba/smbpasswd
+text_lists=0
+run_from_inetd=0
+list_printers_command=lpc status | grep "[A-z0-9]:" | sed -e 's/://g'
+swat_path=/usr/sbin/swat
+dont_convert=-499
+pdbedit=/usr/bin/pdbedit

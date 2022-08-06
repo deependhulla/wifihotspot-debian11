@@ -1,0 +1,4 @@
+modules=core/2.215 prefork/2.215 mod_auth_basic/2.215 mod_auth_digest/2.215 mod_authn_file/2.215 mod_authn_dbm/2.215 mod_authz_host/2.215 mod_authz_owner/2.215 mod_authz_groupfile/2.215 mod_authz_dbm/2.215 mod_include/2.215 mod_log_config/2.215 mod_env/2.215 mod_ext_filter/2.215 mod_mime_magic/2.215 mod_setenvif/2.215 mod_mime/2.215 mod_dav/2.215 mod_status/2.215 mod_autoindex/2.215 mod_info/2.215 mod_vhost_alias/2.215 mod_negotiation/2.215 mod_dir/2.215 mod_actions/2.215 mod_speling/2.215 mod_userdir/2.215 mod_alias/2.215 mod_rewrite/2.215 mod_proxy/2.215 mod_proxy_balancer/2.215 mod_cache/2.215 mod_suexec/2.215 mod_disk_cache/2.215 mod_cgi/2.215 mod_php5/2.215 mod_mpm_prefork/2.215
+webmin=1.720
+path=/usr/sbin/httpd
+size=354816

@@ -1,0 +1,18 @@
+#date: 05-05-2015 
+with max updates
+
+
+
+---------------------------------------------XXXXXXXXXXXXXXXXXXXXXXXXXXX--------------------------------
+#technoair-v17.tgz
+#Date:Fri May 29 12:30:02 IST 2015
+
+Add-On:
+sms code view --->Tested Ok (For demo perpuse Need to run query in phpmyadmin /usr/local/src/sms_demo.txt  )
+Dashboaerd---data usuage upto EB-->Tested Ok
+Network Tools----Internet start and stop-->in process
+
+FIX:
+1.fixed download limit bug
+
+---------------------------------------------XXXXXXXXXXXXXXXXXXXXXXXXXXX--------------------------------

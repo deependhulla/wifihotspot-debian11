@@ -1,0 +1,6 @@
+MAILTO=""
+* * * * * /usr/local/webadmin/wifidirect/work-for-all-active-mac.sh
+1 * * * * /usr/local/webadmin/wifidirect/iptraf-log-to-file.sh
+5 * * * * /usr/local/webadmin/wifidirect/iptraf-log-to-mysql-and-compress-log-to-save-space.sh
+00 10 * * * /usr/local/bin/automysqlbackup
+00 18 * * * /usr/local/bin/automysqlbackup

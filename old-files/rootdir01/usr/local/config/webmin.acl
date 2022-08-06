@@ -1,0 +1,2 @@
+lcmanager: acl ajaxterm apache bandwidth bind8 bsdexports bsdfdisk change-user cron custom dfsadmin dnsadmin exports format hpuxexports inetd init inittab ipfilter ipfw logrotate mailboxes man mount net postfix proc rbac samba sarg servers sgiexports shell smf squid sshd status stunnel syslog-ng syslog system-status tcpwrappers telnet time webmin webminlog xinetd zones
+wifidirect: wifidirect

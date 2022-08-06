@@ -1,0 +1,16 @@
+lease_file=/var/lib/dhcpd/dhcpd.leases
+display_max=100
+lease_tz=0
+interfaces_type=redhat
+show_mac=0
+dhcpd_conf=/etc/dhcp/dhcpd.conf
+stop_cmd=/etc/rc.d/init.d/dhcpd stop
+pid_file=/var/run/dhcpd.pid
+restart_cmd=/etc/rc.d/init.d/dhcpd restart
+desc_name=0
+dhcpd_nocols=5
+start_cmd=/etc/rc.d/init.d/dhcpd start
+dhcpd_path=/usr/sbin/dhcpd
+group_name=0
+lease_sort=0
+show_ip=0

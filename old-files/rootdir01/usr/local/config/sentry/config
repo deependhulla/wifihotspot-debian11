@@ -1,0 +1,12 @@
+portsentry_start=/etc/rc.d/init.d/portsentry start
+logcheck=/usr/bin/logcheck.sh
+portsentry_pid=
+hostsentry_stop=/etc/rc.d/init.d/hostsentry stop
+portsentry_config=/etc/portsentry/portsentry.conf
+hostsentry_config=/etc/hostsentry/hostsentry.conf
+portsentry_stop=/etc/rc.d/init.d/portsentry stop
+portsentry=/usr/sbin/portsentry
+portsentry_umode=udp
+portsentry_tmode=tcp
+hostsentry_start=/etc/rc.d/init.d/hostsentry start
+hostsentry=/usr/lib/hostsentry/hostsentry.py

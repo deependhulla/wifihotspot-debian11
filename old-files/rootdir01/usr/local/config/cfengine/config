@@ -1,0 +1,9 @@
+start_cmd=/etc/rc.d/init.d/cfengine start
+cfrun=/usr/sbin/cfrun
+cfd=/usr/sbin/cfd
+cfd_conf=
+cfengine=/usr/sbin/cfengine
+cfrun_hosts=
+stop_cmd=/etc/rc.d/init.d/cfengine stop
+cfengine_dir=/etc/cfengine
+cfengine_conf=

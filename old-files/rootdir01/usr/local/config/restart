@@ -1,0 +1,2 @@
+#!/bin/sh
+/usr/local/webadmin/config/stop && /usr/local/webadmin/config/start

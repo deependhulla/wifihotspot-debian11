@@ -1,0 +1,17 @@
+gs_path=gs
+show_status=0
+gs_fontpath=
+stop_cmd=/etc/rc.d/init.d/cups stop
+spool_dir=/var/spool/cups
+iface_owner=lp:lp
+iface_arg=
+sort_mode=0
+model_path=/usr/share/cups/model /etc/cups/ppd
+start_cmd=/etc/rc.d/init.d/cups start
+iface_perms=755
+show_jobs=0
+gs_lib=
+display_mode=0
+smbclient_path=smbclient
+print_style=cups
+driver_style=cups

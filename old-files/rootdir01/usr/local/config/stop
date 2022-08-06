@@ -1,0 +1,4 @@
+#!/bin/sh
+echo Stopping Webmin server in /usr/local/webadmin
+pidfile=`grep "^pidfile=" /usr/local/webadmin/config/miniserv.conf | sed -e 's/pidfile=//g'`
+kill `cat $pidfile`

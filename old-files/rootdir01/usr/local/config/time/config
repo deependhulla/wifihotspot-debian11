@@ -1,0 +1,6 @@
+timeserver_hardware=1
+seconds=1
+lease=5
+ntp_only=1
+hwclock_flags=sysconfig
+zone_style=linux

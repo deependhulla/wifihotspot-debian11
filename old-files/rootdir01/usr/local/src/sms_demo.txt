@@ -1,0 +1,3 @@
+INSERT INTO `wifihotspot`.`app_module_info` (`uid`, `logid`, `create_by_user`, `create_on_date`, `create_type`, `org_sname`, `module_id`, `module_sname`, `module_fullname`, `module_phpuri`, `module_primary_id`, `module_dropdown`, `module_display_order_id`) VALUES (NULL, NULL, '', '2015-05-12 11:50:19', '', '', '25', 'View Sms Code', 'View Sms Code', 'sms_view.php', '10', '0', '2');
+
+INSERT INTO `wifihotspot`.`app_module_access` (`uid`, `logid`, `create_by_user`, `create_on_date`, `create_type`, `org_sname`, `module_id`, `login_name`) VALUES (NULL, NULL, '', '2015-05-12 14:21:34', '', '', '25', '1');

@@ -1,0 +1,3746 @@
+$VAR1 = [
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Library for country/city/organization to IP address or hostname mapping ',
+            'version' => '1.5.1-5.el6',
+            'name' => 'GeoIP',
+            'update' => 'GeoIP'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A program used for creating device files in /dev ',
+            'version' => '3.24-6.el6',
+            'name' => 'MAKEDEV',
+            'update' => 'MAKEDEV'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'MariaDB: a very fast and robust SQL database server ',
+            'version' => '10.0.17-1.el6',
+            'name' => 'MariaDB-client',
+            'update' => 'MariaDB-client'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'MariaDB: a very fast and robust SQL database server ',
+            'version' => '10.0.17-1.el6',
+            'name' => 'MariaDB-common',
+            'update' => 'MariaDB-common'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'MariaDB: a very fast and robust SQL database server ',
+            'version' => '10.0.17-1.el6',
+            'name' => 'MariaDB-compat',
+            'update' => 'MariaDB-compat'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'MariaDB: a very fast and robust SQL database server ',
+            'version' => '10.0.17-1.el6',
+            'name' => 'MariaDB-server',
+            'update' => 'MariaDB-server'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'MariaDB: a very fast and robust SQL database server ',
+            'version' => '10.0.17-1.el6',
+            'name' => 'MariaDB-shared',
+            'update' => 'MariaDB-shared'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Access control list utilities ',
+            'version' => '2.2.49-6.el6',
+            'name' => 'acl',
+            'update' => 'acl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Apache Portable Runtime library ',
+            'version' => '1.3.9-5.el6_2',
+            'name' => 'apr',
+            'update' => 'apr'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Apache Portable Runtime Utility library ',
+            'version' => '1.3.9-3.el6_0.1',
+            'name' => 'apr-util',
+            'update' => 'apr-util'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'APR utility library LDAP support ',
+            'version' => '1.3.9-3.el6_0.1',
+            'name' => 'apr-util-ldap',
+            'update' => 'apr-util-ldap'
+          },
+          {
+            'epoch' => '12',
+            'system' => 'yum',
+            'desc' => 'Spell checker ',
+            'version' => '0.60.6-12.el6',
+            'name' => 'aspell',
+            'update' => 'aspell'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Utilities for managing filesystem extended attributes ',
+            'version' => '2.4.44-7.el6',
+            'name' => 'attr',
+            'update' => 'attr'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'User space tools for 2.6 kernel auditing ',
+            'version' => '2.3.7-5.el6',
+            'name' => 'audit',
+            'update' => 'audit'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Dynamic library for libaudit ',
+            'version' => '2.3.7-5.el6',
+            'name' => 'audit-libs',
+            'update' => 'audit-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Command line tool for setting up authentication from network services ',
+            'version' => '6.1.12-19.el6',
+            'name' => 'authconfig',
+            'update' => 'authconfig'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A GNU tool for automatically configuring source code ',
+            'version' => '2.63-5.1.el6',
+            'name' => 'autoconf',
+            'update' => 'autoconf'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A GNU tool for automatically creating Makefiles ',
+            'version' => '1.11.1-4.el6',
+            'name' => 'automake',
+            'update' => 'automake'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Libraries for avahi run-time use ',
+            'version' => '0.6.25-15.el6',
+            'name' => 'avahi-libs',
+            'update' => 'avahi-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Open firmware for some Broadcom 43xx series WLAN chips ',
+            'version' => '5.2-4.el6',
+            'name' => 'b43-openfwwf',
+            'update' => 'b43-openfwwf'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The skeleton package which defines a simple Red Hat Enterprise Linux system ',
+            'version' => '10.0-4.el6',
+            'name' => 'basesystem',
+            'update' => 'basesystem'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The GNU Bourne Again shell ',
+            'version' => '4.1.2-29.el6',
+            'name' => 'bash',
+            'update' => 'bash'
+          },
+          {
+            'epoch' => '32',
+            'system' => 'yum',
+            'desc' => 'The Berkeley Internet Name Domain (BIND) DNS (Domain Name System) server ',
+            'version' => '9.8.2-0.30.rc1.el6_6.2',
+            'name' => 'bind',
+            'update' => 'bind'
+          },
+          {
+            'epoch' => '32',
+            'system' => 'yum',
+            'desc' => 'A chroot runtime environment for the ISC BIND DNS server, named(8) ',
+            'version' => '9.8.2-0.30.rc1.el6_6.2',
+            'name' => 'bind-chroot',
+            'update' => 'bind-chroot'
+          },
+          {
+            'epoch' => '32',
+            'system' => 'yum',
+            'desc' => 'Libraries used by the BIND DNS packages ',
+            'version' => '9.8.2-0.30.rc1.el6_6.2',
+            'name' => 'bind-libs',
+            'update' => 'bind-libs'
+          },
+          {
+            'epoch' => '32',
+            'system' => 'yum',
+            'desc' => 'BIND server with database backends and DLZ support ',
+            'version' => '9.8.2-0.30.rc1.el6_6.2',
+            'name' => 'bind-sdb',
+            'update' => 'bind-sdb'
+          },
+          {
+            'epoch' => '32',
+            'system' => 'yum',
+            'desc' => 'Utilities for querying DNS name servers ',
+            'version' => '9.8.2-0.30.rc1.el6_6.2',
+            'name' => 'bind-utils',
+            'update' => 'bind-utils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A GNU collection of binary utilities ',
+            'version' => '2.20.51.0.2-5.42.el6',
+            'name' => 'binutils',
+            'update' => 'binutils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Utilities for configuring the linux ethernet bridge ',
+            'version' => '1.2-10.el6',
+            'name' => 'bridge-utils',
+            'update' => 'bridge-utils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A file compression utility ',
+            'version' => '1.0.5-7.el6_0',
+            'name' => 'bzip2',
+            'update' => 'bzip2'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Libraries for applications using bzip2 ',
+            'version' => '1.0.5-7.el6_0',
+            'name' => 'bzip2-libs',
+            'update' => 'bzip2-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A library that performs asynchronous DNS operations ',
+            'version' => '1.9.1-5.el6.3',
+            'name' => 'c-ares19',
+            'update' => 'c-ares19'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Development files for c-ares ',
+            'version' => '1.9.1-5.el6.3',
+            'name' => 'c-ares19-devel',
+            'update' => 'c-ares19-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The Mozilla CA root certificate bundle ',
+            'version' => '2014.1.98-65.1.el6',
+            'name' => 'ca-certificates',
+            'update' => 'ca-certificates'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'CentOS release file ',
+            'version' => '6-6.el6.centos.12.2',
+            'name' => 'centos-release',
+            'update' => 'centos-release'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'SELinux policy compiler ',
+            'version' => '2.0.22-1.el6',
+            'name' => 'checkpolicy',
+            'update' => 'checkpolicy'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A system tool for maintaining the /etc/rc*.d hierarchy ',
+            'version' => '1.3.49.3-2.el6_4.1',
+            'name' => 'chkconfig',
+            'update' => 'chkconfig'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Parma Polyhedra Library backend (ppl) based version of the Cloog binaries ',
+            'version' => '0.15.7-1.2.el6',
+            'name' => 'cloog-ppl',
+            'update' => 'cloog-ppl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A set of basic GNU tools commonly used in shell scripts ',
+            'version' => '8.4-37.el6',
+            'name' => 'coreutils',
+            'update' => 'coreutils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Libraries for coreutils ',
+            'version' => '8.4-37.el6',
+            'name' => 'coreutils-libs',
+            'update' => 'coreutils-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A GNU archiving program ',
+            'version' => '2.10-12.el6_5',
+            'name' => 'cpio',
+            'update' => 'cpio'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The C Preprocessor ',
+            'version' => '4.4.7-11.el6',
+            'name' => 'cpp',
+            'update' => 'cpp'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A password-checking library ',
+            'version' => '2.8.16-4.el6',
+            'name' => 'cracklib',
+            'update' => 'cracklib'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The standard CrackLib dictionaries ',
+            'version' => '2.8.16-4.el6',
+            'name' => 'cracklib-dicts',
+            'update' => 'cracklib-dicts'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Regulatory compliance daemon for 802.11 wireless networking ',
+            'version' => '1.1.3_2014.06.13-1.el6',
+            'name' => 'crda',
+            'update' => 'crda'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Cron daemon for executing programs at set times ',
+            'version' => '1.4.4-12.el6',
+            'name' => 'cronie',
+            'update' => 'cronie'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Utility for running regular jobs ',
+            'version' => '1.4.4-12.el6',
+            'name' => 'cronie-anacron',
+            'update' => 'cronie-anacron'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Root crontab files used to schedule the execution of programs ',
+            'version' => '1.10-33.el6',
+            'name' => 'crontabs',
+            'update' => 'crontabs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A utility for setting up encrypted filesystems ',
+            'version' => '1.2.0-11.el6',
+            'name' => 'cryptsetup-luks',
+            'update' => 'cryptsetup-luks'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Cryptsetup shared library ',
+            'version' => '1.2.0-11.el6',
+            'name' => 'cryptsetup-luks-libs',
+            'update' => 'cryptsetup-luks-libs'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'Common Unix Printing System - libraries ',
+            'version' => '1.4.2-67.el6',
+            'name' => 'cups-libs',
+            'update' => 'cups-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A utility for getting files from remote servers (FTP, HTTP, and others) ',
+            'version' => '7.19.7-40.el6_6.4',
+            'name' => 'curl',
+            'update' => 'curl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The Cyrus SASL library ',
+            'version' => '2.1.23-15.el6_6.2',
+            'name' => 'cyrus-sasl',
+            'update' => 'cyrus-sasl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Shared libraries needed by applications which use Cyrus SASL ',
+            'version' => '2.1.23-15.el6_6.2',
+            'name' => 'cyrus-sasl-lib',
+            'update' => 'cyrus-sasl-lib'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Small and fast POSIX-compliant shell ',
+            'version' => '0.5.5.1-4.el6',
+            'name' => 'dash',
+            'update' => 'dash'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The Berkeley DB database library (version 4) for C ',
+            'version' => '4.7.25-18.el6_4',
+            'name' => 'db4',
+            'update' => 'db4'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Command line tools for managing Berkeley DB (version 4) databases ',
+            'version' => '4.7.25-18.el6_4',
+            'name' => 'db4-utils',
+            'update' => 'db4-utils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'GLib bindings for D-Bus ',
+            'version' => '0.86-6.el6',
+            'name' => 'dbus-glib',
+            'update' => 'dbus-glib'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'Libraries for accessing D-BUS ',
+            'version' => '1.2.24-8.el6_6',
+            'name' => 'dbus-libs',
+            'update' => 'dbus-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Device mapper utility ',
+            'version' => '1.02.90-2.el6_6.1',
+            'name' => 'device-mapper',
+            'update' => 'device-mapper'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Device-mapper event daemon ',
+            'version' => '1.02.90-2.el6_6.1',
+            'name' => 'device-mapper-event',
+            'update' => 'device-mapper-event'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Device-mapper event daemon shared library ',
+            'version' => '1.02.90-2.el6_6.1',
+            'name' => 'device-mapper-event-libs',
+            'update' => 'device-mapper-event-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Device-mapper shared library ',
+            'version' => '1.02.90-2.el6_6.1',
+            'name' => 'device-mapper-libs',
+            'update' => 'device-mapper-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Tools to manage multipath devices using device-mapper ',
+            'version' => '0.4.9-80.el6_6.3',
+            'name' => 'device-mapper-multipath',
+            'update' => 'device-mapper-multipath'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The device-mapper-multipath modules and shared library ',
+            'version' => '0.4.9-80.el6_6.3',
+            'name' => 'device-mapper-multipath-libs',
+            'update' => 'device-mapper-multipath-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Device-mapper thin provisioning tools ',
+            'version' => '0.3.2-1.el6',
+            'name' => 'device-mapper-persistent-data',
+            'update' => 'device-mapper-persistent-data'
+          },
+          {
+            'epoch' => '12',
+            'system' => 'yum',
+            'desc' => 'Provides the dhclient ISC DHCP client daemon and dhclient-script ',
+            'version' => '4.1.1-43.P1.el6.centos.1',
+            'name' => 'dhclient',
+            'update' => 'dhclient'
+          },
+          {
+            'epoch' => '12',
+            'system' => 'yum',
+            'desc' => 'Dynamic host configuration protocol software ',
+            'version' => '4.1.1-43.P1.el6.centos.1',
+            'name' => 'dhcp',
+            'update' => 'dhcp'
+          },
+          {
+            'epoch' => 12,
+            'system' => 'yum',
+            'desc' => 'Common files used by ISC dhcp client and server ',
+            'version' => '4.1.1-43.P1.el6.centos.1',
+            'name' => 'dhcp-common',
+            'update' => 'dhcp-common'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A GNU collection of diff utilities ',
+            'version' => '2.8.1-28.el6',
+            'name' => 'diffutils',
+            'update' => 'diffutils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Initramfs generator using udev ',
+            'version' => '004-356.el6_6.2',
+            'name' => 'dracut',
+            'update' => 'dracut'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Metapackage to build generic initramfs with dracut with only kernel modules ',
+            'version' => '004-356.el6_6.2',
+            'name' => 'dracut-kernel',
+            'update' => 'dracut-kernel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Utilities for managing ext2, ext3, and ext4 filesystems ',
+            'version' => '1.41.12-21.el6',
+            'name' => 'e2fsprogs',
+            'update' => 'e2fsprogs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Ext2/3/4 filesystem-specific shared libraries ',
+            'version' => '1.41.12-21.el6',
+            'name' => 'e2fsprogs-libs',
+            'update' => 'e2fsprogs-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'EFI Boot Manager ',
+            'version' => '0.5.4-12.el6',
+            'name' => 'efibootmgr',
+            'update' => 'efibootmgr'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Library to read and write ELF files ',
+            'version' => '0.158-3.2.el6',
+            'name' => 'elfutils-libelf',
+            'update' => 'elfutils-libelf'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A text-mode Web browser ',
+            'version' => '0.12-0.21.pre5.el6_3',
+            'name' => 'elinks',
+            'update' => 'elinks'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'An Enchanting Spell Checking Library ',
+            'version' => '1.5.0-4.el6',
+            'name' => 'enchant',
+            'update' => 'enchant'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Extra Packages for Enterprise Linux repository configuration ',
+            'version' => '6-8',
+            'name' => 'epel-release',
+            'update' => 'epel-release'
+          },
+          {
+            'epoch' => '2',
+            'system' => 'yum',
+            'desc' => 'Ethernet settings tool for PCI ethernet cards ',
+            'version' => '3.5-5.el6',
+            'name' => 'ethtool',
+            'update' => 'ethtool'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An XML parser library ',
+            'version' => '2.0.1-11.el6_2',
+            'name' => 'expat',
+            'update' => 'expat'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A utility for determining file types ',
+            'version' => '5.04-21.el6',
+            'name' => 'file',
+            'update' => 'file'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Libraries for applications using libmagic ',
+            'version' => '5.04-21.el6',
+            'name' => 'file-libs',
+            'update' => 'file-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The basic directory layout for a Linux system ',
+            'version' => '2.4.30-3.el6',
+            'name' => 'filesystem',
+            'update' => 'filesystem'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'The GNU versions of find utilities (find and xargs) ',
+            'version' => '4.4.2-6.el6',
+            'name' => 'findutils',
+            'update' => 'findutils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A library for integrity verification of FIPS validated modules ',
+            'version' => '1.2.0-7.el6',
+            'name' => 'fipscheck',
+            'update' => 'fipscheck'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Library files for fipscheck ',
+            'version' => '1.2.0-7.el6',
+            'name' => 'fipscheck-lib',
+            'update' => 'fipscheck-lib'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A free and portable font rendering engine ',
+            'version' => '2.3.11-15.el6_6.1',
+            'name' => 'freetype',
+            'update' => 'freetype'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The standard UNIX FTP (File Transfer Protocol) client ',
+            'version' => '0.17-54.el6',
+            'name' => 'ftp',
+            'update' => 'ftp'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'File System in Userspace (FUSE) utilities ',
+            'version' => '2.8.3-4.el6',
+            'name' => 'fuse',
+            'update' => 'fuse'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Library providing the FAM File Alteration Monitor API ',
+            'version' => '0.1.10-9.el6',
+            'name' => 'gamin',
+            'update' => 'gamin'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The GNU version of the awk text processing utility ',
+            'version' => '3.1.7-10.el6',
+            'name' => 'gawk',
+            'update' => 'gawk'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Various compilers (C, C++, Objective-C, Java, ...) ',
+            'version' => '4.4.7-11.el6',
+            'name' => 'gcc',
+            'update' => 'gcc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'C++ support for GCC ',
+            'version' => '4.4.7-11.el6',
+            'name' => 'gcc-c++',
+            'update' => 'gcc-c++'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A GNU set of database routines which use extensible hashing ',
+            'version' => '1.8.0-36.el6',
+            'name' => 'gdbm',
+            'update' => 'gdbm'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Fast Version Control System ',
+            'version' => '1.7.1-3.el6_4.1',
+            'name' => 'git',
+            'update' => 'git'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A library of handy utility functions ',
+            'version' => '2.28.8-4.el6',
+            'name' => 'glib2',
+            'update' => 'glib2'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The GNU libc libraries ',
+            'version' => '2.12-1.149.el6_6.7',
+            'name' => 'glibc',
+            'update' => 'glibc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Common binaries and locale data for glibc ',
+            'version' => '2.12-1.149.el6_6.7',
+            'name' => 'glibc-common',
+            'update' => 'glibc-common'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Object files for development using standard C libraries. ',
+            'version' => '2.12-1.149.el6_6.7',
+            'name' => 'glibc-devel',
+            'update' => 'glibc-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Header files for development using standard C libraries. ',
+            'version' => '2.12-1.149.el6_6.7',
+            'name' => 'glibc-headers',
+            'update' => 'glibc-headers'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A GNU arbitrary precision library ',
+            'version' => '4.3.1-7.el6_2.2',
+            'name' => 'gmp',
+            'update' => 'gmp'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Utility for secure communication and data storage ',
+            'version' => '2.0.14-8.el6',
+            'name' => 'gnupg2',
+            'update' => 'gnupg2'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A TLS protocol implementation ',
+            'version' => '2.8.5-14.el6_5',
+            'name' => 'gnutls',
+            'update' => 'gnutls'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'GnuPG Made Easy - high level crypto API ',
+            'version' => '1.1.8-3.el6',
+            'name' => 'gpgme',
+            'update' => 'gpgme'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A mouse server for the Linux console ',
+            'version' => '1.20.6-12.el6',
+            'name' => 'gpm',
+            'update' => 'gpm'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Dynamic library for for the gpm ',
+            'version' => '1.20.6-12.el6',
+            'name' => 'gpm-libs',
+            'update' => 'gpm-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Pattern matching utilities ',
+            'version' => '2.6.3-6.el6',
+            'name' => 'grep',
+            'update' => 'grep'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A document formatting system ',
+            'version' => '1.18.1.4-21.el6',
+            'name' => 'groff',
+            'update' => 'groff'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'Grand Unified Boot Loader. ',
+            'version' => '0.97-93.el6',
+            'name' => 'grub',
+            'update' => 'grub'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Command line tool for updating bootloader configs ',
+            'version' => '7.0.15-7.el6',
+            'name' => 'grubby',
+            'update' => 'grubby'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Generate Your Projects ',
+            'version' => '0.1-0.6.1010svn.el6',
+            'name' => 'gyp',
+            'update' => 'gyp'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The GNU data compression program ',
+            'version' => '1.3.12-22.el6',
+            'name' => 'gzip',
+            'update' => 'gzip'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'HTTP request/response parser for C ',
+            'version' => '2.0-4.20121128gitcd01361.el6',
+            'name' => 'http-parser',
+            'update' => 'http-parser'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Development headers and libraries for http-parser ',
+            'version' => '2.0-4.20121128gitcd01361.el6',
+            'name' => 'http-parser-devel',
+            'update' => 'http-parser-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Apache HTTP Server ',
+            'version' => '2.2.15-39.el6.centos',
+            'name' => 'httpd',
+            'update' => 'httpd'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Tools for use with the Apache HTTP Server ',
+            'version' => '2.2.15-39.el6.centos',
+            'name' => 'httpd-tools',
+            'update' => 'httpd-tools'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A spell checker and morphological analyzer library ',
+            'version' => '1.2.8-16.el6',
+            'name' => 'hunspell',
+            'update' => 'hunspell'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Hardware identification and configuration data ',
+            'version' => '0.233-11.1.el6',
+            'name' => 'hwdata',
+            'update' => 'hwdata'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A stand-alone TTY-based reader for GNU texinfo documentation ',
+            'version' => '4.13a-8.el6',
+            'name' => 'info',
+            'update' => 'info'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The inittab file and the /etc/init.d scripts ',
+            'version' => '9.03.46-1.el6.centos.1',
+            'name' => 'initscripts',
+            'update' => 'initscripts'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Advanced IP routing and network device configuration tools ',
+            'version' => '2.6.32-33.el6_6',
+            'name' => 'iproute',
+            'update' => 'iproute'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Tools for managing Linux kernel packet filtering capabilities ',
+            'version' => '1.4.7-14.el6',
+            'name' => 'iptables',
+            'update' => 'iptables'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'IPv6 support for iptables ',
+            'version' => '1.4.7-14.el6',
+            'name' => 'iptables-ipv6',
+            'update' => 'iptables-ipv6'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A console-based network monitoring utility ',
+            'version' => '3.0.1-14.el6',
+            'name' => 'iptraf',
+            'update' => 'iptraf'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Network monitoring tools including ping ',
+            'version' => '20071127-17.el6_4.2',
+            'name' => 'iputils',
+            'update' => 'iputils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'iSCSI daemon and utility programs ',
+            'version' => '6.2.0.873-13.el6',
+            'name' => 'iscsi-initiator-utils',
+            'update' => 'iscsi-initiator-utils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A nl80211 based wireless configuration tool ',
+            'version' => '3.10-1.1.el6',
+            'name' => 'iw',
+            'update' => 'iw'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Tools for configuring the console (keyboard, virtual terminals, etc.) ',
+            'version' => '1.15-11.el6',
+            'name' => 'kbd',
+            'update' => 'kbd'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Data for kbd package ',
+            'version' => '1.15-11.el6',
+            'name' => 'kbd-misc',
+            'update' => 'kbd-misc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The Linux kernel ',
+            'version' => '2.6.32-504.16.2.el6',
+            'name' => 'kernel',
+            'update' => 'kernel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Firmware files used by the Linux kernel ',
+            'version' => '2.6.32-504.16.2.el6',
+            'name' => 'kernel-firmware',
+            'update' => 'kernel-firmware'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Header files for the Linux kernel for use by glibc ',
+            'version' => '2.6.32-504.16.2.el6',
+            'name' => 'kernel-headers',
+            'update' => 'kernel-headers'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Linux Key Management Utilities ',
+            'version' => '1.4-5.el6',
+            'name' => 'keyutils',
+            'update' => 'keyutils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Key utilities library ',
+            'version' => '1.4-5.el6',
+            'name' => 'keyutils-libs',
+            'update' => 'keyutils-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Development package for building Linux key management utilities ',
+            'version' => '1.4-5.el6',
+            'name' => 'keyutils-libs-devel',
+            'update' => 'keyutils-libs-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Partition device manager for device-mapper devices ',
+            'version' => '0.4.9-80.el6_6.3',
+            'name' => 'kpartx',
+            'update' => 'kpartx'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Development files needed to compile Kerberos 5 programs ',
+            'version' => '1.10.3-37.el6_6',
+            'name' => 'krb5-devel',
+            'update' => 'krb5-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The shared libraries used by Kerberos 5 ',
+            'version' => '1.10.3-37.el6_6',
+            'name' => 'krb5-libs',
+            'update' => 'krb5-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A text file browser similar to more, but better ',
+            'version' => '436-13.el6',
+            'name' => 'less',
+            'update' => 'less'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Core X11 protocol client library ',
+            'version' => '1.6.0-2.2.el6',
+            'name' => 'libX11',
+            'update' => 'libX11'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Common data for libX11 ',
+            'version' => '1.6.0-2.2.el6',
+            'name' => 'libX11-common',
+            'update' => 'libX11-common'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Sample Authorization Protocol for X ',
+            'version' => '1.0.6-4.el6',
+            'name' => 'libXau',
+            'update' => 'libXau'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'X.Org X11 libXpm runtime library ',
+            'version' => '3.5.10-2.el6',
+            'name' => 'libXpm',
+            'update' => 'libXpm'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Dynamic library for access control list support ',
+            'version' => '2.2.49-6.el6',
+            'name' => 'libacl',
+            'update' => 'libacl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Linux-native asynchronous I/O access library ',
+            'version' => '0.3.107-10.el6',
+            'name' => 'libaio',
+            'update' => 'libaio'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Dynamic library for extended attribute support ',
+            'version' => '2.4.44-7.el6',
+            'name' => 'libattr',
+            'update' => 'libattr'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Block device ID library ',
+            'version' => '2.17.2-12.18.el6',
+            'name' => 'libblkid',
+            'update' => 'libblkid'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'C-client mail access routines for IMAP and POP protocols ',
+            'version' => '2007e-11.el6',
+            'name' => 'libc-client',
+            'update' => 'libc-client'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Library for getting and setting POSIX.1e capabilities ',
+            'version' => '2.16-5.5.el6',
+            'name' => 'libcap',
+            'update' => 'libcap'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An alternate posix capabilities library ',
+            'version' => '0.6.4-3.el6_0.1',
+            'name' => 'libcap-ng',
+            'update' => 'libcap-ng'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Common error description library ',
+            'version' => '1.41.12-21.el6',
+            'name' => 'libcom_err',
+            'update' => 'libcom_err'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Common error description library ',
+            'version' => '1.41.12-21.el6',
+            'name' => 'libcom_err-devel',
+            'update' => 'libcom_err-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A library for getting files from web servers ',
+            'version' => '7.19.7-40.el6_6.4',
+            'name' => 'libcurl',
+            'update' => 'libcurl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Direct Rendering Manager runtime library ',
+            'version' => '2.4.52-4.el6',
+            'name' => 'libdrm',
+            'update' => 'libdrm'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The NetBSD Editline library ',
+            'version' => '2.11-4.20080712cvs.1.el6',
+            'name' => 'libedit',
+            'update' => 'libedit'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Abstract asynchronous event notification library ',
+            'version' => '1.4.13-4.el6',
+            'name' => 'libevent',
+            'update' => 'libevent'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A portable foreign function interface library ',
+            'version' => '3.0.5-3.2.el6',
+            'name' => 'libffi',
+            'update' => 'libffi'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'GCC version 4.4 shared support library ',
+            'version' => '4.4.7-11.el6',
+            'name' => 'libgcc',
+            'update' => 'libgcc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A general-purpose cryptography library ',
+            'version' => '1.4.5-11.el6_4',
+            'name' => 'libgcrypt',
+            'update' => 'libgcrypt'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'GCC OpenMP v3.0 shared support library ',
+            'version' => '4.4.7-11.el6',
+            'name' => 'libgomp',
+            'update' => 'libgomp'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Library for error values used by GnuPG components ',
+            'version' => '1.7-4.el6',
+            'name' => 'libgpg-error',
+            'update' => 'libgpg-error'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Generic Security Services Application Programming Interface Library ',
+            'version' => '0.1-11.el6',
+            'name' => 'libgssglue',
+            'update' => 'libgssglue'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'International Components for Unicode - libraries ',
+            'version' => '4.2.1-9.1.el6_2',
+            'name' => 'libicu',
+            'update' => 'libicu'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'International Components for Unicode - libraries ',
+            'version' => '50.1.2-11.el6.remi',
+            'name' => 'libicu-last',
+            'update' => 'libicu-last'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Internationalized Domain Name support library ',
+            'version' => '1.18-2.el6',
+            'name' => 'libidn',
+            'update' => 'libidn'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A MMX/SSE2 accelerated library for manipulating JPEG image files ',
+            'version' => '1.2.1-3.el6_5',
+            'name' => 'libjpeg-turbo',
+            'update' => 'libjpeg-turbo'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A schema-less, ldap like, API and database ',
+            'version' => '1.1.13-3.el6',
+            'name' => 'libldb',
+            'update' => 'libldb'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Developer tools for the LDB library ',
+            'version' => '1.1.13-3.el6',
+            'name' => 'libldb-devel',
+            'update' => 'libldb-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Encryption algorithms library ',
+            'version' => '2.5.8-9.el6',
+            'name' => 'libmcrypt',
+            'update' => 'libmcrypt'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Lightweight application development library ',
+            'version' => '1.0.1-7.el6',
+            'name' => 'libnih',
+            'update' => 'libnih'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Convenience library for kernel netlink sockets ',
+            'version' => '1.1.4-2.el6',
+            'name' => 'libnl',
+            'update' => 'libnl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'PCI access library ',
+            'version' => '0.13.3-0.1.el6',
+            'name' => 'libpciaccess',
+            'update' => 'libpciaccess'
+          },
+          {
+            'epoch' => '2',
+            'system' => 'yum',
+            'desc' => 'A library of functions for manipulating PNG image format files ',
+            'version' => '1.2.49-1.el6_2',
+            'name' => 'libpng',
+            'update' => 'libpng'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'SELinux library and simple utilities ',
+            'version' => '2.0.94-5.8.el6',
+            'name' => 'libselinux',
+            'update' => 'libselinux'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Header files and libraries used to build SELinux ',
+            'version' => '2.0.94-5.8.el6',
+            'name' => 'libselinux-devel',
+            'update' => 'libselinux-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'SELinux libselinux utilies ',
+            'version' => '2.0.94-5.8.el6',
+            'name' => 'libselinux-utils',
+            'update' => 'libselinux-utils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'SELinux binary policy manipulation library ',
+            'version' => '2.0.43-4.2.el6',
+            'name' => 'libsemanage',
+            'update' => 'libsemanage'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'SELinux binary policy manipulation library ',
+            'version' => '2.0.41-4.el6',
+            'name' => 'libsepol',
+            'update' => 'libsepol'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Header files and libraries used to build policy manipulation tools ',
+            'version' => '2.0.41-4.el6',
+            'name' => 'libsepol-devel',
+            'update' => 'libsepol-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Command line interface parsing library ',
+            'version' => '1.41.12-21.el6',
+            'name' => 'libss',
+            'update' => 'libss'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A library implementing the SSH2 protocol ',
+            'version' => '1.4.2-1.el6_6.1',
+            'name' => 'libssh2',
+            'update' => 'libssh2'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'GNU Standard C++ Library ',
+            'version' => '4.4.7-11.el6',
+            'name' => 'libstdc++',
+            'update' => 'libstdc++'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Header files and libraries for C++ development ',
+            'version' => '4.4.7-11.el6',
+            'name' => 'libstdc++-devel',
+            'update' => 'libstdc++-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The talloc library ',
+            'version' => '2.0.7-2.el6',
+            'name' => 'libtalloc',
+            'update' => 'libtalloc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Developer tools for the Talloc library ',
+            'version' => '2.0.7-2.el6',
+            'name' => 'libtalloc-devel',
+            'update' => 'libtalloc-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The ASN.1 library used in GNUTLS ',
+            'version' => '2.3-6.el6_5',
+            'name' => 'libtasn1',
+            'update' => 'libtasn1'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The tdb library ',
+            'version' => '1.2.10-1.el6',
+            'name' => 'libtdb',
+            'update' => 'libtdb'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Header files need to link the Tdb library ',
+            'version' => '1.2.10-1.el6',
+            'name' => 'libtdb-devel',
+            'update' => 'libtdb-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The tevent library ',
+            'version' => '0.9.18-3.el6',
+            'name' => 'libtevent',
+            'update' => 'libtevent'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Developer tools for the Tevent library ',
+            'version' => '0.9.18-3.el6',
+            'name' => 'libtevent-devel',
+            'update' => 'libtevent-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Shared libraries for tidy ',
+            'version' => '0.99.0-19.20070615.1.el6',
+            'name' => 'libtidy',
+            'update' => 'libtidy'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Library of functions for manipulating TIFF format image files ',
+            'version' => '3.9.4-10.el6_5',
+            'name' => 'libtiff',
+            'update' => 'libtiff'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Transport Independent RPC Library ',
+            'version' => '0.2.1-10.el6',
+            'name' => 'libtirpc',
+            'update' => 'libtirpc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Runtime libraries for GNU Libtool Dynamic Module Loader ',
+            'version' => '2.2.6-15.5.el6',
+            'name' => 'libtool-ltdl',
+            'update' => 'libtool-ltdl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Dynamic library to access udev device information ',
+            'version' => '147-2.57.el6',
+            'name' => 'libudev',
+            'update' => 'libudev'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A library which allows userspace access to USB devices ',
+            'version' => '0.1.12-23.el6',
+            'name' => 'libusb',
+            'update' => 'libusb'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A user and group account administration library ',
+            'version' => '0.56.13-5.el6',
+            'name' => 'libuser',
+            'update' => 'libuser'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A privileged helper for utmp/wtmp updates ',
+            'version' => '1.1.5-4.1.el6',
+            'name' => 'libutempter',
+            'update' => 'libutempter'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Universally unique ID library ',
+            'version' => '2.17.2-12.18.el6',
+            'name' => 'libuuid',
+            'update' => 'libuuid'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'Platform layer for node.js ',
+            'version' => '0.10.34-1.el6',
+            'name' => 'libuv',
+            'update' => 'libuv'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'Development libraries for libuv ',
+            'version' => '0.10.34-1.el6',
+            'name' => 'libuv-devel',
+            'update' => 'libuv-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A C binding to the X11 protocol ',
+            'version' => '1.9.1-2.el6',
+            'name' => 'libxcb',
+            'update' => 'libxcb'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Library providing XML and HTML support ',
+            'version' => '2.7.6-17.el6_6.1',
+            'name' => 'libxml2',
+            'update' => 'libxml2'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Library providing the Gnome XSLT engine ',
+            'version' => '1.1.26-2.el6_3.1',
+            'name' => 'libxslt',
+            'update' => 'libxslt'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Linux hardware monitoring core libraries ',
+            'version' => '3.1.1-17.el6',
+            'name' => 'lm_sensors-libs',
+            'update' => 'lm_sensors-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Rotates, compresses, removes and mails system log files ',
+            'version' => '3.7.8-17.el6',
+            'name' => 'logrotate',
+            'update' => 'logrotate'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Hardware lister ',
+            'version' => 'B.02.14-3.el6',
+            'name' => 'lshw',
+            'update' => 'lshw'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Powerful light-weight programming language ',
+            'version' => '5.1.4-4.1.el6',
+            'name' => 'lua',
+            'update' => 'lua'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Userland logical volume management tools ',
+            'version' => '2.02.111-2.el6_6.1',
+            'name' => 'lvm2',
+            'update' => 'lvm2'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Shared libraries for lvm2 ',
+            'version' => '2.02.111-2.el6_6.1',
+            'name' => 'lvm2-libs',
+            'update' => 'lvm2-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The GNU macro processor ',
+            'version' => '1.4.13-5.el6',
+            'name' => 'm4',
+            'update' => 'm4'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Helper application and MIME type associations for file types ',
+            'version' => '2.1.31-2.el6',
+            'name' => 'mailcap',
+            'update' => 'mailcap'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'A GNU tool which simplifies the build process for users ',
+            'version' => '3.81-20.el6',
+            'name' => 'make',
+            'update' => 'make'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'User-friendly text console file manager and visual shell ',
+            'version' => '4.7.0.2-3.el6',
+            'name' => 'mc',
+            'update' => 'mc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The mdadm program controls Linux md devices (software RAID arrays) ',
+            'version' => '3.3-6.el6_6.1',
+            'name' => 'mdadm',
+            'update' => 'mdadm'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A compact getty program for virtual consoles only ',
+            'version' => '1.08-5.el6',
+            'name' => 'mingetty',
+            'update' => 'mingetty'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'SSL/TLS module for the Apache HTTP Server ',
+            'version' => '2.2.15-39.el6.centos',
+            'name' => 'mod_ssl',
+            'update' => 'mod_ssl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Kernel module management utilities. ',
+            'version' => '3.9-24.el6',
+            'name' => 'module-init-tools',
+            'update' => 'module-init-tools'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A C library for multiple-precision floating-point computations ',
+            'version' => '2.4.1-6.el6',
+            'name' => 'mpfr',
+            'update' => 'mpfr'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Ncurses support utilities ',
+            'version' => '5.7-3.20090208.el6',
+            'name' => 'ncurses',
+            'update' => 'ncurses'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Descriptions of common terminals ',
+            'version' => '5.7-3.20090208.el6',
+            'name' => 'ncurses-base',
+            'update' => 'ncurses-base'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Ncurses libraries ',
+            'version' => '5.7-3.20090208.el6',
+            'name' => 'ncurses-libs',
+            'update' => 'ncurses-libs'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'A collection of SNMP protocol tools and libraries ',
+            'version' => '5.5-50.el6_6.1',
+            'name' => 'net-snmp',
+            'update' => 'net-snmp'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'The NET-SNMP runtime libraries ',
+            'version' => '5.5-50.el6_6.1',
+            'name' => 'net-snmp-libs',
+            'update' => 'net-snmp-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Basic networking tools ',
+            'version' => '1.60-110.el6_2',
+            'name' => 'net-tools',
+            'update' => 'net-tools'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A library for text mode user interfaces ',
+            'version' => '0.52.11-3.el6',
+            'name' => 'newt',
+            'update' => 'newt'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Python bindings for newt ',
+            'version' => '0.52.11-3.el6',
+            'name' => 'newt-python',
+            'update' => 'newt-python'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'NFS utilities and supporting clients and daemons for the kernel NFS server ',
+            'version' => '1.2.3-54.el6',
+            'name' => 'nfs-utils',
+            'update' => 'nfs-utils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Network File System Support Library ',
+            'version' => '1.1.5-9.el6',
+            'name' => 'nfs-utils-lib',
+            'update' => 'nfs-utils-lib'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'High performance web server ',
+            'version' => '1.8.0-1.el6.ngx',
+            'name' => 'nginx',
+            'update' => 'nginx'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Node.js native addon build tool ',
+            'version' => '0.10.6-2.el6',
+            'name' => 'node-gyp',
+            'update' => 'node-gyp'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'JavaScript runtime ',
+            'version' => '0.10.36-3.el6',
+            'name' => 'nodejs',
+            'update' => 'nodejs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Abbreviation calculator for Node.js ',
+            'version' => '1.0.4-6.el6',
+            'name' => 'nodejs-abbrev',
+            'update' => 'nodejs-abbrev'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'ANSI escape codes for Node.js ',
+            'version' => '0.2.1-1.el6',
+            'name' => 'nodejs-ansi',
+            'update' => 'nodejs-ansi'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Renders nested hierarchies with unicode pipes ',
+            'version' => '0.0.2-8.el6',
+            'name' => 'nodejs-archy',
+            'update' => 'nodejs-archy'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Contains parsers and serializers for ASN.1 (currently BER only) ',
+            'version' => '0.1.11-3.el6',
+            'name' => 'nodejs-asn1',
+            'update' => 'nodejs-asn1'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Extra assertions on top of node\'s assert module ',
+            'version' => '0.1.4-1.el6',
+            'name' => 'nodejs-assert-plus',
+            'update' => 'nodejs-assert-plus'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Higher-order functions and common patterns for asynchronous code ',
+            'version' => '0.2.10-1.el6',
+            'name' => 'nodejs-async',
+            'update' => 'nodejs-async'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'AWS signing for Node.js ',
+            'version' => '0.3.0-1.el6',
+            'name' => 'nodejs-aws-sign',
+            'update' => 'nodejs-aws-sign'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A stream of blocks ',
+            'version' => '0.0.7-1.el6',
+            'name' => 'nodejs-block-stream',
+            'update' => 'nodejs-block-stream'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'HTTP friendly error objects ',
+            'version' => '0.4.2-2.el6',
+            'name' => 'nodejs-boom',
+            'update' => 'nodejs-boom'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Make child_process objects emit \'close\' events ',
+            'version' => '0.1.1-2.el6',
+            'name' => 'nodejs-child-process-close',
+            'update' => 'nodejs-child-process-close'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Recursively change UNIX file permissions ',
+            'version' => '0.1.0-4.el6',
+            'name' => 'nodejs-chmodr',
+            'update' => 'nodejs-chmodr'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Changes file permissions recursively ',
+            'version' => '0.0.1-9.el6',
+            'name' => 'nodejs-chownr',
+            'update' => 'nodejs-chownr'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Used to create executable scripts on Windows and Unix ',
+            'version' => '1.1.0-3.el6',
+            'name' => 'nodejs-cmd-shim',
+            'update' => 'nodejs-cmd-shim'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A stream that emits multiple other streams one after another ',
+            'version' => '0.0.4-3.el6',
+            'name' => 'nodejs-combined-stream',
+            'update' => 'nodejs-combined-stream'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Handle configuration once and for all ',
+            'version' => '1.1.7-1.el6',
+            'name' => 'nodejs-config-chain',
+            'update' => 'nodejs-config-chain'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'A cookie handling and cookie jar library for Node.js ',
+            'version' => '0.3.0-1.el6',
+            'name' => 'nodejs-cookie-jar',
+            'update' => 'nodejs-cookie-jar'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for doing logged-in requests to a couchdb server ',
+            'version' => '0.1.18-1.el6',
+            'name' => 'nodejs-couch-login',
+            'update' => 'nodejs-couch-login'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'General purpose cryptography utilities for Node.js ',
+            'version' => '0.2.2-1.el6',
+            'name' => 'nodejs-cryptiles',
+            'update' => 'nodejs-cryptiles'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Read and write binary structures and data types with Node.js ',
+            'version' => '0.5.3-3.el6',
+            'name' => 'nodejs-ctype',
+            'update' => 'nodejs-ctype'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Buffers events from a stream until you are ready to handle them ',
+            'version' => '0.0.5-5.el6',
+            'name' => 'nodejs-delayed-stream',
+            'update' => 'nodejs-delayed-stream'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'JavaScript runtime - development headers ',
+            'version' => '0.10.36-3.el6',
+            'name' => 'nodejs-devel',
+            'update' => 'nodejs-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Launch the default text editor from Node.js programs ',
+            'version' => '0.0.4-2.el6',
+            'name' => 'nodejs-editor',
+            'update' => 'nodejs-editor'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'HTTP Agent that keeps socket connections alive between keep-alive requests ',
+            'version' => '0.5.0-1.el6',
+            'name' => 'nodejs-forever-agent',
+            'update' => 'nodejs-forever-agent'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module to create readable "multipart/form-data" streams ',
+            'version' => '0.1.1-1.el6',
+            'name' => 'nodejs-form-data',
+            'update' => 'nodejs-form-data'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Advanced file system stream objects for Node.js ',
+            'version' => '0.1.24-1.el6',
+            'name' => 'nodejs-fstream',
+            'update' => 'nodejs-fstream'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A file stream object that can ignore files by globs ',
+            'version' => '0.0.7-1.el6',
+            'name' => 'nodejs-fstream-ignore',
+            'update' => 'nodejs-fstream-ignore'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An fstream class for creating npm packages ',
+            'version' => '0.1.5-1.el6',
+            'name' => 'nodejs-fstream-npm',
+            'update' => 'nodejs-fstream-npm'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Parse a GitHub git URL and return the GitHub repository URL ',
+            'version' => '1.1.1-2.el6',
+            'name' => 'nodejs-github-url-from-git',
+            'update' => 'nodejs-github-url-from-git'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A little globber for Node.js ',
+            'version' => '3.2.6-1.el6',
+            'name' => 'nodejs-glob',
+            'update' => 'nodejs-glob'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => '\'fs\' module with incremental back-off on EMFILE ',
+            'version' => '2.0.0-2.el6',
+            'name' => 'nodejs-graceful-fs',
+            'update' => 'nodejs-graceful-fs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'HTTP Hawk authentication scheme ',
+            'version' => '1.0.0-1.el6',
+            'name' => 'nodejs-hawk',
+            'update' => 'nodejs-hawk'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'General purpose Node.js utilities ',
+            'version' => '0.9.1-1.el6',
+            'name' => 'nodejs-hoek',
+            'update' => 'nodejs-hoek'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Reference implementation of Joyent\'s HTTP Signature Scheme ',
+            'version' => '0.10.0-3.el6',
+            'name' => 'nodejs-http-signature',
+            'update' => 'nodejs-http-signature'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A tiny simple way to do classic inheritance in js ',
+            'version' => '2.0.0-4.el6',
+            'name' => 'nodejs-inherits',
+            'update' => 'nodejs-inherits'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An INI parser/serializer for node.js ',
+            'version' => '1.1.0-3.el6',
+            'name' => 'nodejs-ini',
+            'update' => 'nodejs-ini'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A node module to get your node module started ',
+            'version' => '0.0.10-1.el6',
+            'name' => 'nodejs-init-package-json',
+            'update' => 'nodejs-init-package-json'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'JSON.stringify that handles circular references ',
+            'version' => '5.0.0-1.el6',
+            'name' => 'nodejs-json-stringify-safe',
+            'update' => 'nodejs-json-stringify-safe'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A very polite lock file utility ',
+            'version' => '0.4.2-1.el6',
+            'name' => 'nodejs-lockfile',
+            'update' => 'nodejs-lockfile'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A least recently used cache object for Node.js ',
+            'version' => '2.3.0-3.el6',
+            'name' => 'nodejs-lru-cache',
+            'update' => 'nodejs-lru-cache'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A comprehensive library for mime-type mapping ',
+            'version' => '1.2.11-1.el6',
+            'name' => 'nodejs-mime',
+            'update' => 'nodejs-mime'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'JavaScript glob matcher ',
+            'version' => '0.2.12-2.el6',
+            'name' => 'nodejs-minimatch',
+            'update' => 'nodejs-minimatch'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Recursive directory creation module for Node.js ',
+            'version' => '0.3.5-3.el6',
+            'name' => 'nodejs-mkdirp',
+            'update' => 'nodejs-mkdirp'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Basic pass-through stream, but when muted, the bytes are dropped ',
+            'version' => '0.0.4-1.el6',
+            'name' => 'nodejs-mute-stream',
+            'update' => 'nodejs-mute-stream'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Simple and fast generation of RFC4122 (v1 and v4) UUIDs for Node.js ',
+            'version' => '1.4.1-1.el6',
+            'name' => 'nodejs-node-uuid',
+            'update' => 'nodejs-node-uuid'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Node.js option parsing ',
+            'version' => '2.1.2-1.el6',
+            'name' => 'nodejs-nopt',
+            'update' => 'nodejs-nopt'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Normalizes npm/package.json metadata ',
+            'version' => '0.2.1-1.el6',
+            'name' => 'nodejs-normalize-package-data',
+            'update' => 'nodejs-normalize-package-data'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Client for the npm registry ',
+            'version' => '0.2.28-1.el6',
+            'name' => 'nodejs-npm-registry-client',
+            'update' => 'nodejs-npm-registry-client'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Username, password, and e-mail validation for the npm registry ',
+            'version' => '0.0.3-1.el6',
+            'name' => 'nodejs-npm-user-validate',
+            'update' => 'nodejs-npm-user-validate'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'npm configuration module ',
+            'version' => '0.1.2-1.el6',
+            'name' => 'nodejs-npmconf',
+            'update' => 'nodejs-npmconf'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Logger for npm ',
+            'version' => '0.0.4-1.el6',
+            'name' => 'nodejs-npmlog',
+            'update' => 'nodejs-npmlog'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'OAuth1 signing for Node.js ',
+            'version' => '0.3.0-1.el6',
+            'name' => 'nodejs-oauth-sign',
+            'update' => 'nodejs-oauth-sign'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Run a function exactly one time ',
+            'version' => '1.1.1-5.el6',
+            'name' => 'nodejs-once',
+            'update' => 'nodejs-once'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Opens stuff, like webpages and files and executables ',
+            'version' => '1.3.0-7.el6',
+            'name' => 'nodejs-opener',
+            'update' => 'nodejs-opener'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Look up environment settings specific to different operating systems ',
+            'version' => '0.0.3-5.el6',
+            'name' => 'nodejs-osenv',
+            'update' => 'nodejs-osenv'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'RPM Macros and Utilities for Node.js Packaging ',
+            'version' => '7-1.el6',
+            'name' => 'nodejs-packaging',
+            'update' => 'nodejs-packaging'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A prompting wizard for building files from specialized PromZard modules ',
+            'version' => '0.2.0-6.el6',
+            'name' => 'nodejs-promzard',
+            'update' => 'nodejs-promzard'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A list of objects bound by prototype chain ',
+            'version' => '1.2.2-5.el6',
+            'name' => 'nodejs-proto-list',
+            'update' => 'nodejs-proto-list'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Query string parser for Node.js ',
+            'version' => '0.6.6-3.el6',
+            'name' => 'nodejs-qs',
+            'update' => 'nodejs-qs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An implementation of read(1) for node programs ',
+            'version' => '1.0.5-1.el6',
+            'name' => 'nodejs-read',
+            'update' => 'nodejs-read'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Returns a tree structure of all installed packages in a folder ',
+            'version' => '0.2.4-1.el6',
+            'name' => 'nodejs-read-installed',
+            'update' => 'nodejs-read-installed'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'npm\'s package.json parser ',
+            'version' => '1.1.3-1.el6',
+            'name' => 'nodejs-read-package-json',
+            'update' => 'nodejs-read-package-json'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Simplified HTTP request client ',
+            'version' => '2.25.0-3.el6',
+            'name' => 'nodejs-request',
+            'update' => 'nodejs-request'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Retry strategies for failed operations ',
+            'version' => '0.6.0-5.el6',
+            'name' => 'nodejs-retry',
+            'update' => 'nodejs-retry'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A deep deletion module for node.js ',
+            'version' => '2.2.2-1.el6',
+            'name' => 'nodejs-rimraf',
+            'update' => 'nodejs-rimraf'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Semantic versioner for npm ',
+            'version' => '2.1.0-1.el6',
+            'name' => 'nodejs-semver',
+            'update' => 'nodejs-semver'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Check and get file hashes ',
+            'version' => '1.2.1-1.el6',
+            'name' => 'nodejs-sha',
+            'update' => 'nodejs-sha'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Quick and dirty signatures for Objects ',
+            'version' => '1.0.0-5.el6',
+            'name' => 'nodejs-sigmund',
+            'update' => 'nodejs-sigmund'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A flow control library that fits in a slideshow ',
+            'version' => '1.1.5-1.el6',
+            'name' => 'nodejs-slide',
+            'update' => 'nodejs-slide'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'SNTP v4 client (RFC4330) for Node.js ',
+            'version' => '0.2.4-1.el6',
+            'name' => 'nodejs-sntp',
+            'update' => 'nodejs-sntp'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Tar for Node.js ',
+            'version' => '0.1.18-1.el6',
+            'name' => 'nodejs-tar',
+            'update' => 'nodejs-tar'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'HTTP proxy tunneling agent ',
+            'version' => '0.3.0-1.el6',
+            'name' => 'nodejs-tunnel-agent',
+            'update' => 'nodejs-tunnel-agent'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Convert a username/group name to a UID/GID number ',
+            'version' => '0.0.3-7.el6',
+            'name' => 'nodejs-uid-number',
+            'update' => 'nodejs-uid-number'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A JavaScript implementation of the \'which\' command ',
+            'version' => '1.0.5-8.el6',
+            'name' => 'nodejs-which',
+            'update' => 'nodejs-which'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Node.js Package Manager ',
+            'version' => '1.3.6-5.el6',
+            'name' => 'npm',
+            'update' => 'npm'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Netscape Portable Runtime ',
+            'version' => '4.10.6-1.el6_5',
+            'name' => 'nspr',
+            'update' => 'nspr'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Network Security Services ',
+            'version' => '3.16.2.3-3.el6_6',
+            'name' => 'nss',
+            'update' => 'nss'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Network Security Services Softoken Module ',
+            'version' => '3.14.3-22.el6_6',
+            'name' => 'nss-softokn',
+            'update' => 'nss-softokn'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Freebl library for the Network Security Services ',
+            'version' => '3.14.3-22.el6_6',
+            'name' => 'nss-softokn-freebl',
+            'update' => 'nss-softokn-freebl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'System NSS Initialization ',
+            'version' => '3.16.2.3-3.el6_6',
+            'name' => 'nss-sysinit',
+            'update' => 'nss-sysinit'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Tools for the Network Security Services ',
+            'version' => '3.16.2.3-3.el6_6',
+            'name' => 'nss-tools',
+            'update' => 'nss-tools'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Network Security Services Utilities Library ',
+            'version' => '3.16.2.3-2.el6_6',
+            'name' => 'nss-util',
+            'update' => 'nss-util'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Source-level compatibility library for OpenSSL to NSS porting ',
+            'version' => '0.9.6-1.el6',
+            'name' => 'nss_compat_ossl',
+            'update' => 'nss_compat_ossl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The NTP daemon and utilities ',
+            'version' => '4.2.6p5-3.el6.centos',
+            'name' => 'ntp',
+            'update' => 'ntp'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Utility to set the date and time via NTP ',
+            'version' => '4.2.6p5-3.el6.centos',
+            'name' => 'ntpdate',
+            'update' => 'ntpdate'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'LDAP support libraries ',
+            'version' => '2.4.39-8.el6',
+            'name' => 'openldap',
+            'update' => 'openldap'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An open source implementation of SSH protocol versions 1 and 2 ',
+            'version' => '5.3p1-104.el6_6.1',
+            'name' => 'openssh',
+            'update' => 'openssh'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An open source SSH client applications ',
+            'version' => '5.3p1-104.el6_6.1',
+            'name' => 'openssh-clients',
+            'update' => 'openssh-clients'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An open source SSH server daemon ',
+            'version' => '5.3p1-104.el6_6.1',
+            'name' => 'openssh-server',
+            'update' => 'openssh-server'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A general purpose cryptography library with TLS implementation ',
+            'version' => '1.0.1e-30.el6.8',
+            'name' => 'openssl',
+            'update' => 'openssl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Files for development of applications which will use OpenSSL ',
+            'version' => '1.0.1e-30.el6.8',
+            'name' => 'openssl-devel',
+            'update' => 'openssl-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Library for loading and sharing PKCS#11 modules ',
+            'version' => '0.18.5-2.el6_5.2',
+            'name' => 'p11-kit',
+            'update' => 'p11-kit'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'System trust module from p11-kit ',
+            'version' => '0.18.5-2.el6_5.2',
+            'name' => 'p11-kit-trust',
+            'update' => 'p11-kit-trust'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An extensible library which provides authentication for applications ',
+            'version' => '1.1.1-20.el6',
+            'name' => 'pam',
+            'update' => 'pam'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An utility for setting or changing passwords using PAM ',
+            'version' => '0.77-4.el6_2.2',
+            'name' => 'passwd',
+            'update' => 'passwd'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Linux PCI library ',
+            'version' => '3.1.10-4.el6',
+            'name' => 'pciutils-libs',
+            'update' => 'pciutils-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Perl-compatible regular expression library ',
+            'version' => '7.8-6.el6',
+            'name' => 'pcre',
+            'update' => 'pcre'
+          },
+          {
+            'epoch' => '4',
+            'system' => 'yum',
+            'desc' => 'Practical Extraction and Report Language ',
+            'version' => '5.10.1-136.el6_6.1',
+            'name' => 'perl',
+            'update' => 'perl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A MySQL interface for perl ',
+            'version' => '4.013-3.el6',
+            'name' => 'perl-DBD-MySQL',
+            'update' => 'perl-DBD-MySQL'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A database access API for perl ',
+            'version' => '1.609-4.el6',
+            'name' => 'perl-DBI',
+            'update' => 'perl-DBI'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'Error/exception handling in an OO-ish way ',
+            'version' => '0.17015-4.el6',
+            'name' => 'perl-Error',
+            'update' => 'perl-Error'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Perl interface to Git ',
+            'version' => '1.7.1-3.el6_4.1',
+            'name' => 'perl-Git',
+            'update' => 'perl-Git'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'Automatically give your module the ability to have plugins ',
+            'version' => '3.90-136.el6_6.1',
+            'name' => 'perl-Module-Pluggable',
+            'update' => 'perl-Module-Pluggable'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Perl extension for using OpenSSL ',
+            'version' => '1.35-9.el6',
+            'name' => 'perl-Net-SSLeay',
+            'update' => 'perl-Net-SSLeay'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Perl extension for generating and using LALR parsers ',
+            'version' => '1.05-41.el6',
+            'name' => 'perl-Parse-Yapp',
+            'update' => 'perl-Parse-Yapp'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'Perl module for resolving POD escape sequences ',
+            'version' => '1.04-136.el6_6.1',
+            'name' => 'perl-Pod-Escapes',
+            'update' => 'perl-Pod-Escapes'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'Framework for parsing POD documentation ',
+            'version' => '3.13-136.el6_6.1',
+            'name' => 'perl-Pod-Simple',
+            'update' => 'perl-Pod-Simple'
+          },
+          {
+            'epoch' => '4',
+            'system' => 'yum',
+            'desc' => 'High resolution alarm, sleep, gettimeofday, interval timers ',
+            'version' => '1.9721-136.el6_6.1',
+            'name' => 'perl-Time-HiRes',
+            'update' => 'perl-Time-HiRes'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'A Perl module for time and date manipulation ',
+            'version' => '1.16-13.el6',
+            'name' => 'perl-TimeDate',
+            'update' => 'perl-TimeDate'
+          },
+          {
+            'epoch' => '4',
+            'system' => 'yum',
+            'desc' => 'The libraries for the perl runtime ',
+            'version' => '5.10.1-136.el6_6.1',
+            'name' => 'perl-libs',
+            'update' => 'perl-libs'
+          },
+          {
+            'epoch' => '3',
+            'system' => 'yum',
+            'desc' => 'Perl extension for Version Objects ',
+            'version' => '0.77-136.el6_6.1',
+            'name' => 'perl-version',
+            'update' => 'perl-version'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'PHP scripting language for creating dynamic web sites ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php',
+            'update' => 'php'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications for using the bcmath library ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-bcmath',
+            'update' => 'php-bcmath'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Command-line interface for PHP ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-cli',
+            'update' => 'php-cli'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Common files for PHP ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-common',
+            'update' => 'php-common'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A database abstraction layer module for PHP applications ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-dba',
+            'update' => 'php-dba'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Files needed for building PHP extensions ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-devel',
+            'update' => 'php-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'PHP library for embedding in applications ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-embedded',
+            'update' => 'php-embedded'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Enchant spelling extension for PHP applications ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-enchant',
+            'update' => 'php-enchant'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'PHP FastCGI Process Manager ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-fpm',
+            'update' => 'php-fpm'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications for using the gd graphics library ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-gd',
+            'update' => 'php-gd'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications that use IMAP ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-imap',
+            'update' => 'php-imap'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Internationalization extension for PHP applications ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-intl',
+            'update' => 'php-intl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications that use LDAP ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-ldap',
+            'update' => 'php-ldap'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications which need multi-byte string handling ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-mbstring',
+            'update' => 'php-mbstring'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Standard PHP module provides mcrypt library support ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-mcrypt',
+            'update' => 'php-mcrypt'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications that use MySQL databases ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-mysql',
+            'update' => 'php-mysql'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications that use ODBC databases ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-odbc',
+            'update' => 'php-odbc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A database access abstraction module for PHP applications ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-pdo',
+            'update' => 'php-pdo'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'PHP Extension and Application Repository framework ',
+            'version' => '1.9.5-10.el6.remi',
+            'name' => 'php-pear',
+            'update' => 'php-pear'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'APC caches and optimizes PHP intermediate code ',
+            'version' => '3.1.15-0.4.20130912.el6.remi.5.4',
+            'name' => 'php-pecl-apc',
+            'update' => 'php-pecl-apc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'APC developer files (header) ',
+            'version' => '3.1.15-0.4.20130912.el6.remi.5.4',
+            'name' => 'php-pecl-apc-devel',
+            'update' => 'php-pecl-apc-devel'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Extension to work with the Memcached caching daemon ',
+            'version' => '3.0.8-2.el6.remi.5.4',
+            'name' => 'php-pecl-memcache',
+            'update' => 'php-pecl-memcache'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A PostgreSQL database module for PHP ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-pgsql',
+            'update' => 'php-pgsql'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Modules for PHP script using system process interfaces ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-process',
+            'update' => 'php-process'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications for using pspell interfaces ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-pspell',
+            'update' => 'php-pspell'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications for using the recode library ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-recode',
+            'update' => 'php-recode'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications that query SNMP-managed devices ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-snmp',
+            'update' => 'php-snmp'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications that use the SOAP protocol ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-soap',
+            'update' => 'php-soap'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Standard PHP module provides tidy library support ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-tidy',
+            'update' => 'php-tidy'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications which use XML ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-xml',
+            'update' => 'php-xml'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A module for PHP applications which use the XML-RPC protocol ',
+            'version' => '5.4.40-1.el6.remi',
+            'name' => 'php-xmlrpc',
+            'update' => 'php-xmlrpc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Collection of simple PIN or passphrase entry dialogs ',
+            'version' => '0.7.6-6.el6',
+            'name' => 'pinentry',
+            'update' => 'pinentry'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'A tool for determining compilation options ',
+            'version' => '0.23-9.1.el6',
+            'name' => 'pkgconfig',
+            'update' => 'pkgconfig'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Graphical Boot Animation and Logger ',
+            'version' => '0.8.3-27.el6.centos.1',
+            'name' => 'plymouth',
+            'update' => 'plymouth'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Plymouth libraries ',
+            'version' => '0.8.3-27.el6.centos.1',
+            'name' => 'plymouth-core-libs',
+            'update' => 'plymouth-core-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Plymouth related scripts ',
+            'version' => '0.8.3-27.el6.centos.1',
+            'name' => 'plymouth-scripts',
+            'update' => 'plymouth-scripts'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'SELinux policy core utilities ',
+            'version' => '2.0.83-19.47.el6_6.1',
+            'name' => 'policycoreutils',
+            'update' => 'policycoreutils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'C library for parsing command line parameters ',
+            'version' => '1.13-7.el6',
+            'name' => 'popt',
+            'update' => 'popt'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'TCP port reservation utility ',
+            'version' => '0.0.4-9.el6',
+            'name' => 'portreserve',
+            'update' => 'portreserve'
+          },
+          {
+            'epoch' => '2',
+            'system' => 'yum',
+            'desc' => 'Postfix Mail Transport Agent ',
+            'version' => '2.6.6-6.el6_5',
+            'name' => 'postfix',
+            'update' => 'postfix'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The shared libraries required for any PostgreSQL clients ',
+            'version' => '8.4.20-2.el6_6',
+            'name' => 'postgresql-libs',
+            'update' => 'postgresql-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The Parma Polyhedra Library: a library of numerical abstractions ',
+            'version' => '0.10.2-11.el6',
+            'name' => 'ppl',
+            'update' => 'ppl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'System and process monitoring utilities ',
+            'version' => '3.2.8-30.el6',
+            'name' => 'procps',
+            'update' => 'procps'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Flexible, stable and highly-configurable FTP server ',
+            'version' => '1.3.3g-4.el6',
+            'name' => 'proftpd',
+            'update' => 'proftpd'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Utilities for managing processes on your system ',
+            'version' => '22.6-19.el6_5',
+            'name' => 'psmisc',
+            'update' => 'psmisc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The GNU Portable Threads library ',
+            'version' => '2.0.7-9.3.el6',
+            'name' => 'pth',
+            'update' => 'pth'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Python module for working with OpenPGP messages ',
+            'version' => '0.1-18.20090824bzr68.el6',
+            'name' => 'pygpgme',
+            'update' => 'pygpgme'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Python bindings for the LDB library ',
+            'version' => '1.1.13-3.el6',
+            'name' => 'pyldb',
+            'update' => 'pyldb'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Developer tools for the Talloc library ',
+            'version' => '2.0.7-2.el6',
+            'name' => 'pytalloc',
+            'update' => 'pytalloc'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An interpreted, interactive, object-oriented programming language ',
+            'version' => '2.6.6-52.el6',
+            'name' => 'python',
+            'update' => 'python'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Python Module for Accessing and Modifying Configuration Data in INI files ',
+            'version' => '0.3.1-2.1.el6',
+            'name' => 'python-iniparse',
+            'update' => 'python-iniparse'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Runtime libraries for Python ',
+            'version' => '2.6.6-52.el6',
+            'name' => 'python-libs',
+            'update' => 'python-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A Python interface to libcurl ',
+            'version' => '7.19.0-8.el6',
+            'name' => 'python-pycurl',
+            'update' => 'python-pycurl'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Python bindings for the Tdb library ',
+            'version' => '1.2.10-1.el6',
+            'name' => 'python-tdb',
+            'update' => 'python-tdb'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Python bindings for the Tevent library ',
+            'version' => '0.9.18-3.el6',
+            'name' => 'python-tevent',
+            'update' => 'python-tevent'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A high-level cross-protocol url-grabber ',
+            'version' => '3.9.1-9.el6',
+            'name' => 'python-urlgrabber',
+            'update' => 'python-urlgrabber'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A library for editing typed command lines ',
+            'version' => '6.0-4.el6',
+            'name' => 'readline',
+            'update' => 'readline'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Conversion between character sets and surfaces ',
+            'version' => '3.6-28.1.el6',
+            'name' => 'recode',
+            'update' => 'recode'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'CentOS-related icons and pictures ',
+            'version' => '60.0.14-12.el6.centos',
+            'name' => 'redhat-logos',
+            'update' => 'redhat-logos'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Red Hat specific rpm configuration files ',
+            'version' => '9.0.3-42.el6.centos',
+            'name' => 'redhat-rpm-config',
+            'update' => 'redhat-rpm-config'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'YUM configuration for remi repository ',
+            'version' => '6.5-1.el6.remi',
+            'name' => 'remi-release',
+            'update' => 'remi-release'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The basic required files for the root user\'s directory ',
+            'version' => '8.1-6.1.el6',
+            'name' => 'rootfiles',
+            'update' => 'rootfiles'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Universal Addresses to RPC Program Number Mapper ',
+            'version' => '0.2.0-11.el6',
+            'name' => 'rpcbind',
+            'update' => 'rpcbind'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The RPM package management system ',
+            'version' => '4.8.0-38.el6_6',
+            'name' => 'rpm',
+            'update' => 'rpm'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Libraries for manipulating RPM packages ',
+            'version' => '4.8.0-38.el6_6',
+            'name' => 'rpm-libs',
+            'update' => 'rpm-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Python bindings for apps which will manipulate RPM packages ',
+            'version' => '4.8.0-38.el6_6',
+            'name' => 'rpm-python',
+            'update' => 'rpm-python'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A program for synchronizing files over a network ',
+            'version' => '3.0.6-12.el6',
+            'name' => 'rsync',
+            'update' => 'rsync'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Enhanced system logging and kernel message trapping daemons ',
+            'version' => '5.8.10-10.el6_6',
+            'name' => 'rsyslog',
+            'update' => 'rsyslog'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'Server and Client software to interoperate with Windows machines ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4',
+            'update' => 'samba4'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'Samba client programs ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-client',
+            'update' => 'samba4-client'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'Files used by both Samba servers and clients ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-common',
+            'update' => 'samba4-common'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'AD Domain Controller placeholder package. ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-dc',
+            'update' => 'samba4-dc'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'AD Domain Controller libraries placeholder package. ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-dc-libs',
+            'update' => 'samba4-dc-libs'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'Developer tools for Samba libraries ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-devel',
+            'update' => 'samba4-devel'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'Samba libraries ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-libs',
+            'update' => 'samba4-libs'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'Perl IDL compiler ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-pidl',
+            'update' => 'samba4-pidl'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'Samba Python libraries ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-python',
+            'update' => 'samba4-python'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'The Samba SMB server Web configuration program ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-swat',
+            'update' => 'samba4-swat'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'Testing tools for Samba servers and clients ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-test',
+            'update' => 'samba4-test'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'Samba winbind ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-winbind',
+            'update' => 'samba4-winbind'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'Samba winbind clients ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-winbind-clients',
+            'update' => 'samba4-winbind-clients'
+          },
+          {
+            'epoch' => '0',
+            'system' => 'yum',
+            'desc' => 'Samba winbind krb5 locator ',
+            'version' => '4.0.0-66.el6_6.rc4',
+            'name' => 'samba4-winbind-krb5-locator',
+            'update' => 'samba4-winbind-krb5-locator'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A screen manager that supports multiple logins on one terminal ',
+            'version' => '4.0.3-16.el6',
+            'name' => 'screen',
+            'update' => 'screen'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A GNU stream text editor ',
+            'version' => '4.2.1-10.el6',
+            'name' => 'sed',
+            'update' => 'sed'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'SELinux policy configuration ',
+            'version' => '3.7.19-260.el6_6.2',
+            'name' => 'selinux-policy',
+            'update' => 'selinux-policy'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'SELinux targeted base policy ',
+            'version' => '3.7.19-260.el6_6.2',
+            'name' => 'selinux-policy-targeted',
+            'update' => 'selinux-policy-targeted'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A set of system configuration and setup files ',
+            'version' => '2.8.14-20.el6_4.1',
+            'name' => 'setup',
+            'update' => 'setup'
+          },
+          {
+            'epoch' => '2',
+            'system' => 'yum',
+            'desc' => 'Utilities for managing accounts and shadow password files ',
+            'version' => '4.1.4.2-19.el6_6.1',
+            'name' => 'shadow-utils',
+            'update' => 'shadow-utils'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Shared MIME information database ',
+            'version' => '0.70-6.el6',
+            'name' => 'shared-mime-info',
+            'update' => 'shared-mime-info'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The shared library for the S-Lang extension language ',
+            'version' => '2.2.1-1.el6',
+            'name' => 'slang',
+            'update' => 'slang'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Library that implements an embeddable SQL database engine ',
+            'version' => '3.6.20-1.el6',
+            'name' => 'sqlite',
+            'update' => 'sqlite'
+          },
+          {
+            'epoch' => '7',
+            'system' => 'yum',
+            'desc' => 'The Squid proxy caching server ',
+            'version' => '3.1.10-29.el6',
+            'name' => 'squid',
+            'update' => 'squid'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Filter, redirector and access controller plugin for squid ',
+            'version' => '1.4-9.el6',
+            'name' => 'squidGuard',
+            'update' => 'squidGuard'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Allows restricted root access for specified users ',
+            'version' => '1.8.6p3-15.el6',
+            'name' => 'sudo',
+            'update' => 'sudo'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'system-config-firewall base components and command line tool ',
+            'version' => '1.2.27-7.2.el6_6',
+            'name' => 'system-config-firewall-base',
+            'update' => 'system-config-firewall-base'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Tools used for process and utmp management. ',
+            'version' => '2.87-5.dsf.el6',
+            'name' => 'sysvinit-tools',
+            'update' => 'sysvinit-tools'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'PostScript Type 1 font rasterizer ',
+            'version' => '5.1.2-6.el6_2.1',
+            'name' => 't1lib',
+            'update' => 't1lib'
+          },
+          {
+            'epoch' => '2',
+            'system' => 'yum',
+            'desc' => 'A GNU file archiving program ',
+            'version' => '1.23-11.el6',
+            'name' => 'tar',
+            'update' => 'tar'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Libraries for tcp_wrappers ',
+            'version' => '7.6-57.el6',
+            'name' => 'tcp_wrappers-libs',
+            'update' => 'tcp_wrappers-libs'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'The client program for the Telnet remote login protocol ',
+            'version' => '0.17-48.el6',
+            'name' => 'telnet',
+            'update' => 'telnet'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A modern implementation of a DBM ',
+            'version' => '1.4.33-6.el6',
+            'name' => 'tokyocabinet',
+            'update' => 'tokyocabinet'
+          },
+          {
+            'epoch' => '3',
+            'system' => 'yum',
+            'desc' => 'Traces the route taken by packets over an IPv4/IPv6 network ',
+            'version' => '2.0.14-2.el6',
+            'name' => 'traceroute',
+            'update' => 'traceroute'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Timezone data ',
+            'version' => '2015d-1.el6',
+            'name' => 'tzdata',
+            'update' => 'tzdata'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A userspace implementation of devfs ',
+            'version' => '147-2.57.el6',
+            'name' => 'udev',
+            'update' => 'udev'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A complete ODBC driver manager for Linux ',
+            'version' => '2.2.14-14.el6',
+            'name' => 'unixODBC',
+            'update' => 'unixODBC'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A utility for unpacking zip files ',
+            'version' => '6.0-2.el6_6',
+            'name' => 'unzip',
+            'update' => 'unzip'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'An event-driven init system ',
+            'version' => '0.6.5-13.el6_5.3',
+            'name' => 'upstart',
+            'update' => 'upstart'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'String library, very low memory overhead, simple to import ',
+            'version' => '1.0.4-9.1.el6',
+            'name' => 'ustr',
+            'update' => 'ustr'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A collection of basic system utilities ',
+            'version' => '2.17.2-12.18.el6',
+            'name' => 'util-linux-ng',
+            'update' => 'util-linux-ng'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'JavaScript Engine ',
+            'version' => '3.14.5.10-17.el6',
+            'name' => 'v8',
+            'update' => 'v8'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'Development headers and libraries for v8 ',
+            'version' => '3.14.5.10-17.el6',
+            'name' => 'v8-devel',
+            'update' => 'v8-devel'
+          },
+          {
+            'epoch' => '2',
+            'system' => 'yum',
+            'desc' => 'The common files needed by any version of the VIM editor ',
+            'version' => '7.2.411-1.8.el6',
+            'name' => 'vim-common',
+            'update' => 'vim-common'
+          },
+          {
+            'epoch' => '2',
+            'system' => 'yum',
+            'desc' => 'A version of the VIM editor which includes recent enhancements ',
+            'version' => '7.2.411-1.8.el6',
+            'name' => 'vim-enhanced',
+            'update' => 'vim-enhanced'
+          },
+          {
+            'epoch' => '2',
+            'system' => 'yum',
+            'desc' => 'A minimal version of the VIM editor ',
+            'version' => '7.2.411-1.8.el6',
+            'name' => 'vim-minimal',
+            'update' => 'vim-minimal'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A utility for retrieving files using the HTTP or FTP protocols ',
+            'version' => '1.12-5.el6_6.1',
+            'name' => 'wget',
+            'update' => 'wget'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Displays where a particular program in your path is located ',
+            'version' => '2.19-6.el6',
+            'name' => 'which',
+            'update' => 'which'
+          },
+          {
+            'epoch' => '1',
+            'system' => 'yum',
+            'desc' => 'Wireless ethernet configuration tools ',
+            'version' => '29-5.1.1.el6',
+            'name' => 'wireless-tools',
+            'update' => 'wireless-tools'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Utilities for managing the XFS filesystem ',
+            'version' => '3.1.1-16.el6',
+            'name' => 'xfsprogs',
+            'update' => 'xfsprogs'
+          },
+          {
+            'epoch' => '2',
+            'system' => 'yum',
+            'desc' => 'A secure replacement for inetd ',
+            'version' => '2.3.14-39.el6_4',
+            'name' => 'xinetd',
+            'update' => 'xinetd'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Libraries for decoding LZMA compression ',
+            'version' => '4.999.9-0.5.beta.20091007git.el6',
+            'name' => 'xz-libs',
+            'update' => 'xz-libs'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'RPM package installer/updater/manager ',
+            'version' => '3.2.29-60.el6.centos',
+            'name' => 'yum',
+            'update' => 'yum'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'A fast metadata parser for yum ',
+            'version' => '1.1.2-16.el6',
+            'name' => 'yum-metadata-parser',
+            'update' => 'yum-metadata-parser'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Yum plugin which chooses fastest repository from a mirrorlist ',
+            'version' => '1.1.30-30.el6',
+            'name' => 'yum-plugin-fastestmirror',
+            'update' => 'yum-plugin-fastestmirror'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'The zlib compression and decompression library ',
+            'version' => '1.2.3-29.el6',
+            'name' => 'zlib',
+            'update' => 'zlib'
+          },
+          {
+            'epoch' => undef,
+            'system' => 'yum',
+            'desc' => 'Header files and libraries for Zlib development ',
+            'version' => '1.2.3-29.el6',
+            'name' => 'zlib-devel',
+            'update' => 'zlib-devel'
+          }
+        ];

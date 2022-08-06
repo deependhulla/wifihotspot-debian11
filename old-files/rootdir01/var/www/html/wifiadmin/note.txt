@@ -1,0 +1,58 @@
+
+******* 07-May-2015 WIFI UPDATES
+
+1-"Terms & Condition Page" added in configuration.Below mysql query
+
+INSERT INTO `wifihotspot`.`config_info` (`uid`, `logid`, `create_by_user`,
+`create_on_date`, `create_type`, `type_of_msg`, `msg_in_config`, `msg_data`)
+VALUES (19, NULL, '', CURRENT_TIMESTAMP, '', 'TERMS_CONDITION_PAGE', 'Terms &
+Condition Page', 'Terms & Condition Page');
+              .
+2-terms.php created in wifilogin folder.
+3-term.txt default file created in wifiadmin folder.All terms & condition data
+in term.txt file.
+
+4-"Package Value 3 Type" added in configuration with 3 Dropdown values.Below
+mysql query
+  1-Hidden    
+  2-Plain Text check
+  3-Check Mob. No.
+
+INSERT INTO `wifihotspot`.`config_info` (`uid`, `logid`, `create_by_user`,
+`create_on_date`, `create_type`, `type_of_msg`, `msg_in_config`, `msg_data`)
+VALUES (20, NULL, '', CURRENT_TIMESTAMP, '', 'PACKAGE_VALUE_3_TYPE', 'Package
+Value 3 Type', '2');
+
+5-"Package Value 3 Text" added in configuration.Below mysql query
+
+INSERT INTO `wifihotspot`.`config_info` (`uid`, `logid`, `create_by_user`,
+`create_on_date`, `create_type`, `type_of_msg`, `msg_in_config`, `msg_data`)
+VALUES (21, NULL, '', CURRENT_TIMESTAMP, '', 'PACKAGE_VALUE_3_TEXT', 'Package
+Value 3 Text', 'Your Mob No.');
+
+6-"Support License Key" added in configuration.Below mysql query
+
+INSERT INTO `wifihotspot`.`config_info` (`uid`, `logid`, `create_by_user`,
+`create_on_date`, `create_type`, `type_of_msg`, `msg_in_config`, `msg_data`)
+VALUES (22, NULL, '', '2015-05-07 18:10:13', '', 'SUPPORT_LICENSE_KEY',
+'Support License Key', 'AKL67AS3423');
+
+7-"Value3" Column Added in tbl wifi_package_management.Below mysql query
+
+ALTER TABLE `wifi_package_management` ADD `value3` VARCHAR(55) NOT NULL AFTER
+`value2`;
+
+* In Package Management value3 data insert/update/view
+
+Modification in files:-
+---------------------
+1-system_message_edit.php
+2-system_message_ajax_data_raw.php
+3-package_mgmt.php
+4-package_mgmt_add.php
+5-package_mgmt_edit.php
+6-package_mgmt_ajax_data_raw.php
+7-access_plan.php
+8-access_plan_edit.php
+9-access_plan_add.php
+

@@ -1,0 +1,5 @@
+# default class for unclassified traffic
+RATE=512Kbit
+CEIL=512Kbit
+BURST=1k
+LEAF=sfq

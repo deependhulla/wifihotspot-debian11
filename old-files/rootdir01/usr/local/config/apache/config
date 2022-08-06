@@ -1,0 +1,17 @@
+show_order=0
+start_cmd=/etc/rc.d/init.d/httpd start
+test_always=0
+test_manual=0
+show_list=0
+mime_types=/etc/mime.types
+auto_mods=1
+apachectl_path=/usr/sbin/apachectl
+stop_cmd=/etc/rc.d/init.d/httpd stop
+show_names=0
+test_apachectl=1
+max_servers=100
+test_config=1
+apply_cmd=/etc/rc.d/init.d/httpd graceful
+httpd_path=/usr/sbin/httpd
+allow_virtualmin=0
+httpd_dir=/etc/httpd

@@ -1,0 +1,11 @@
+#!/bin/sh
+echo Starting Webmin server in /usr/local/webadmin
+trap '' 1
+LANG=
+export LANG
+#PERLIO=:raw
+unset PERLIO
+export PERLIO
+PERLLIB=/usr/local/webadmin
+export PERLLIB
+exec '/usr/local/webadmin/miniserv.pl' /usr/local/webadmin/config/miniserv.conf
