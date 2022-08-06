@@ -1,11 +1,6 @@
 #!/bin/bash
 
-wget -c https://mariadb.org/mariadb_release_signing_key.asc -O /etc/apt/trusted.gpg.d/mariadb_release_signing_key.asc  
-chmod -c 644 /etc/apt/trusted.gpg.d/mariadb_release_signing_key.asc
 
-echo 'deb [arch=amd64] https://mariadb.mirror.liquidtelecom.com/repo/10.6/debian bullseye main' > /etc/apt/sources.list.d/mariadb-and-php.list
-
-echo "Updating Repo List to get Mariadb 10.6 Repo up";
 apt-get update
 apt-get -y upgrade
 
