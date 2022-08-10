@@ -1,9 +1,9 @@
-<?
+<?php
 
 $ebdbname="wifihotspot";
-$ebdbuser="root";
+$ebdbuser="mydbadmin";
 $ebdbhost="localhost";
-$ebdbpass="techno02srv";
+$ebdbpass="ogheiY3h";
 $appcompanyname="TechnoInfotech";
 $appname="TechnoAir";
 $appversion="1.0";

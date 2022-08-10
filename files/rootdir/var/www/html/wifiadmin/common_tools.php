@@ -1,4 +1,4 @@
-<?
+<?php
 include_once('dbinfo.php');
 
 function formatBytes($size, $precision = 2)
@@ -39,7 +39,7 @@ $userlogin=0;
 <br><div class="container">
 <div class="alert alert-success">You have succesfully logged out</div>
 </div></center>
-<?
+<?php
 }
 #### logouot logic end
 
@@ -114,7 +114,7 @@ if($userlogin==0)
 Please Enter Correct Username and Password or You are not allowed to access from this IP
 </div></div>
 </center>
-<?
+<?php
 }
 }
 
@@ -175,7 +175,7 @@ $sr=1;
 <meta name="description" content="">
 <meta name="author" content="">
 <link rel="icon" href="favicon.ico">
-<title><? echo $apptitle." - ".$appname." - ".$appcompanyname; ?></title>
+<title><?php echo $apptitle." - ".$appname." - ".$appcompanyname; ?></title>
 <link href="css/datepicker.css" rel="stylesheet">
 <!--<script src="js/bootstrap-datepicker.js "></script>-->
 <link href="css/bootstrap.min-blue.css" rel="stylesheet">
@@ -206,19 +206,19 @@ $sr=1;
 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 </button>
-<a class="navbar-brand" href="index.php"><? echo $appname." - ".$appcompanyname; ?></a>
+<a class="navbar-brand" href="index.php"><?php echo $appname." - ".$appcompanyname; ?></a>
 </div>
-<?
+<?php
 if($userlogin==1)
 {
 $accessokformodule=0;
 ?>
 <div class="navbar-collapse collapse">
 <ul class="nav navbar-nav navbar-right">
-<li <? if($submoduleid==0){echo 'class="active"';} ?> ><a href="index.php">Dashboard</a></li>
+<li <?php if($submoduleid==0){echo 'class="active"';} ?> ><a href="index.php">Dashboard</a></li>
 
 
-<?
+<?php
 $sqlxu="SELECT a.`module_id`, a.`module_sname`, a.`module_fullname`, a.`module_phpuri` FROM `app_module_info` as a,`app_module_access` as b  WHERE   a.`module_primary_id` = 0 and b.`module_id`=a.`module_id` AND b.`login_name` = '".$userloginid."' order by a.`module_display_order_id` ASC";
 #print "\n<hr> $sqlxu";
 
@@ -226,8 +226,8 @@ $mysqlresultu = $mysqldblink->query($sqlxu);
 while($mysqlrowu = $mysqlresultu->fetch_assoc()){
 
 ?>
-<li <? if($submoduleid==$mysqlrowu['module_id']){echo 'class="active"';} ?> class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown" ><?=$mysqlrowu['module_sname']?><span class="caret caret-right"></span></a>
-<?
+<li <?php if($submoduleid==$mysqlrowu['module_id']){echo 'class="active"';} ?> class="dropdown"><a href="#"  class="dropdown-toggle" data-toggle="dropdown" ><?php echo $mysqlrowu['module_sname']; ?><span class="caret caret-right"></span></a>
+<?php
 
 $sqlxua="SELECT a.`module_id`, a.`module_sname`, a.`module_fullname`, a.`module_phpuri` FROM `app_module_info` as a,`app_module_access` as b  WHERE   a.`module_primary_id` = ".$mysqlrowu['module_id']." and b.`module_id`=a.`module_id` AND b.`login_name` = '".$userloginid."' order by a.`module_display_order_id` ASC";
 #print "\n<hr> $sqlxua";
@@ -243,8 +243,8 @@ $accessokformodule=1;
 }
 
 ?>
-<li <? if($submoduleid==$mysqlrowua['module_id']){echo 'class="uactive"';} ?> ><a href="<?=$mysqlrowua['module_phpuri']?>"><?=$mysqlrowua['module_sname']?></a>
-<?
+<li <?php if($submoduleid==$mysqlrowua['module_id']){echo 'class="uactive"';} ?> ><a href="<?php echo $mysqlrowua['module_phpuri']; ?>"><?php echo $mysqlrowua['module_sname']; ?></a>
+<?php
 }
 if($dropx!=0){print "</ul>";}
 print "</li>";
@@ -261,18 +261,18 @@ $accessokformodule=1;
 
 
 <li class="dropdown">
-<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?=$userloginname?> <span class="caret"></span></a>
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $userloginname; ?> <span class="caret"></span></a>
 <ul class="dropdown-menu" role="menu">
 <li><a href="changepassform.php">Change Password</a></li>
 <li><a href="index.php?logoutnow=yes">Logout</a></li></ul>
 </li>
 </div>
-<?
+<?php
 
 }
 ?>
 </div></div>
-<?
+<?php
 if($accessokformodule==0 && $userlogin==1 && $submoduleid>0)
 {
 print "<br><br><center><font color=red>Access to this module not allowed. </font></center>";
@@ -286,7 +286,7 @@ function html_footer_to_show()
 {
 ?>
 </body></html>
-<?
+<?php
 }
 // footer common end
 
@@ -334,7 +334,7 @@ html_header_to_show();
     <div class="container">
       <form class="form-signin" role="adminform" action="index.php" method="post">
         <h2 class="form-signin-heading">Please sign in</h2>
-<input type="text" class="form-control" placeholder="Username" name="appsusername" value="<?=$_POST['appsusername']?>" required autofocus><br>        
+<input type="text" class="form-control" placeholder="Username" name="appsusername" value="<?php echo $_POST['appsusername']; ?>" required autofocus><br>        
 <input type="password" class="form-control" placeholder="Password" name="appspass" required>
 <div class="checkbox">
           <label><input type="checkbox" name="appsrem" value="remember-me" > Remember me </label>
@@ -349,11 +349,11 @@ html_header_to_show();
 <?php
 include_once('lic.php');
 ?>
-<!-- <b>Technoinfotech</b> Support Contract Ends On : <b><? echo $supportdate;?></b> -->
+<!-- <b>Technoinfotech</b> Support Contract Ends On : <b><?php echo $supportdate; ?></b> -->
 </div>
 </div>
 </center>
-<?
+<?php
 }
 /// if not login show form -end
 ?>

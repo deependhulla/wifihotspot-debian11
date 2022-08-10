@@ -1,4 +1,4 @@
-<?
+<?php
 
 $submoduleid=0;
 include_once('common_tools.php');
@@ -24,7 +24,7 @@ html_header_to_show();
                             <div class="small-box bg-aqua">
                                 <div class="inner">
                                     <h3>
-<?
+<?php
 /// force create if not there daywise table -start
 $tablex=" wifilog.`wifi_user_usage_".date('Y_m_d')."` ";
 $createsql="CREATE TABLE IF NOT EXISTS ".$tablex." (
@@ -105,7 +105,7 @@ echo $outx;
                             <div class="small-box bg-green">
                                 <div class="inner">
                                     <h3>
-<?
+<?php
 $outx=0;
 $sqlx="SELECT count(`user_mac_address`) as countx FROM `mac_user_info`";
 //print "<br>$sqlx<br>";
@@ -135,7 +135,7 @@ echo $outx;
                                 <div class="inner">
                                     <h3>
                                         
-<?
+<?php
 $outx=0;
 $sqlx="SELECT SUM( `iptables_bytes` )  FROM `wifilog`.`wifi_user_usage_".date('Y_m_d')."` ";
 
@@ -167,7 +167,7 @@ echo $outx;
                                 <div class="inner">
                                     <h3>
                                         
-<?
+<?php
 
 $outx=0;
 $sqlx="SELECT SUM( `iptables_bytes` )  FROM `wifi_daily_usage` ";
@@ -198,7 +198,7 @@ echo $outx;
                         </div><!-- ./col -->
                     </div><!-- /.row -->
 
-<?
+<?php
 ////////////////////////////////////////////////////////////////////////////////
 /// User Activity - start 
 if($_GET['rtype']=="usersactive")
@@ -211,16 +211,16 @@ if($enddate==""){$enddate=date('Y-m-d');}
 ?>
 <!-- Custom tabs Charts -->
 <form name="myform" id="myform">
-<input type="hidden" name="rtype" value="<?=$_GET['rtype']?>">
+<input type="hidden" name="rtype" value="<?php echo $_GET['rtype']; ?>">
 <div class="box box-primary">
 	<div class="box-header">
 <h3 class="box-title">Users Daywise Activity</h3>
 <div style="float: right !important;">
     <div class="input-append date">
                 <div class="input-daterange" id="datepicker" >
-                    <input type="text" class="btn btn-default" style="color:red" name="startdate"  value="<?=$startdate?>"/>
+                    <input type="text" class="btn btn-default" style="color:red" name="startdate"  value="<? echo $startdate; ?>"/>
 <button type="button" class="btn btn-default" onClick="document.myform.submit();return false;;">Go</button> 
-<!-- to   <input type="text" class="input-small" name="enddate" value="<?=$enddate?>"/> -->
+<!-- to   <input type="text" class="input-small" name="enddate" value="<? echo $enddate; ?>"/> -->
                 </div> 
             </div> </div>
 </div>
@@ -266,7 +266,7 @@ $('#datadisplaybox').dataTable( {
 
 // "columns": [ {"name": "Sr", "orderable": "false"}],
 
-"ajax": "view_reports_ajax_raw.php?startdate=<?=$startdate?>&enddate=<?=$enddate?>&rtype=<?=$rtype?>",
+"ajax": "view_reports_ajax_raw.php?startdate=<?php echo $startdate; ?>&enddate=<?php echo $enddate; ?>&rtype=<?php echo $rtype; ?>",
  "columnDefs": [
  {
 "render": function ( data, type, row ) {
@@ -314,7 +314,7 @@ window.location.href="view_mac_report.php?maccheck="+globaledituid;
         element: 'specialchart',
         resize: true,
         data: [
-<?
+<?php
 $outx=0;
 $e=0;
 $startdatex=$startdate;
@@ -342,7 +342,7 @@ xLabels : "hour",
     });
 </script>
 
-<?
+<?php
 }
 /// User Activity - end 
 ////////////////////////////////////////////////////////////////////////////////
@@ -360,7 +360,7 @@ if($enddate==""){$enddate=date('Y-m-d');}
 ?>
 <!-- Custom tabs Charts -->
 <form name="myform" id="myform">
-<input type="hidden" name="rtype" value="<?=$_GET['rtype']?>">
+<input type="hidden" name="rtype" value="<?php echo $_GET['rtype']; ?>">
 <div class="box box-primary">
         <div class="box-header">
 <h3 class="box-title">Users Registered</h3>
@@ -395,7 +395,7 @@ $('#datadisplaybox').dataTable( {
 //stateSave: true,
 
 // "columns": [ {"name": "Sr", "orderable": "false"}],
-"ajax": "view_reports_ajax_raw.php?startdate=<?=$startdate?>&enddate=<?=$enddate?>&rtype=<?=$rtype?>",
+"ajax": "view_reports_ajax_raw.php?startdate=<?php echo $startdate; ?>&enddate=<?php echo $enddate; ?>&rtype=<?php echo $rtype; ?>",
  "columnDefs": [
  {
 "render": function ( data, type, row ) {
@@ -417,7 +417,7 @@ return '<a href="?rtype=macview&macid='+data+'">'+data +'</a>';
         element: 'specialchart',
         resize: true,
         data: [
-<?
+<?php
 $outx=0;
 $e=0;
 $startdatex=$startdate;
@@ -459,7 +459,7 @@ print " {y: '".$mrow[0]."', d1: ".$mrow[2].",d2:".$mrow[1]."},";
 
 
 
-<?
+<?php
 }
 /// User Register - end
 ////////////////////////////////////////////////////////////////////////////////
@@ -476,16 +476,16 @@ if($enddate==""){$enddate=date('Y-m-d');}
 ?>
 <!-- Custom tabs Charts -->
 <form name="myform" id="myform">
-<input type="hidden" name="rtype" value="<?=$_GET['rtype']?>">
+<input type="hidden" name="rtype" value="<?php echo $_GET['rtype']; ?>">
 <div class="box box-primary">
         <div class="box-header">
 <h3 class="box-title">Users Daywise Activity</h3>
 <div style="float: right !important;">
     <div class="input-append date">
                 <div class="input-daterange" id="datepicker" >
-                    <input type="text" class="btn btn-default" style="color:red" name="startdate"  value="<?=$startdate?>"/>
+                    <input type="text" class="btn btn-default" style="color:red" name="startdate"  value="<?php echo $startdate; ?>"/>
 <button type="button" class="btn btn-default" onClick="document.myform.submit();return false;;">Go</button>
-<!-- to   <input type="text" class="input-small" name="enddate" value="<?=$enddate?>"/> -->
+<!-- to   <input type="text" class="input-small" name="enddate" value="<?php echo $enddate; ?>"/> -->
                 </div>
             </div> </div>
 </div>
@@ -534,7 +534,7 @@ $('#datadisplaybox').dataTable( {
 //stateSave: true,
 
 // "columns": [ {"name": "Sr", "orderable": "false"}],
-"ajax": "view_reports_ajax_raw.php?startdate=<?=$startdate?>&enddate=<?=$enddate?>&rtype=<?=$rtype?>",
+"ajax": "view_reports_ajax_raw.php?startdate=<?php echo $startdate; ?>&enddate=<?php echo $enddate; ?>&rtype=<?php echo $rtype; ?>",
  "columnDefs": [
  {
 "render": function ( data, type, row ) {
@@ -556,7 +556,7 @@ return '<a href="?rtype=macview&macid='+data+'">'+data +'</a>';
         element: 'specialchart',
         resize: true,
         data: [
-<?
+<?php
 $outx=0;
 $e=0;
 $startdatex=$startdate;
@@ -585,7 +585,7 @@ labels: ['Avg Data', 'MAX Data','Total Data'],
     });
 </script>
 
-<?
+<?php
 }
 /// User Usage - end
 ////////////////////////////////////////////////////////////////////////////////
@@ -603,7 +603,7 @@ if($enddate==""){$enddate=date('Y-m-d');}
 ?>
 <!-- Custom tabs Charts -->
 <form name="myform" id="myform">
-<input type="hidden" name="rtype" value="<?=$_GET['rtype']?>">
+<input type="hidden" name="rtype" value="<?php echo $_GET['rtype']; ?>">
 <div class="box box-primary">
         <div class="box-header">
 <h3 class="box-title">Daily Data Usage</h3>
@@ -635,7 +635,7 @@ $('#datadisplaybox').dataTable( {
 //stateSave: true,
 
 // "columns": [ {"name": "Sr", "orderable": "false"}],
-"ajax": "view_reports_ajax_raw.php?startdate=<?=$startdate?>&enddate=<?=$enddate?>&rtype=<?=$rtype?>",
+"ajax": "view_reports_ajax_raw.php?startdate=<?php echo $startdate; ?>&enddate=<?php echo $enddate; ?>&rtype=<?php echo $rtype; ?>",
  "columnDefs": [
  {
 "render": function ( data, type, row ) {
@@ -658,7 +658,7 @@ return '<a href="?rtype=userusage&startdate='+data+'">'+data +'</a>';
         element: 'specialchart',
         resize: true,
         data: [
-<?
+<?php
 $outx=0;
 $e=0;
 $startdatex=$startdate;
@@ -693,7 +693,7 @@ print " {y: '".$mrow[0]."', d1: ".$mrow[1]."},";
 
 
 
-<?
+<?php
 }
 /// User Usage - end
 ////////////////////////////////////////////////////////////////////////////////
@@ -719,16 +719,16 @@ $macid=str_replace(";","",$macid);
 ?>
 <!-- Custom tabs Charts -->
 <form name="myform" id="myform">
-<input type="hidden" name="rtype" value="<?=$_GET['rtype']?>">
+<input type="hidden" name="rtype" value="<?php echo $_GET['rtype']; ?>">
 <div class="box box-primary">
         <div class="box-header">
-<h3 class="box-title">Activity of MAC : <?=$_GET['macid']?></h3>
+<h3 class="box-title">Activity of MAC : <?php echo $_GET['macid']; ?></h3>
 <div style="float: right !important;">
 <!--     <div class="input-append date">
                 <div class="input-daterange" id="datepicker" >
-                    <input type="text" class="btn btn-default" name="startdate"  value="<?=$startdate?>"/>
+                    <input type="text" class="btn btn-default" name="startdate"  value="<?php echo $startdate; ?>"/>
 <button type="button" class="btn btn-default" onClick="document.myform.submit();return false;;">Go</button> 
-to   <input type="text" class="input-small" name="enddate" value="<?=$enddate?>"/> 
+to   <input type="text" class="input-small" name="enddate" value="<?php echo $enddate; ?>"/> 
                 </div>
             </div> </div> -->
 </div>
@@ -777,7 +777,7 @@ $('#datadisplaybox').dataTable( {
 "serverSide": true,
 //stateSave: true,
 // "columns": [ {"name": "Sr", "orderable": "false"}],
-"ajax": "view_reports_ajax_raw.php?startdate=<?=$startdate?>&enddate=<?=$enddate?>&rtype=<?=$rtype?>&macid=<?=$macid?>&",
+"ajax": "view_reports_ajax_raw.php?startdate=<?php echo $startdate;?>&enddate=<?php echo $enddate; ?>&rtype=<?php echo $rtype; ?>&macid=<?php echo $macid; ?>&",
  "columnDefs": [
  {
 "render": function ( data, type, row ) {
@@ -799,7 +799,7 @@ return data;
         element: 'specialchart',
         resize: true,
         data: [
-<?
+<?php
 $macid=$_GET['macid'];
 $macid=str_replace(" ","",$macid);
 $macid=str_replace("'","",$macid);
@@ -845,7 +845,7 @@ labels: ['Avg Data', 'MAX Data','Total Data'],
     });
 </script>
 
-<?
+<?php
 }
 /// MAC User Usage - end
 ////////////////////////////////////////////////////////////////////////////////
@@ -889,7 +889,7 @@ if($_GET['rtype']=="")
         resize: true,
         data: [
 
-<?
+<?php
 $outx=0;
 $e=0;
 $sqlx="SELECT distinct count(`user_mac`),`user_live_hour` FROM 
@@ -919,7 +919,7 @@ xLabels : "hour",
         resize: true,
      data: [
 
-<?
+<?php
 $outx=0;
 $e=0;
 $sqlx="SELECT `user_live_hour`,ROUND(AVG( `iptables_bytes` )/(1024 * 1024),2) ,ROUND(MAX( `iptables_bytes` )/(1024 * 1024),2),ROUND(SUM( `iptables_bytes` )/(1024 * 1024),2) FROM
@@ -951,7 +951,7 @@ labels: ['Avg Data', 'MAX Data','Total Data'],
         
     data: [
 
-<?
+<?php
 $outx=0;
 $e=0;
 $sqlx="SELECT `user_live_hour`,ROUND(((AVG( `iptables_bytes` )*8)/3600)/1024,2) ,ROUND(((MAX( `iptables_bytes`)*8)/3600)/1024,2),ROUND(((SUM( `iptables_bytes` )*8)/3600)/1024,2) FROM
@@ -986,7 +986,7 @@ labels: ['Average Bandwidth', 'Max Bandwidth','Total Bandwidth'],
 </script>
 
 
-<?
+<?php
 // for no rtype --end -- only for homepage
 }
 

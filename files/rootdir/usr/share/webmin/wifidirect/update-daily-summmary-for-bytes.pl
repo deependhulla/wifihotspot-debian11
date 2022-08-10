@@ -8,9 +8,9 @@ $now_string = strftime "%a-%d-%m-%Y-%H-%M-%S", localtime;
 ($dayx,$datex,$monx,$yearx,$hourx,$minx,$secx)=split/-/,$now_string;
 $todayx=$yearx."-".$monx."-".$datex;
 $dbname="wifihotspot";
-$hostname="192.168.3.254";
-$username="wifihotspot";
-$password="n9Rxz9NRvdtWB5tG";
+$hostname="127.0.0.1";
+$username="mydbadmin";
+$password="ogheiY3h";
 
 $yes_string = strftime "%a-%d-%m-%Y-%H-%M-%S", localtime(time-86400);
 ($ydayx,$ydatex,$ymonx,$yyearx,$yhourx,$yminx,$ysecx)=split/-/,$yes_string;
