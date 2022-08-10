@@ -1,4 +1,4 @@
-<?
+<?php
 include_once('dbconfig.php');
 #$macAddr="B8:B4:2E:FE:85:93";
 #$activembplan=1;
@@ -79,7 +79,7 @@ if($debugx==1){
 print "Work for Day: ".$dayarray[$d]."\n";
 }
 $sqlx="SELECT SUM(`iptables_bytes`) as totalbytes FROM `wifilog`.`wifi_user_usage_".$tablex."` WHERE `create_on_date` >= '".$startdatetimex."' AND `user_mac` LIKE '".$macAddr."' ORDER BY `create_on_date` ASC";
-#print "$sqlx \n";
+#print "$sqlx <br>\n";
 $dailybytes=0;
 $tmysqlresult = $mysqldblink->query($sqlx);
 while($tmysqlrow = $tmysqlresult->fetch_assoc())
@@ -91,7 +91,7 @@ if($gresettime==0){$gresetmb=0;}
 $gresettime++;
 $gresetmb=$gresetmb + $dailybytes;
 if($debugx==1){
-print "DAILY : $dailybytes : Total : $gtotalmb  --> $sresettime >  $sresetmb --> $gresettime --> $gresetmb\n";
+print "<br>DAILY : $dailybytes : Total : $gtotalmb  --> $sresettime >  $sresetmb --> $gresettime --> $gresetmb\n";
 }
 if($activembplan==1 && $gtotalmb > $stotalmb){ $activembplan=0; $reasonx="Total Allocated Used";}
 // work for rest limit start
@@ -103,6 +103,15 @@ if($debugx==1){print "\n work for every day \n ";}
 // For loop for Day check over
 }
 
+$lastdaycheckwas=$dayarray[sizeof($dayarray)-1];
+$todaycheck=date("Y-m-d");
+if($lastdaycheckwas != $todaycheck)
+{
+$gresetmb=0;
+#print "REST NOW day";
+}
+#print " -->".$lastdaycheckwas."-->".$todaycheck;
+
 if($activembplan==1 && $sresettime > 0 && $sresetmb > 0){
 if($debugx==1){ print "\n  Action for REST rules\n ";}
 if( $gresetmb > $sresetmb){ $activembplan=2; $reasonx="Allocated for Day Period used.";}
@@ -111,6 +120,7 @@ if( $gresetmb > $sresetmb){ $activembplan=2; $reasonx="Allocated for Day Period 
 }
 // Function over here
 if($debugx==1){ print "\nACTIVE MB PLAN : $activembplan : $reasonx\n";}
+#print "---> $activembplan";
 return $activembplan;
 }
 

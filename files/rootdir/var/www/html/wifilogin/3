@@ -86,7 +86,7 @@ global $gotregdate;
 global $gotmacblock;
 global $gotmobblock;
 $sqlxz = "SELECT `uid`,`user_reg_active`,`user_mobile`,`user_mac_blocked`,`user_mobile_blocked`,`user_access_plan`, Date_Format( `user_reg_datetime`, '%Y-%m-%d' ) as regdate,`user_todaycode_active`   FROM `mac_user_info` where `user_mac_address`='".$macAddr."' order by uid DESC limit 0 ,1";
-print $sqlxz."<hr>";
+#print $sqlxz;
 $mysqlresult = $mysqldblink->query($sqlxz);
 while($mysqlrow = $mysqlresult->fetch_assoc()){
 #print_r($mysqlrow);
@@ -185,11 +185,11 @@ $smsenddone=1;
 $smstext="Access Code is : ".$smscodex;
 $smstextmsg=urlencode($smstext);
 $urlx="http://technoworld.in/cgi-bin/gsmmodem/sendviagsm230.cgi?mobileno=91".$gotmobile."&message=$smstextmsg";
-#$urlx="http://192.168.3.254/clubmaster/sendsmsapi.php?smsuser=club&smsapikey=apikeynvm&mobileno=".$gotmobile."&smsmsg=".$smstextmsg."";
+$urlx="http://192.168.3.254/clubmaster/sendsmsapi.php?smsuser=club&smsapikey=apikeynvm&mobileno=".$gotmobile."&smsmsg=".$smstextmsg."";
 $urlxdata=file_get_contents($urlx);
 #print "--> $urlxdata";
-#$zurlx="http://192.168.3.254/clubmaster/sms-process-trans.php";
-#$zurlxdata=file_get_contents($zurlx);
+$zurlx="http://192.168.3.254/clubmaster/sms-process-trans.php";
+$zurlxdata=file_get_contents($zurlx);
 
 #print "\n $urlx --> $urlxdata \n";
 $sqlx="UPDATE `mac_code_info` SET `specialcodeactive` = ".$specialcodeactive." WHERE  `live_date` = CURDATE() AND `userid` = ".$gotuidx." ";
@@ -291,13 +291,13 @@ $nr = getDistinctNr(1000, 9999);
 if($myfun=="newregsave")
 {
 
-$regx="INSERT INTO `mac_user_info`(`uid`, `logid`, `create_by_user`, `create_on_date`, `create_type`, `user_mac_address`, `user_full_name`, `user_mobile`, `user_email`, `user_membership_no`, `user_extra_office_info`, `user_access_plan`, `user_device_type`, `user_reg_browser_full_info`, `user_reg_browser`, `user_reg_device`, `user_reg_datetime`, `user_reg_active`, `user_activaton_datetime`, `user_mac_blocked`, `user_mobile_blocked`, `user_block_reason`, `user_block_datetime`, `user_internal_comments`, `user_ip_address`) VALUES (NULL,NULL,'',NOW(),'','$macAddr','$reg_fname','$reg_mob','$reg_email','','','0','','','','',NOW(),0,'0000-00-00',0,0,'','0000-00-00','','$ipAddress')";
-#print $regx;
+$regx="INSERT INTO `mac_user_info`(`uid`, `logid`, `create_by_user`, `create_on_date`, `create_type`, `user_mac_address`, `user_full_name`, `user_mobile`, `user_email`, `user_membership_no`, `user_extra_office_info`, `user_access_plan`, `user_device_type`, `user_reg_browser_full_info`, `user_reg_browser`, `user_reg_device`, `user_reg_datetime`, `user_reg_active`, `user_activaton_datetime`, `user_mac_blocked`, `user_mobile_blocked`, `user_block_reason`, `user_block_datetime`, `user_internal_comments`, `user_ip_address`) VALUES (NULL,NULL,'',NOW(),'','$macAddr','$reg_fname','$reg_mob','$reg_email','','','0','','','','',NOW(),0,'','','','','','','$ipAddress')";
+print $regx;
 $mysqlresulti = $mysqldblink->query($regx);
 $gotuidx=mysqli_insert_id($mysqldblink);
 
-$regy="INSERT INTO `mac_code_info`(`uid`, `logid`, `create_by_user`, `create_on_date`, `create_type`, `live_date`, `userid`, `specialcode`, `specialcodeactive`) VALUES (NULL,NULL,'',NOW(),'',NOW(),'$gotuidx','$nr','0')";
-#print $regy;
+$regy="INSERT INTO `mac_code_info`(`uid`, `logid`, `create_by_user`, `create_on_date`, `create_type`, `live_date`, `userid`, `specialcode`, `specialcodeactive`) VALUES ('','','',NOW(),'',NOW(),'$gotuidx','$nr','')";
+print $regy;
 $mysqlregy = $mysqldblink->query($regy);
 checkmacuid();
 sendsmsnow();
@@ -391,7 +391,7 @@ $error_sms_code="SMS Code Not matched. Please Enter the Proper Code";
 
   <body>
     <div class="container">
-<div align=center>    <img src="<?php echo $companylogo; ?>" align=center height=80px></div>
+<div align=center>    <img src="<?php echo $companylogo; ?>" align=center></div>
 <?php
 if($myfun=="internetactive")
 {
@@ -577,7 +577,7 @@ if($myfun=="smscodesend")
 ?>
 <form class="form-signin" method="POST" action="" role="formform">
 <?php echo $smsmsg; ?>
-<center>Your Device Unique <br>ID : <b><font color=green><?php echo $gotuidx; ?></font></b></center>
+<center>Your Device Unique <br>ID : <b><font color=green><? echo $gotuidx; ?></font></b></center>
         <h3 class="form-signin-heading" align="center">Please enter SMS Code</h3>
  <input type=hidden name="myfun" value="checksmscode">
 <span class="reg_error"><?php echo $error_sms_code; ?></span>

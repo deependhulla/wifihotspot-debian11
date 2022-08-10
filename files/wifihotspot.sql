@@ -535,3 +535,7 @@ CREATE TABLE IF NOT EXISTS `internet_tools` (
 INSERT INTO `internet_tools` (`uid`, `logid`, `create_by_user`, `create_on_date`, `current_status`, `automatic_internet`, `start_time`, `end_time`) VALUES
 (1, 0, '', '2015-05-29 06:42:23', '0', '0', '2015-05-28 13:58:29', '2015-05-28 13:58:33');
 
+ALTER TABLE `mac_user_info` ADD `user_todaycode_active` INT NOT NULL DEFAULT '0' AFTER `message_og_the_day`, ADD INDEX (`user_todaycode_active`);
+ALTER TABLE `mac_user_info` CHANGE `full_access` `full_access` INT(11) NOT NULL DEFAULT '0';
+ALTER TABLE `mac_user_info` CHANGE `message_og_the_day` `message_og_the_day` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '';
+

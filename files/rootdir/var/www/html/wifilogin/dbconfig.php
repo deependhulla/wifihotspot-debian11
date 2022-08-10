@@ -1,12 +1,10 @@
-<?
+<?php
 
 $ebdbname="wifihotspot";
-$ebdbuser="root";
-$ebdbhost="localhost";
-$ebdbpass="techno02srv";
+$ebdbuser="mydbadmin";
+$ebdbhost="127.0.0.1";
+$ebdbpass="ogheiY3h";
 
-$smsusername="technoinfotech";
-$smsapikey="D3C11CEAF117BE157844F15D2EE87";
 $mysqldblink = new mysqli($ebdbhost, $ebdbuser, $ebdbpass, $ebdbname);
 
 if($mysqldblink->connect_errno > 0){
@@ -14,4 +12,3 @@ if($mysqldblink->connect_errno > 0){
 }
 
 ?>
-
