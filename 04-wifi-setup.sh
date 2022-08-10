@@ -15,4 +15,17 @@ mysql < files/mysql-db.sql  1>/dev/null 2>/dev/null
 mysql wifihotspot < files/wifihotspot.sql  1>/dev/null 2>/dev/null
 mysql wifi_iptraf < files/iptraf.sql  1>/dev/null 2>/dev/null
 
+## copy all default config files
+/bin/cp -pRv files/rootdir/* /
+systemctl stop named
+systemctl disable named
 
+systemctl enable unbound
+systemctl start unbound
+
+
+systemctl enable isc-dhcp-server.service
+systemctl restart isc-dhcp-server.service
+
+echo " Done.";
+echo "";
