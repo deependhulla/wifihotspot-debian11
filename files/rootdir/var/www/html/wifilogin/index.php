@@ -86,7 +86,7 @@ global $gotregdate;
 global $gotmacblock;
 global $gotmobblock;
 $sqlxz = "SELECT `uid`,`user_reg_active`,`user_mobile`,`user_mac_blocked`,`user_mobile_blocked`,`user_access_plan`, Date_Format( `user_reg_datetime`, '%Y-%m-%d' ) as regdate,`user_todaycode_active`   FROM `mac_user_info` where `user_mac_address`='".$macAddr."' order by uid DESC limit 0 ,1";
-print $sqlxz."<hr>";
+#print $sqlxz."<hr>";
 $mysqlresult = $mysqldblink->query($sqlxz);
 while($mysqlrow = $mysqlresult->fetch_assoc()){
 #print_r($mysqlrow);
