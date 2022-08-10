@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=20;
 include_once('common_tools.php');
 if($userlogin==1){html_header_to_show();}
@@ -74,7 +74,7 @@ window.location.href="index.php?rtype=macview&macid="+globaledituidmac;
 
 </script>
 <div class="container">
-<h4 class="page-header"><?=$moduletitle?></h4>
+<h4 class="page-header"><?php echo $moduletitle;?></h4>
 <table id="datadisplaybox" class="display responsive" cellspacing="0" width="100%">
 <thead>
 <tr>
@@ -84,7 +84,7 @@ window.location.href="index.php?rtype=macview&macid="+globaledituidmac;
 </table>
 </div>
 
-<?
+<?php
 }
 html_footer_to_show();
 ?>

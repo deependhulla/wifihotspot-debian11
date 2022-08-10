@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=20;
 include_once('common_tools.php');
 $getuid= $_REQUEST['uid'];
@@ -13,14 +13,14 @@ if($userlogin==1 && $accessokformodule==1)
 {
 ?>
 <div class="container">
-<h4 class="page-header">System Message |  &nbsp; UID:<?=$getuid;?></h4>
+<h4 class="page-header">System Message |  &nbsp; UID:<?php echo $getuid;?></h4>
 
 <!--Start Restore Button for terms & condition Message text area -->
 <script>
 function confirmrestore(){
 var y=confirm("Are you sure you want to Restore Default Terms & Condition");
 if(y==true){
-window.location="system_message_edit.php?uid=<?=$getuid;?>&type_restore=restore";
+window.location="system_message_edit.php?uid=<?php echo $getuid;?>&type_restore=restore";
 }}
 </script>
 
@@ -40,7 +40,7 @@ $mysqlrest = $mysqldblink->query($sqlrest);
 function confirmterms(){
 var y=confirm("Are you sure you want to Restore Terms & Condition Message");
 if(y==true){
-window.location="system_message_edit.php?uid=<?=$getuid;?>&type_restore_terms=terms";
+window.location="system_message_edit.php?uid=<?php echo $getuid;?>&type_restore_terms=terms";
 }}
 </script>
 
@@ -55,7 +55,7 @@ $mysqlrest1 = $mysqldblink->query($sqlrest1);
 ?>
 <!--End Restore Button for terms msg -->
 
-<?
+<?php
 $_POST['msg_data']=str_replace("'","\'",$_POST['msg_data']);
 $_POST['msg_data']=str_replace('"','\"',$_POST['msg_data']);
 
@@ -93,7 +93,7 @@ if($operror==0){?>
         <a href="#" "close" data-dismiss="alert">&times;</a>
         <strong>Success!</strong> Your Message Updated  Successfully.
     </div>
-<?
+<?php
 //header("Location: system_message.php");
 }else{?>
  <div class="alert alert-danger">
@@ -106,7 +106,7 @@ if($getuid!="22"){ print "<strong>Failed!</strong> Your Message Cannot be Update
 ?>
     </div>
 
-<?
+<?php
 } 
 
 ////////////// Logo start here //////////////////////////
@@ -158,21 +158,21 @@ if($getuid=="22")
 ?>
 <div class="panel panel-success">
 <div class="panel-heading">
-<?
-$cmdx="/usr/local/webadmin/wifidirect/get-system-key";
+<?php
+$cmdx="/usr/share/webmin/wifidirect/get-system-key";
 $lkey=`$cmdx`;
 print "Your Server Key : <strong>".$lkey."</strong><br>Please send this key as email to info@technoinfotech.com, <br>with your company details and contact number to get Support Licence Key.";
 ?>
 </div>
 </div>
-<?
+<?php
 }
 
 //////////////////////
 ?>
 <div class="row">
 <div class="col-md-6">
-Message Type : <?=$msg_in_config;?>
+Message Type : <?php echo $msg_in_config;?>
 </div>
 </div>
 
@@ -181,80 +181,81 @@ Message Type : <?=$msg_in_config;?>
 <div class="row">
 <div class="col-md-6">
 <!--Message: -->
-<?
+<?php
 #$msg_data=str_replace('"','\"',$msg_data);
 $msg_data=htmlentities($msg_data);
 if($getuid!=3 && $getuid!=4 && $getuid!=11 && $getuid!=16 && $getuid!=14 && $getuid!=15 && $getuid!=19 && $getuid!=20){?>
 
-<input type="text" class="form-control" name="msg_data" value="<?=$msg_data?>" >
-<?
+<input type="text" class="form-control" name="msg_data" value="<?php echo $msg_data; ?>" >
+<?php
 }
 
 if($getuid == 14){
 ?>
-<input type="number"  class="form-control" name="msg_data" value="<?=$msg_data;?>" pattern="[0-9]" min="1" >
-<?
+<input type="number"  class="form-control" name="msg_data" value="<?php echo $msg_data;?>" pattern="[0-9]" min="1" >
+<?php
 }
 
 if($getuid == 15){
 ?>
-<input type="number"  class="form-control" name="msg_data" value="<?=$msg_data;?>" pattern="[0-9]" min="1" >
-<?
+<input type="number"  class="form-control" name="msg_data" value="<?php echo $msg_data;?>" pattern="[0-9]" min="1" >
+<?php
 }
 
 
 
-if($getuid==3){?>
- <input type="hidden" class="form-control" name="msg_data" value="<?=$msg_data?>" >
-Current Logo : <img src="../wifilogin/<?=$mylogo?>" align=center height=100 width=100>
+if($getuid==3){
+?>
+ <input type="hidden" class="form-control" name="msg_data" value="<?php echo $msg_data;?>" >
+Current Logo : <img src="../wifilogin/<?php echo $mylogo;?>" align=center height=100 width=100>
 <hr>Upload New Logo <br>(Prefered transparent background png file with max size of W-300xH-150) : <input type="file" name="uploadedimage" id="uploadedimage">
-<?}?>
+<?php } ?>
 
-<?
+<?php
 if($getuid==4)
 {?>
-<input type="text" class="form-control" name="msg_data" value="<?=$msg_data?>" >
+<input type="text" class="form-control" name="msg_data" value="<?php echo $msg_data; ?>" >
 <br/><input type="button"  name="terms" value="Restore terms" onClick="confirmterms(); return false;" class="btn btn-default">
-<?
+<?php
 }?>
 
-<?
+<?php
 if($getuid==11){
 ?>
 <select class="form-control" name="msg_data">
-<option value="0" <?if($msg_data== '0') echo ' selected="selected"'?> >Basic SMS Verification </option>
-<option value="1" <?if($msg_data== '1') echo ' selected="selected"'?> >Package SMS Verification </option>
-<option value="2" <?if($msg_data== '2') echo ' selected="selected"'?> >Package Direct Verification </option>
+<option value="0" <?php if($msg_data== '0') echo ' selected="selected"'?> >Basic SMS Verification </option>
+<option value="1" <?php if($msg_data== '1') echo ' selected="selected"'?> >Package SMS Verification </option>
+<option value="2" <?php if($msg_data== '2') echo ' selected="selected"'?> >Package Direct Verification </option>
 </select>
 
-<?
+<?php
 }
 if($getuid==16){
 ?>
 <select class="form-control" name="msg_data">
-<option value="Direct as Router when behind Firewall/Proxy/Router" <?if($msg_data== 'Direct as Router when behind Firewall/Proxy/Router') echo ' selected="selected"'?> >Direct as Router, when behind Firewall/Proxy/Router </option>
-<option value="Direct ISP Terminated" <?if($msg_data== 'Direct ISP Terminated') echo ' selected="selected"'?> >Direct ISP Terminated </option>
+<option value="Direct as Router when behind Firewall/Proxy/Router" <?php if($msg_data== 'Direct as Router when behind Firewall/Proxy/Router') echo ' selected="selected"'?> >Direct as Router, when behind Firewall/Proxy/Router </option>
+<option value="Direct ISP Terminated" <?php if($msg_data== 'Direct ISP Terminated') echo ' selected="selected"'?> >Direct ISP Terminated </option>
 </select>
 
-<?
+<?php
 }
 if($getuid==19){
 ?>
-<textarea class="form-control" rows="20" name="msg_data" ><?=$msg_data?></textarea>
+<textarea class="form-control" rows="20" name="msg_data" ><?php echo $msg_data; ?></textarea>
 <br/><input type="button"  name="restore" value="Restore default" onClick="confirmrestore(); return false;" class="btn btn-default">
-<?
+<?php
 }
 ?>
 
-<?
+<?php
 if($getuid==20){
 ?>
 <select class="form-control" name="msg_data">
-<option value="0" <?if($msg_data== '0') echo ' selected="selected"'?> >Hidden </option>
-<option value="1" <?if($msg_data== '1') echo ' selected="selected"'?> >Plain Text Check </option>
-<option value="2" <?if($msg_data== '2') echo ' selected="selected"'?> >Check Mob No. </option>
+<option value="0" <?php if($msg_data== '0') echo ' selected="selected"'?> >Hidden </option>
+<option value="1" <?php if($msg_data== '1') echo ' selected="selected"'?> >Plain Text Check </option>
+<option value="2" <?php if($msg_data== '2') echo ' selected="selected"'?> >Check Mob No. </option>
 </select>
-<?
+<?php
 }
 ?>
 
@@ -267,7 +268,7 @@ if($getuid==20){
 <!--<input type="button"  name="delmsg" value="Delete" onClick="confirmdel_msg(); return false;" class="btn btn-default">-->
 </form>
 
-<?
+<?php
 }
 html_footer_to_show();
 ?>
