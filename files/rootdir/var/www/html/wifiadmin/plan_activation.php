@@ -1,4 +1,4 @@
-<?
+<?php
 $allokv=1;
 $submoduleid=18;
 include_once('common_tools.php');
@@ -10,7 +10,7 @@ if($userlogin==1 && $accessokformodule==1)
 {
 ?>
 <div class="container">
-<h4 class="page-header"><?=$moduletitle?></h4>
+<h4 class="page-header"><?php echo $moduletitle;?></h4>
 <form action="" method="POST" name="search_device" id="search_device">
 <input type="hidden" name="search_deviceid" value="searchdevice">
 <div class="row">
@@ -24,7 +24,7 @@ Enter Unique Device ID :
 <br>
 <br>
 
-<?
+<?php
 
 if (isset($_POST['up_new_plan']) && $_POST['up_new_plan']=='newplan') {
 if(isset($_POST['upline_new_plan']))
@@ -102,6 +102,7 @@ if($allokv==1){
 $ipAddress="";
 $sqlx="INSERT INTO `wifi_live_plans` (`uid` ,`logid` ,`create_by_user` ,`create_on_date` ,`create_type` ,`mac_uid` ,`plan_uid` ,`start_time` ,`end_time` ,`access_plan_live` ,`verify_type` ,`verify_info` ,`additional_notes`, `traffic_reset_limit_in_mb`, `traffic_reset_period`, `traffic_limit_in_mb`, `plan_price`, `basic_upload_max_speed_kbps`,`basic_download_max_speed_kbps`)VALUES (NULL , NULL , '".$userloginname."', NOW( ) , '', '".$uidy."', '".$planid."', NOW(), DATE_ADD(NOW(), INTERVAL '".$gotmin."' MINUTE), '1', '".$v_type."', '".$verify_info."', '".$additional_notes."','".$traffic_reset_limit_in_mb_insert."','".$traffic_reset_period_insert."','".$traffic_limit_in_mb_insert."','".$plan_price_insert."','$basic_upload_max_speed_kbps','$basic_download_max_speed_kbps');";
 
+#print "$sqlx ";
 $mysql="SELECT `uid`, `user_full_name`,`user_mobile`, `user_email`, `user_mac_blocked`, `user_mobile_blocked`,`user_reg_active` ,`user_access_plan`,`user_mac_address`,`user_reg_datetime`,user_ip_address FROM `mac_user_info` where `uid` = ".$uidy;
 $umysqlresult = $mysqldblink->query($mysql);
 if($urow = $umysqlresult->fetch_array()){
@@ -138,7 +139,7 @@ if($mysqlresultb){
         <strong>Success!</strong> Your Access Plan Applied  Successfully.
         </div>
 
-<?
+<?php
 }
 }
 }
@@ -183,7 +184,8 @@ $user_mac_blocked= "<span style='color: green'>Not Blocked</span>";
         <a href="#" "closex" data-dismiss="alert">&times;</a>
         <strong>Failed!</strong> Your Device ID does not exist.
     </div>
-<?}
+<?php
+}
 $sqlu="SELECT user_access_plan_name FROM wifi_access_plan where `uid`=$user_access_plan";
 $mysqlresultu = $mysqldblink->query($sqlu);
 if($mysqlrow = $mysqlresultu->fetch_array()){
@@ -193,49 +195,49 @@ $user_access_plan_name=$mysqlrow['user_access_plan_name'];
 }
 ?>
 
-<?
+<?php
 if($donexx==1)
 {
 ?>
  <div class="box">
    <div class="box-header">
-   <h3 class="box-title">Information of Device ID : <?=$getuid;?></h3>
+   <h3 class="box-title">Information of Device ID : <?php echo $getuid;?></h3>
 <button class="btn btn-primary" onclick="myFunction()">Print Invoice for POS</button>
 <button class="btn btn-primary" onclick="myFunction1()">Print Invoice for A4</button>
-<button class="btn btn-primary" onclick="window.open('device_plan_history.php?uid=<? echo $getuid;?>');">See Plan History</button>
+<button class="btn btn-primary" onclick="window.open('device_plan_history.php?uid=<?php echo $getuid;?>');">See Plan History</button>
 <br><br>
 <script>
 function myFunction() {
-    window.open("print_invoice_pos.php?uid=<? echo $getuid;?>", "_blank", "menubar=0,location=0, resizable=yes, top=100, left=200, width=900, height=700");
+    window.open("print_invoice_pos.php?uid=<?php echo $getuid;?>", "_blank", "menubar=0,location=0, resizable=yes, top=100, left=200, width=900, height=700");
 }
 </script>
 <script>
 function myFunction1() {
-    window.open("print_invoice_a4.php?rtype=pactivenormal&uid=<? echo $getuid;?>", "_blank", "menubar=0,location=0, resizable=yes, top=200, left=400");
+    window.open("print_invoice_a4.php?rtype=pactivenormal&uid=<?php echo $getuid;?>", "_blank", "menubar=0,location=0, resizable=yes, top=200, left=400");
 }
 </script>
                                 </div><!-- /.box-header -->
                                 <div class="box-body">
                                     <table class="table table-bordered">
-<tr><td>Name : <?=$user_full_name?>
-</td><td>Mobile No : <?=$user_mobile?>
+<tr><td>Name : <?php echo $user_full_name;?>
+</td><td>Mobile No : <?php echo $user_mobile;?>
 </td></tr>
-<tr><td>Email : <?=$user_email?>
-</td><td>Verification Status : <?=$user_reg_active?>
+<tr><td>Email : <?php echo $user_email;?>
+</td><td>Verification Status : <?php echo $user_reg_active;?>
 </td></tr>
-<tr><td>Mobile Status : <?=$user_mobile_blocked;?>
-</td><td>MAC Status : <?=$user_mac_blocked;?>
+<tr><td>Mobile Status : <?php echo $user_mobile_blocked;?>
+</td><td>MAC Status : <?php echo $user_mac_blocked;?>
 </td></tr>
 <tr><!--<td>
-Default Plan : <?=$user_access_plan_name;?>
+Default Plan : <?php echo $user_access_plan_name;?>
 </td>-->
 <td>
-Registration Date : <?=$user_reg_datetime;?>
+Registration Date : <?php echo $user_reg_datetime;?>
 </td>
 <td>
-MAC : <a href="index.php?rtype=macview&macid=<?=$user_mac_address;?>"><?=$user_mac_address;?></a>
+MAC : <a href="index.php?rtype=macview&macid=<?php echo $user_mac_address;?>"><?php echo $user_mac_address;?></a>
 </td></tr>
-<?
+<?php 
 $expireday="";
 $startday="";
 $planbyuser="Default";
@@ -281,51 +283,51 @@ $traffic_reset_limit_in_mb_text="No Cap";
 <center><b>Current / Last Plan</b></center>
 <table class="table table-bordered">
 <tr>
-<th>Plan Name :</th><td> <?=$lastplan?></td>
+<th>Plan Name :</th><td> <?php echo $lastplan;?></td>
 </tr>
 <tr>
-<th>Started :</th><td> <?=$startday?></td>
+<th>Started :</th><td> <?php echo $startday;?></td>
 </tr>
 <tr>
-<th>Expires :</th><td> <?=$expireday?></td>
+<th>Expires :</th><td> <?php echo $expireday;?></td>
 </tr>
 <tr>
-<th>Traffic Limit For Valid Period :</th><td> <?if($traffic_limit_in_mb == "0"){ echo "Unlimited"; } else {?> <?=$traffic_limit_in_mb. " MB" ; }?></td>
+<th>Traffic Limit For Valid Period :</th><td> <?php if($traffic_limit_in_mb == "0"){ echo "Unlimited"; } else {?> <?php echo $traffic_limit_in_mb. " MB" ; }?></td>
 </tr>
 <tr>
-<th>Traffic Reset Limit :</th><td> <?if($traffic_reset_limit_in_mb == "0"){ echo "No Cap"; } else {?> <?=$traffic_reset_limit_in_mb. " MB"; }?></td>
+<th>Traffic Reset Limit :</th><td> <?php if($traffic_reset_limit_in_mb == "0"){ echo "No Cap"; } else {?> <?php echo $traffic_reset_limit_in_mb. " MB"; }?></td>
 </tr>
 <tr>
-<th>Traffic Reset Limit For Valid Period :</th><td> <?if($traffic_reset_period == "0"){ echo "No Cap"; } else {?> <?=$traffic_reset_period. " Days"; }?></td>
+<th>Traffic Reset Limit For Valid Period :</th><td> <?php if($traffic_reset_period == "0"){ echo "No Cap"; } else {?> <?php echo $traffic_reset_period. " Days"; }?></td>
 </tr>
 <!-- <tr>
-<th>Upload Speed in kbps :</th><td> <?if($basic_upload_max_speed_kbps == "0"){ echo "Unlimited"; } else {?> <?=$basic_upload_max_speed_kbps. " kbps"; }?></td> 
+<th>Upload Speed in kbps :</th><td> <?php if($basic_upload_max_speed_kbps == "0"){ echo "Unlimited"; } else {?> <?php echo $basic_upload_max_speed_kbps. " kbps"; }?></td> 
 </tr> -->
 
 <tr>
-<th>Download Speed in kbps :</th><td> <?if($basic_download_max_speed_kbps == "0"){ echo "Unlimited"; } else {?> <?=$basic_download_max_speed_kbps. " kbps"; }?></td>
+<th>Download Speed in kbps :</th><td> <?php if($basic_download_max_speed_kbps == "0"){ echo "Unlimited"; } else {?> <?php echo $basic_download_max_speed_kbps. " kbps"; }?></td>
 </tr>
 
 <tr>
-<th>Verification Type :</th><td><?=$verify_typet?></td>
+<th>Verification Type :</th><td><?php echo $verify_typet;?></td>
 </tr>
 <tr>
-<th>Verification ID :</th><td><?=$verify_infot?></td>
+<th>Verification ID :</th><td><?php echo $verify_infot;?></td>
 </tr>
 <tr>
-<th>Plan Applied by :</th><td><?=$planbyuser?>  on <?=$createdt?></td>
+<th>Plan Applied by :</th><td><?php echo $planbyuser;?>  on <?php echo $createdt;?></td>
 </tr>
 <tr>
-<th>Plan Price(INR) :</th><td> <?if($plan_price == "0"){ echo "Free"; } else {?> <?=$plan_price; }?></td>
+<th>Plan Price(INR) :</th><td> <?php if($plan_price == "0"){ echo "Free"; } else {?> <?php echo $plan_price; }?></td>
 </tr>
 <tr>
-<th>Package UID :</th><td> <?if($package_uid == "0"){ echo "None"; } else {?> <?=$package_uid; }?></td>
+<th>Package UID :</th><td> <?php if($package_uid == "0"){ echo "None"; } else {?> <?php echo $package_uid; }?></td>
 </tr>
 </table>
 </td>
 </tr>
 </table>
-</div></div><?
+</div></div><?php
 if($notallowed==1){
 ?>
 <div class="alert alert-danger">
@@ -333,7 +335,7 @@ if($notallowed==1){
         <strong>Plan Activation Disabled!</strong> This Device is not verified or Blocked.
     </div>
 
-<?
+<?php
 }
 
 
@@ -345,22 +347,22 @@ if($allokv==0){
 ?>
 <div class="alert alert-danger">
         <a href="#" "closex" data-dismiss="alert">&times;</a>
-        <strong>Error - <? echo $error_fname;?></strong>
+        <strong>Error - <?php echo $error_fname;?></strong>
     </div>
 
-<?
+<?php
 }
 
 ?>
 <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" name="upline_newplan" id="upline_newplan">
 <input type="hidden" name="up_new_plan" value="newplan" >
-<input type="hidden" name="updatenewpl" value="<?=$getuid;?>" >
+<input type="hidden" name="updatenewpl" value="<?php echo $getuid;?>" >
 <div class="row">
 <div class="col-md-8">
 Assign new access plan :
 <select   id="user_access_plan" class="form-control" name="user_access_plan" required>
 <option value="" selected>Select Access Plan</option>
-<?
+<?php
 
 $sqlxz="SELECT uid,user_access_plan_name FROM wifi_access_plan where `access_plan_active`=1";
 $mysqlresultxz = $mysqldblink->query($sqlxz);
@@ -379,7 +381,7 @@ echo "<option value='$uidxx'>$user_access_plan_name</option>";
 Manual Verification via :
 <select   id="verify_type" class="form-control" id="verify_type" name="verify_type" required>
 <option value="" selected>Select</option>
-<?
+<?php
 
 $sqlxz="SELECT `verify_type_name` FROM `verify_type_details` ORDER BY `uid` DESC ";
 $mysqlresultxz = $mysqldblink->query($sqlxz);
@@ -407,17 +409,17 @@ Short description about user : <input type="text" class="form-control" name="add
 <!--<button   class="btn btn-primary" name="upline_new_plan" value="Save Details">Apply New Plan</button>-->
 <br>&nbsp;</div>
 </form>
-<?
+<?php
 }
 ?>
 </div>
-<? 
+<?php
 }
 ?>
 
 </div>
 
-<?
+<?php
 }
 html_footer_to_show();
 ?>
