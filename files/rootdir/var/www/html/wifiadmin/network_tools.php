@@ -1,4 +1,4 @@
-	<?
+<?php
 $submoduleid=23;
 include_once('common_tools.php');
 if($userlogin==1){html_header_to_show();}
@@ -24,7 +24,7 @@ fieldset.scheduler-border {
 
 <div class="container">
 <h4 class="page-header">Network Tools</h4>
-<?
+<?php
 $checkx=$_POST['checkx'];
 $domain_namex = $_POST['domain_namex'];
 $domain_namex=str_replace(" ","",$domain_namex);
@@ -49,17 +49,17 @@ if($checkx == 'dig'){$dns_lookupx ="selected";$runcmdx="dig ".$domain_namex." A 
  <input type="hidden" name="savedetails" value="save_wifimodem" >
 <div class="row">
 <div class="col-md-3">Check :<select class="form-control" id="checkx" name="checkx">
-<option value="ping" <?=$pingx?> selected >Ping </option>
-<option value="traceroute" <?=$trace_routex?> >Trace Route</option>
-<option value="dig" <?=$dns_lookupx?> >DNS Lookup </option>
+<option value="ping" <?php echo $pingx;?> selected >Ping </option>
+<option value="traceroute" <?php echo $trace_routex;?> >Trace Route</option>
+<option value="dig" <?php echo $dns_lookupx; ?> >DNS Lookup </option>
 </select>
 </div>
-<div class="col-md-3">IP / Domain Name :<input type="text"  class="form-control" id="domain_namex" name="domain_namex" value="<? echo $domain_namex;?>"required/></div>
+<div class="col-md-3">IP / Domain Name :<input type="text"  class="form-control" id="domain_namex" name="domain_namex" value="<?php echo $domain_namex;?>"required/></div>
 <div class="col-md-3"> <input type="submit" id="SubmitButton"  name="SubmitButton"   class="btn btn-default" style="margin-top: 20px;" value="Check Now" ></div>
 <div class="col-md-3"  id="msgDiv"></div>
 </div>
 <br>
-<?
+<?php
 if($checkx!="")
 {
 
@@ -83,7 +83,7 @@ print '<pre style="text-align: left;">'.$outx.'<br>&nbsp;</pre>';
 <br>
 </form>
 
-<?
+<?php
 $type_start=$_REQUEST['type_start'];
 $type_stop=$_REQUEST['type_stop'];
 $type_yes=$_REQUEST['type_yes'];
@@ -136,7 +136,7 @@ $internetInActive= 'checked';
 function confirmstart(){
 var y=confirm("Are you sure you want to Shut down Internet");
 if(y==true){
-window.location="network_tools.php?uid=<?=$getuid;?>&type_start=start";
+window.location="network_tools.php?uid=<?php echo $getuid;?>&type_start=start";
 }}
 </script>
 
@@ -144,21 +144,21 @@ window.location="network_tools.php?uid=<?=$getuid;?>&type_start=start";
 function confirmstop(){
 var y=confirm("Are you sure you want to Start Internet");
 if(y==true){
-window.location="network_tools.php?uid=<?=$getuid;?>&type_stop=stop";
+window.location="network_tools.php?uid=<?php echo $getuid;?>&type_stop=stop";
 }}
 </script>
 <script> 
 function confirmyes(){
 var y=confirm("Are you sure you want to Start Internet Automatic");
 if(y==true){
-window.location="network_tools.php?uid=<?=$getuid;?>&type_yes=yes";
+window.location="network_tools.php?uid=<?php echo $getuid;?>&type_yes=yes";
 }} 
 </script>
 <script> 
 function confirmno(){
 var y=confirm("Are you sure you want to Stop Internet Automatic");
 if(y==true){
-window.location="network_tools.php?uid=<?=$getuid;?>&type_no=no";
+window.location="network_tools.php?uid=<?php echo $getuid;?>&type_no=no";
 }}
 </script>
 
@@ -194,7 +194,7 @@ Click here to Automatic Start And Stop:
 </body>
 </html>
 
-<?
+<?php
 //}
 html_footer_to_show();
 ?>

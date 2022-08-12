@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=21;
 include_once('common_tools.php');
 $getuid=$_REQUEST['uid'];
@@ -29,9 +29,9 @@ fieldset.scheduler-border {
     }
 </style>
 <div class="container">
-<h4 class="page-header">Update Admin Users | Uid : <?=$getuid?></h4>
+<h4 class="page-header">Update Admin Users | Uid : <?php echo $getuid;?></h4>
 
-<?
+<?php
 if($type_wifi=='del'){
 $sqldel = "DELETE FROM `app_login_info` WHERE uid= $getuid" ;
 $mysqldel = $mysqldblink->query($sqldel);
@@ -129,34 +129,34 @@ if($mysqlrow['login_active']=="0"){$inactive="selected";}
 
 <div class="row">
 <div class="col-md-6">
-Login Name : <input type="text" class="form-control" name="user_login_name" value="<?=$user_login_name?>" required >
+Login Name : <input type="text" class="form-control" name="user_login_name" value="<?php echo $user_login_name;?>" required >
 </div>
 <div class="col-md-6">
-Full Name : <input type="text" class="form-control" name="user_full_name" value="<?=$user_full_name?>" required >
+Full Name : <input type="text" class="form-control" name="user_full_name" value="<?php echo $user_full_name;?>" required >
 </div>
 </div>
 <div class="row">
 <div class="col-md-6">
-Mobile No: <input type="text" class="form-control" name="user_mobile" value="<?=$user_mobile?>" pattern="[0-9]{10}" title="10 digits Mobile No"required/>
+Mobile No: <input type="text" class="form-control" name="user_mobile" value="<?php echo $user_mobile;?>" pattern="[0-9]{10}" title="10 digits Mobile No"required/>
 </div>
 <div class="col-md-6">
-Password : <input type="password" class="form-control" id="user_pass"name="user_pass" value="<?=$user_pass?>" required/>
+Password : <input type="password" class="form-control" id="user_pass"name="user_pass" value="<?php echo $user_pass;?>" required/>
 </div>
 </div>
 <div class="row">
 <div class="col-md-6">
-Location : <input type="text" class="form-control" name="user_location" value="<?=$user_location ?>" required >
+Location : <input type="text" class="form-control" name="user_location" value="<?php echo $user_location; ?>" required >
 </div>
 <div class="col-md-6">
 Active  :<select class="form-control" name="login_active">
-<option value="1" <?=$active?> >Active</option>
-<option value="0" <?=$inactive?> >Inactive</option>
+<option value="1" <?php echo $active;?> >Active</option>
+<option value="0" <?php echo $inactive;?> >Inactive</option>
 </select>
 </div>
 </div>
 <div class="row">
 <div class="col-md-6">
-Restricted IP (Separate by comma): (192.16.201.251,192.16.20.252) <input type="text" class="form-control" name="user_ip" value="<?=$user_ip ?>" >
+Restricted IP (Separate by comma): (192.16.201.251,192.16.20.252) <input type="text" class="form-control" name="user_ip" value="<?php echo $user_ip; ?>" >
 </div>
 </div>
 
@@ -165,7 +165,7 @@ Restricted IP (Separate by comma): (192.16.201.251,192.16.20.252) <input type="t
 <!--- Modules Start from here -->
 <div class="row">
 <div class="col-md-6">
-<?
+<?php
 $gotmod=array();
 $gm=0;
 $sqx="SELECT DISTINCT `module_id` FROM `app_module_access` WHERE `login_name` = '".$getuid."' ";
@@ -186,11 +186,11 @@ $module_sname=$mysqlrow['module_sname'];
 
 <fieldset class="scheduler-border">
     <legend class="scheduler-border">
-<?
+<?php
 //echo $module_id." -";
 ?>
-<?=$module_sname?></legend>
-<?
+<?php echo $module_sname;?></legend>
+<?php
 $legnd2="SELECT * FROM `app_module_info` WHERE `module_primary_id` = ".$module_id."";
 $mysqlegnd2 = $mysqldblink->query($legnd2);
 while($mysqlrow2 = $mysqlegnd2->fetch_array()){
@@ -208,7 +208,9 @@ print $smodule_sname;
 }
 ?>
 </fieldset>
-<?}?>
+<?php 
+}
+?>
 </div>
 </div>
 
@@ -220,12 +222,12 @@ print $smodule_sname;
 function confirmdel(){
 var y=confirm("Are you sure you want to delete?");
 if(y==true){
-window.location="admin_edit_users.php?uid=<?=$getuid;?>&type_wifi=del";
+window.location="admin_edit_users.php?uid=<?php echo $getuid;?>&type_wifi=del";
 }
 }
 </script>
 
-<?
+<?php
 }
 html_footer_to_show();
 ?>

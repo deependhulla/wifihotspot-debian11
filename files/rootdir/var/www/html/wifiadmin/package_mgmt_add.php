@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=11;
 include_once('common_tools.php');
 if($userlogin==1){html_header_to_show();}
@@ -7,7 +7,7 @@ if($userlogin==1 && $accessokformodule==1)
 {?>
  <div class="container">
 <h4 class="page-header">Add New Package</h4>
-<?
+<?php
  $uid=$_POST['uid'];
  $value1=$_POST['value1'];
  $value2=$_POST['value2'];
@@ -35,10 +35,12 @@ if($count >0){
         <strong>Failed!</strong> Value1 and Value2 Already exist, Please enter unique Value1 and Value2.
     </div>
 
-<?
+<?php
 } else {
 
 $sqlx="INSERT INTO `wifi_package_management`(`value1`, `value2`, `value3`,`access_plan_id`, `no_of_devices_allowed`, `package_active`) VALUES('$value1', '$value2', '$value3','$access_plan_id', '$no_of_devices_allowed', '$package_active');";
+#print " $sqlx ";
+
 $mysqlresult = $mysqldblink->query($sqlx);
 
 if($mysqlresult){?>
@@ -46,13 +48,13 @@ if($mysqlresult){?>
         <a href="#" class="close" data-dismiss="alert">&times;</a>
         <strong>Success!</strong> Your Package Created Successfully.
     </div>
-<?
+<?php
 } else{ ?>
 <div class="alert alert-danger">
         <a href="#" class="close" data-dismiss="alert">&times;</a>
         <strong>Failed!</strong> Your Cannot be Created Successfully.
     </div>
-    <?
+    <?php
 }
 }
 }
@@ -81,15 +83,15 @@ $val3 = $mysqlrow3['msg_data'];
 <input type="hidden" name="savedetails_accessplan" value="save_accessplan" >
 <div class="row">
 <div class="col-md-6">Value1(<?php echo $val1;?>) :
-<input type="text"  class="form-control" name="value1" value="<?=$value1?>" required/></div>
+<input type="text"  class="form-control" name="value1" value="<?php echo $value1;?>" required/></div>
 <div class="col-md-6">Value2(<?php echo $val2;?>) :
-<input type="text"  class="form-control" name="value2" value="<?=$value2?>" required/></div>
+<input type="text"  class="form-control" name="value2" value="<?php echo $value2;?>" required/></div>
 
 <div class="col-md-6">
 Access Plan :
 <select id="access_plan_id" class="form-control" name="access_plan_id" required>
 <option value="" selected>Select Access Plan</option>
-<?
+<?php
 $sqlxz="SELECT uid,user_access_plan_name FROM wifi_access_plan where `access_plan_active`=1";
 $mysqlresultxz = $mysqldblink->query($sqlxz);
 while($mysqlrow = $mysqlresultxz->fetch_array()){
@@ -102,23 +104,24 @@ echo "<option value='$uidxx'>$user_access_plan_name</option>";
 </select>
 </div>
 <div class="col-md-6">Value 3(<?php echo $val3;?>) :
-<input type="text"  class="form-control" name="value3" value="<?=$value3?>" required/></div>
+<input type="text"  class="form-control" name="value3" value="<?php echo $value3;?>" required/></div>
 
 <div class="col-md-6">Number of Devices Allowed :
-<?if($no_of_devices_allowed == ''){
+<?php 
+if($no_of_devices_allowed == ''){
 ?>
 <input type="text"  class="form-control" name="no_of_devices_allowed" value="2" required/></div>
-<?
+<?php
 } else {
 ?>
-<input type="text"  class="form-control" name="no_of_devices_allowed" value="<?=$no_of_devices_allowed?>" required/></div>
-<?
+<input type="text"  class="form-control" name="no_of_devices_allowed" value="<?php echo $no_of_devices_allowed;?>" required/></div>
+<?php
 }
 ?>
 
 <div class="col-md-6">Package Active  :<select class="form-control" name="package_active">
-<option value="1" selected <?=$active?> >Active</option>
-<option value="0"  <?=$inactive?> >Inactive</option>
+<option value="1" selected <?php echo $active;?> >Active</option>
+<option value="0"  <?php echo $inactive;?> >Inactive</option>
 </select>
 </div>
 </div>
@@ -151,7 +154,7 @@ placement: 'bottom'
 
 </script>
 </div>
-<?
+<?php
 }
 html_footer_to_show();
 ?>

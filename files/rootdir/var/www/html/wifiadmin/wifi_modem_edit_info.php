@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=16;
 include_once('common_tools.php');
 $getuid=$_REQUEST['uid'];
@@ -10,9 +10,9 @@ if($userlogin==1 && $accessokformodule==1)
 {
 ?>
 <div class="container">
-<h4 class="page-header">Update Wifi Modem | UId : <?=$getuid?></h4>
+<h4 class="page-header">Update Wifi Modem | UId : <?php echo $getuid;?></h4>
 
-<?
+<?php
 if($type_wifi=='del'){
 $sqldel = "DELETE FROM `wifi_modem_info` WHERE uid= $getu" ;
 $mysqldel = $mysqldblink->query($sqldel);
@@ -32,7 +32,8 @@ if(mysqli_num_rows($mysqlresult1)>= 1){?>
         <strong>Failed!</strong> Wifi Modem ip already exist.
     </div>
 
-<?}
+<?php
+}
 
 
 }
@@ -70,12 +71,12 @@ if($mysqlrow['modem_active']=="0"){$inactive="selected";}
 <form action=""  method="post" name="newadd" id="newadd" onSubmit="return confirmForm(this);">
 <input type="hidden" name="savedetails" value="save_wifimodem" >
 <div class="row">
-<div class="col-md-3">Modem Location:<input type="text"  class="form-control" name="modem_location" value="<?=$modem_location?>" required/></div>
-<div class="col-md-3">SSID :<input type="text"  class="form-control" name="modem_ssid" value="<?=$modem_ssid?>" required/></div>
-<div class="col-md-3">Modem IP :<input type="text"  class="form-control" name="modem_ip" value="<?=$modem_ip?>" required/></div>
+<div class="col-md-3">Modem Location:<input type="text"  class="form-control" name="modem_location" value="<?php echo $modem_location;?>" required/></div>
+<div class="col-md-3">SSID :<input type="text"  class="form-control" name="modem_ssid" value="<?php echo $modem_ssid;?>" required/></div>
+<div class="col-md-3">Modem IP :<input type="text"  class="form-control" name="modem_ip" value="<?php echo $modem_ip;?>" required/></div>
 <div class="col-md-3">Installation :<select class="form-control" name="modem_active">
-<option value="1" <?=$active?> >Installed</option>
-<option value="0"  <?=$inactive?> >NOT Installed</option>
+<option value="1" <?php echo $active;?> >Installed</option>
+<option value="0"  <?php echo $inactive;?> >NOT Installed</option>
 </select>
 </div>
 </div>
@@ -90,13 +91,13 @@ function confirmdel(){
 //var x=document.myform.modem_ssid.value;
 var y=confirm("Are you sure you want to delete?");
 if(y==true){
-window.location="wifi_modem_edit_info.php?getu=<?=$getuid;?>&type_wifi=del";
+window.location="wifi_modem_edit_info.php?getu=<?php echo $getuid;?>&type_wifi=del";
 }
 
 }
 </script>
 
-<?
+<?php
 }
 html_footer_to_show();
 ?>

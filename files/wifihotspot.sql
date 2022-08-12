@@ -538,4 +538,16 @@ INSERT INTO `internet_tools` (`uid`, `logid`, `create_by_user`, `create_on_date`
 ALTER TABLE `mac_user_info` ADD `user_todaycode_active` INT NOT NULL DEFAULT '0' AFTER `message_og_the_day`, ADD INDEX (`user_todaycode_active`);
 ALTER TABLE `mac_user_info` CHANGE `full_access` `full_access` INT(11) NOT NULL DEFAULT '0';
 ALTER TABLE `mac_user_info` CHANGE `message_og_the_day` `message_og_the_day` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '';
+ALTER TABLE `mac_user_info` CHANGE `create_by_user` `create_by_user` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '';
+ALTER TABLE `mac_user_info` CHANGE `create_type` `create_type` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '';
+
+ALTER TABLE `mac_user_info` CHANGE `user_extra_office_info` `user_extra_office_info` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '', CHANGE `user_reg_datetime` `user_reg_datetime` DATETIME NOT NULL DEFAULT '0000-00-00', CHANGE `user_activaton_datetime` `user_activaton_datetime` DATETIME NOT NULL DEFAULT '0000-00-00', CHANGE `user_block_datetime` `user_block_datetime` DATETIME NOT NULL DEFAULT '0000-00-00', CHANGE `user_ip_address` `user_ip_address` VARCHAR(55) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '';
+
+ALTER TABLE `wifi_access_plan` CHANGE `create_by_user` `create_by_user` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '', CHANGE `create_type` `create_type` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '', CHANGE `user_ip_notallowed_list` `user_ip_notallowed_list` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '', CHANGE `special_ip_list` `special_ip_list` TEXT CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '';
+
+ALTER TABLE `wifi_package_management` CHANGE `logid` `logid` INT(11) NOT NULL DEFAULT '0';
+ALTER TABLE `wifi_package_management` CHANGE `create_by_user` `create_by_user` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '';
+ALTER TABLE `app_login_info` CHANGE `logid` `logid` INT(11) NULL DEFAULT '0', CHANGE `create_by_user` `create_by_user` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT '', CHANGE `create_type` `create_type` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '', CHANGE `org_sname` `org_sname` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '';
+
+ALTER TABLE `wifi_modem_info` CHANGE `logid` `logid` INT(11) NULL DEFAULT '0', CHANGE `create_by_user` `create_by_user` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '', CHANGE `create_type` `create_type` VARCHAR(250) CHARACTER SET latin1 COLLATE latin1_swedish_ci NOT NULL DEFAULT '';
 

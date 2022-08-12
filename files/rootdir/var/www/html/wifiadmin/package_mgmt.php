@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=24;
 include_once('common_tools.php');
 
@@ -169,7 +169,7 @@ window.location.href="package_mgmt_add.php";
 
 </script>
 <div class="container">
-<h4 class="page-header"><?=$moduletitle?>
+<h4 class="page-header"><?php echo $moduletitle; ?>
 
 <span style="float:right;"><button onclick="add_access_plan_row();return false;">Add New Package</button></span>
 </h4> 
@@ -200,7 +200,7 @@ window.location.href="package_mgmt_add.php";
 <button id="btnprint" style="float:right;">Print Package</button>
 </div>
 </div>
-<?
+<?php
 }
 
 html_footer_to_show();

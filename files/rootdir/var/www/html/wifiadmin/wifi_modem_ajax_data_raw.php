@@ -1,4 +1,4 @@
-<?
+<?php
 include_once('dbinfo.php');
 foreach($_REQUEST as $key=>$value)$$key=$value;
 $limit=$length;

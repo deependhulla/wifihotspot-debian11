@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=11;
 include_once('common_tools.php');
 $getuid=$_REQUEST['uid'];
@@ -10,9 +10,9 @@ if($userlogin==1){html_header_to_show();}
 if($userlogin==1 && $accessokformodule==1)
 {?>
 <div class="container">
-<h4 class="page-header">Update Package Management | UID :<?=$getuid?></h4>
+<h4 class="page-header">Update Package Management | UID :<?php echo $getuid; ?></h4>
 
-<?
+<?php
 if($savedetails_accessplan=='save_accessplan')
 {
 $mainsqlxx1="SELECT COUNT(*) as count, `value1`,`value2`,`package_active`,`uid` FROM `wifi_package_management` WHERE `value1`= '".strtoupper($_POST['value1'])."' AND `value2` = '".strtoupper($_POST['value2'])."' AND `package_active` = '1' AND `uid` != '".$getuid."'";
@@ -28,7 +28,7 @@ if($count >0){
         <strong>Failed!</strong> Value1 and Value2 Already exist, Please enter unique Value1 and Value2.
     </div>
 
-<?
+<?php
 } else {
 
 
@@ -46,7 +46,7 @@ if($mysqlresultx){?>
         <a href="#" "close" data-dismiss="alert">&times;</a>
         <strong> Your Package Updated Successfully.</strong>
     </div>
-<?
+<?php
 
 }else{?>
 <div class="alert alert-danger">
@@ -54,7 +54,7 @@ if($mysqlresultx){?>
         <strong>Your Package Cannot be Updated Successfully.</strong>
     </div>
 
-<?
+<?php
 }
 }
 }
@@ -110,15 +110,15 @@ $val3 = $mysqlrow3['msg_data'];
 
 <div class="row">
 <div class="col-md-6">Value1(<?php echo $val1;?>) :
-<input type="text"  class="form-control" name="value1" value="<?=$value1?>" required/></div>
+<input type="text"  class="form-control" name="value1" value="<?php echo $value1; ?>" required/></div>
 <div class="col-md-6">Value2(<?php echo $val2;?>) :
-<input type="text"  class="form-control" name="value2" value="<?=$value2?>" required/></div>
+<input type="text"  class="form-control" name="value2" value="<?php echo $value2; ?>" required/></div>
 
 <div class="col-md-6">
 Access Plan :
 <select class="form-control" name="access_plan_id" required>
 <option value="" selected>Select Access Plan</option>
-<?
+<?php
 
 $sqlxz="SELECT uid,user_access_plan_name FROM wifi_access_plan where `access_plan_active`=1";
 $mysqlresultxz = $mysqldblink->query($sqlxz);
@@ -133,14 +133,14 @@ echo "<option value=$uidxx ".$selok."> $user_access_plan_name</option>";
 </select>
 </div>
 <div class="col-md-6">Value 3(<?php echo $val3;?>) :
-<input type="text"  class="form-control" name="value3" value="<?=$value3?>" required/></div>
+<input type="text"  class="form-control" name="value3" value="<?php echo $value3;?>" required/></div>
 
 <div class="col-md-6">Number of Devices Allowed :
-<input type="text"  class="form-control" name="no_of_devices_allowed" value="<?=$no_of_devices_allowed?>" required/></div>
+<input type="text"  class="form-control" name="no_of_devices_allowed" value="<?php echo $no_of_devices_allowed; ?>" required/></div>
 
 <div class="col-md-6">Package Active  :<select class="form-control" name="package_active">
-<option value="1" <?=$active?> >Active</option>
-<option value="0" <?=$inactive?> >Inactive</option>
+<option value="1" <?php echo $active;?> >Active</option>
+<option value="0" <?php echo $inactive;?> >Inactive</option>
 </select>
 </div>
 </div>
@@ -148,9 +148,13 @@ echo "<option value=$uidxx ".$selok."> $user_access_plan_name</option>";
 
 <br>
 <button   class="btn btn-default" name="saveaccessplan" value="Save Details" onclick="save_access_plan(); return false;">Save</button>
-<?if($getuid!='0'){?>
-<a href="package_mgmt_edit.php?uid=<?=$getuid?>&access_type=delete" class="btn btn-default" id="del_accessplan" onclick="return confirm('Do you really want to delete this?')">Delete</a>
-<?}?>
+<?php 
+if($getuid!='0'){
+?>
+<a href="package_mgmt_edit.php?uid=<?php echo $getuid;?>&access_type=delete" class="btn btn-default" id="del_accessplan" onclick="return confirm('Do you really want to delete this?')">Delete</a>
+<?php 
+}
+?>
 </form>        
 <br>
 <script type="text/javascript">
@@ -179,7 +183,7 @@ placement: 'bottom'
 
 </div>
 
-<?
+<?php
 }
 html_footer_to_show();
 ?>

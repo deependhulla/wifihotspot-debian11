@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=1;
 include_once('common_tools.php');
 if($userlogin==1){html_header_to_show();}
@@ -14,9 +14,9 @@ $gotuidx= $_GET['uid'];
 }
 ?>
 <div class="container">
-<h4 class="page-header">Wifi Registered Users |  &nbsp; UID:<?=$gotuidx;?></h4>
+<h4 class="page-header">Wifi Registered Users |  &nbsp; UID:<?php echo $gotuidx;?></h4>
 
-<?
+<?php
 
 if(isset($_POST['savefun']))
 {
@@ -33,11 +33,12 @@ if($getdomainipx == $useremailbreak[1])
 $domainok=0;
 ?>
 <div class="alert alert-danger"> Please enter valid Email.</div>
-<?
+<?php
 }else{
 
 if($savefun=="savedetails")
 {
+if($_POST['user_access_plan']==""){$_POST['user_access_plan']=0;}
 $sqlb="UPDATE `mac_user_info` SET ";
 $sqlb=$sqlb."`create_by_user`= '". $userloginname ."', " ;
 $sqlb=$sqlb."`user_full_name`= '". csx($_POST['user_full_name']) ."', " ;
@@ -48,7 +49,9 @@ $sqlb=$sqlb."`user_access_plan`= '". csx($_POST['user_access_plan']) ."', " ;
 $sqlb=$sqlb."`user_mac_blocked`= '". csx($_POST['user_mac_blocked']) ."', " ;
 $sqlb=$sqlb."`user_mobile_blocked`= '". csx($_POST['user_mobile_blocked']) ."' " ;
 $sqlb=$sqlb." where `uid` =' ".$gotuidx."' " ;
+#print $sqlb;
 $mysqldblink->query($sqlb);
+
 header("Location: wifi_regi.php");
 
 
@@ -85,7 +88,7 @@ $mysqlresultxz = $mysqldblink->query($sqlxz);
 
 ?>
 
-<?
+<?php
 if( $action_wifiu=='delete' )
 {
 $macAddr="";
@@ -115,13 +118,13 @@ header("Location: wifi_regi.php");
 
 <div class="row">
 <div class="col-md-4">
-Name : <input type="text" class="form-control" name="user_full_name" value="<?=$user_full_name?>" >
+Name : <input type="text" class="form-control" name="user_full_name" value="<?php echo $user_full_name; ?>" >
 </div>
 <div class="col-md-4">
-Mobile No: <input type="tel" class="form-control" name="user_mobile" value="<?=$user_mobile?>" pattern="[0-9]{10}" title="10 digits Mobile No" required/>
+Mobile No: <input type="tel" class="form-control" name="user_mobile" value="<?php echo $user_mobile; ?>" pattern="[0-9]{10}" title="10 digits Mobile No" required/>
 </div>
 <div class="col-md-4">
-Email : <input type="email" class="form-control" name="user_email" value="<?=$user_email?>" >
+Email : <input type="email" class="form-control" name="user_email" value="<?php echo $user_email; ?>" >
 </div>
 </div>
 <div class="row">
@@ -129,29 +132,29 @@ Email : <input type="email" class="form-control" name="user_email" value="<?=$us
 
 <div class="col-md-4">
 Verification Status :<select class="form-control" name="user_reg_active">
-<option value="1" <?=$active ?> >SMS Verified</option>
-<option value="0" <?=$inactive ?> >SMS Not Verified</option>
+<option value="1" <?php echo $active; ?> >SMS Verified</option>
+<option value="0" <?php echo $inactive; ?> >SMS Not Verified</option>
 </select>
 </div>
 
 <div class="col-md-4">
 Mob Block :<select class="form-control" name="user_mobile_blocked">
-<option value="1" <?=$blocked?> >Blocked </option>
-<option value="0" <?=$noblocked?> >Not Block </option>
+<option value="1" <?php echo $blocked; ?> >Blocked </option>
+<option value="0" <?php echo $noblocked; ?> >Not Block </option>
 </select>
 </div>
 <div class="col-md-4">
 Mac Block :<select class="form-control" name="user_mac_blocked">
-<option value="1" <?=$blockedx?> >Blocked </option>
-<option value="0" <?=$noblockedx?> >Not Block </option>
+<option value="1" <?php echo $blockedx; ?> >Blocked </option>
+<option value="0" <?php echo $noblockedx; ?> >Not Block </option>
 </select>
 </div>
 </div>
 <!--<div class="row">
 <div class="col-md-4">
 Access Plan :
-<select   id="user_access_plan" class="form-control" name="user_access_plan" value="<?=$user_access_plan;?>">
-<?
+<select   id="user_access_plan" class="form-control" name="user_access_plan" value="<?php echo $user_access_plan;?>">
+<?php
 while($mysqlrow = $mysqlresultxz->fetch_array()){
 $uid=$mysqlrow['uid'];
 $user_access_plan_name=$mysqlrow['user_access_plan_name'];
@@ -166,15 +169,15 @@ echo "<option value='$uid'>$user_access_plan_name</option>";
 <br/>
 <button  name="saveusers" value="Save User" class="btn btn-default" onclick="save_wifi_user();return false;"><span>Save</span></button>
 
-<a href="wifi_edit_users.php?uid=<?=$gotuidx?>&action_wifiu=delete" id="del_wifiuser" class="btn btn-default" onclick="return confirm('Do you really want to delete this?')">Delete</a>
+<a href="wifi_edit_users.php?uid=<?php echo $gotuidx;?>&action_wifiu=delete" id="del_wifiuser" class="btn btn-default" onclick="return confirm('Do you really want to delete this?')">Delete</a>
 </form>
 
 </div>
 <script>
- document.getElementById('user_access_plan').value ="<?=$user_access_plan;?>";
+ document.getElementById('user_access_plan').value ="<?php echo $user_access_plan;?>";
 </script>
 
-<?
+<?php
 }
 html_footer_to_show();
 ?>

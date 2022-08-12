@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=1;
 include_once('common_tools.php');
 
@@ -8,7 +8,7 @@ if($userlogin==1 && $accessokformodule==1)
 ?>
 <div class="container">
 <h4 class="page-header">Add Wifi Users</h4>
-<?
+<?php
 $savedetails_wifi=$_POST['savedetails_wifi'];
 if($savedetails_wifi=='savewifi')
 //if(isset($_POST['save_wifi']))
@@ -76,7 +76,9 @@ $savedetails_wifi=$_POST['savedetails_wifi'];
 
 $donexx=0;
 //if($savedetails_wifi=='savewifi'){
+if($user_access_plan_name==""){$user_access_plan_name=0;}
 $sqlx="INSERT INTO `mac_user_info`( `user_full_name`, `user_mobile`, `user_email`, `user_mac_address`,`user_reg_active`,`user_access_plan`) VALUES ( '$user_full_name', '$user_mobile', '$user_email','$user_mac_address', '$user_reg_active','$user_access_plan_name');";
+#print " $sqlx ";
  $mysqlresult = $mysqldblink->query($sqlx);
 if($mysqlresult){
 $donexx=1;
@@ -85,7 +87,8 @@ $donexx=1;
 <a href="#" "close" data-dismiss="alert">&times;</a>
 <strong>Success!</strong> Your WIFI User Created Successfully.
 </div>
-<?} 
+<?php
+} 
 }
 } 
 
@@ -98,29 +101,29 @@ if($donexx==0)
 
 <div class="row">
 <div class="col-md-4">
-Name : <input type="text" class="form-control" name="user_full_name" value="<?=$user_full_name?>"  >
+Name : <input type="text" class="form-control" name="user_full_name" value="<?php echo $user_full_name; ?>"  >
 </div>
 <div class="col-md-4">
-Mobile No: <input type="text" class="form-control" name="user_mobile" value="<?=$user_mobile?>" pattern="[0-9]{10}" title="10 digits Mobile No"/>
+Mobile No: <input type="text" class="form-control" name="user_mobile" value="<?php echo $user_mobile; ?>" pattern="[0-9]{10}" title="10 digits Mobile No"/>
 </div>
 <div class="col-md-4">
-Email : <input type="email" class="form-control" id="user_email"name="user_email" value="<?=$user_email?>" />
+Email : <input type="email" class="form-control" id="user_email"name="user_email" value="<?php echo $user_email; ?>" />
 </div>
 </div>
 <div class="row">
 <div class="col-md-4">
-Mac Address(example- 98:D6:F7:67:8C:B6) :<input type="text" class="form-control" name="user_mac_address" value="<?=$user_mac_address?>" />
+Mac Address(example- 98:D6:F7:67:8C:B6) :<input type="text" class="form-control" name="user_mac_address" value="<?php $user_mac_address; ?>" />
 </div>
 
 <div class="col-md-4">
 Verification Status :<select class="form-control" name="user_reg_active">
-<option value="1" <?=$active ?> >SMS Verified </option>
-<option value="0" <?=$inactive ?> >SMS not Verified </option>
+<option value="1" <?php echo $active; ?> >SMS Verified </option>
+<option value="0" <?php echo $inactive; ?> >SMS not Verified </option>
 </select>
 </div>
 <!--<div class="col-md-4">
 Access Plan :<select  class="form-control" name="user_access_plan">
-<?foreach ($mysqlresultxz as $row){
+<?php foreach ($mysqlresultxz as $row){
 echo "<option value=$row[uid]>$row[user_access_plan_name]</option>";
 }
 
@@ -130,11 +133,13 @@ echo "<option value=$row[uid]>$row[user_access_plan_name]</option>";
 </div>
 <br/>
 <button class="btn btn-default" name="save_wifi" value="Save Details" onclick="save_wifi_user(); return false;">Create Wifi  User</button></form>
-<?}?>
+<?php 
+}
+?>
 </div>
 
 
-<?
+<?php
 }
 html_footer_to_show();
 ?>

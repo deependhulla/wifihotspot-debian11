@@ -1,4 +1,4 @@
-<?
+<?php
 include_once('dbinfo.php');
 $selval=$_REQUEST['vara'];
 foreach($_REQUEST as $key=>$value)$$key=$value;

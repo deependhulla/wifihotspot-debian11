@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=11;
 include_once('common_tools.php');
 
@@ -64,7 +64,7 @@ window.location.href="access_plan_add.php";
 
 </script>
 <div class="container">
-<h4 class="page-header"><?=$moduletitle?></h4> 
+<h4 class="page-header"><?php echo $moduletitle;?></h4> 
 <div style="float:right;padding:5px;"><button onclick="add_access_plan_row();return false;">Add New Access Plan</button></div>
 <table id="datadisplaybox" class="display responsive" cellspacing="0" width="100%">
 <thead>
@@ -74,7 +74,7 @@ window.location.href="access_plan_add.php";
 </thead>
 </table>
 </div>
-<?
+<?php
 }
 
 html_footer_to_show();

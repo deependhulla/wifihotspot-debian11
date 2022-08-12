@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=19;
 include_once('common_tools.php');
 $maxdays=4;
@@ -81,8 +81,8 @@ $tvalidmsg[$e]=$mysqlrow['code_for_event'];
 ?>
 
 <div class="container">
-<h4 class="page-header"><? echo $moduletitle." for  ".$maxdays." days"; ?></h4> 
-<?
+<h4 class="page-header"><?php echo $moduletitle." for  ".$maxdays." days"; ?></h4> 
+<?php
 
 if($goterror!=""){
 print "<div class=\"alert alert-danger\" >".$goterror."</div>";
@@ -96,21 +96,21 @@ var y="";
 var codeok=1;
 var n=0;
 var m=0;
-<?
+<?php
 for($e=0;$e<$maxdays;$e++)
 {
 ?>
-x=document.myform.tvalidcode<?=$e?>.value;
-y=document.myform.tvalidmsg<?=$e?>.value;
+x=document.myform.tvalidcode<?php echo $e;?>.value;
+y=document.myform.tvalidmsg<?php echo $e;?>.value;
 n = x.length;
 m = y.length;
-//alert('<?=$e?> '+n+' mmmm'+m);
+//alert('<?php echo $e;?> '+n+' mmmm'+m);
 if(n>0)
 {
-if(n<6 && codeok==1){codeok=0; document.myform.tvalidcode<?=$e?>.focus();}
-if(m<6 && codeok==1){codeok=0; document.myform.tvalidmsg<?=$e?>.focus();}
+if(n<6 && codeok==1){codeok=0; document.myform.tvalidcode<?php echo $e;?>.focus();}
+if(m<6 && codeok==1){codeok=0; document.myform.tvalidmsg<?php echo $e;?>.focus();}
 }
-<?
+<?php
 }
 ?>
 
@@ -126,7 +126,7 @@ document.myform.submit();
 <div class="row">
 <form class="form-signin" method="POST" action=" <?php echo $_SERVER['PHP_SELF'];?>" role="form" id="myform" name="myform">
 <input type=hidden name="myfun" value="newtodaysave">
-<?
+<?php
 for($e=0;$e<$maxdays;$e++)
 {
 $gotdatex=date('Y-m-d', strtotime("+".$e." day"));
@@ -135,11 +135,11 @@ $gotdatex=date('Y-m-d', strtotime("+".$e." day"));
 ?>
 <div class="col-md-6">
 
-<?=$gotdatex?> Wifi Today-Access-Code <input type="text" name="tvalidcode<?=$e?>" class="form-control" placeholder="Today's Wifi-Acess Code (6 Char or more)" value="<?php echo $tvalidcode[$e]; ?>" autofocus required>
-<?=$gotdatex?> Event Details <input type="text" name="tvalidmsg<?=$e?>" class="form-control" placeholder="Today's Event Details" value="<?php echo $tvalidmsg[$e]; ?>" autofocus required>
+<?php echo $gotdatex;?> Wifi Today-Access-Code <input type="text" name="tvalidcode<?php echo $e;?>" class="form-control" placeholder="Today's Wifi-Acess Code (6 Char or more)" value="<?php echo $tvalidcode[$e]; ?>" autofocus required>
+<?php echo $gotdatex;?> Event Details <input type="text" name="tvalidmsg<?php echo $e;?>" class="form-control" placeholder="Today's Event Details" value="<?php echo $tvalidmsg[$e]; ?>" autofocus required>
 
 </div>
-<?
+<?php
 }
 ?></div> 
 <br>        <br><button class="btn btn-lg btn-primary btn-block" type="button" name="reg_submit" onClick="todaygo();return false;">Create Today's Code</button>
@@ -149,7 +149,7 @@ $gotdatex=date('Y-m-d', strtotime("+".$e." day"));
 
 </div>
 
-<?
+<?php
 }
 
 

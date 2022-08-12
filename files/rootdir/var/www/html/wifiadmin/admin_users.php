@@ -1,4 +1,4 @@
-<?
+<?php
 $submoduleid=21;
 include_once('common_tools.php');
 
@@ -61,7 +61,7 @@ window.location.href="admin_add_users.php";
 </script>
 
 <div class="container">
-<h4 class="page-header"><?=$moduletitle?></h4>
+<h4 class="page-header"><?php echo $moduletitle;?></h4>
 <div style="float:right;padding:5px;">
 <button onclick="addrow();return false;">Add New Admin Users</button></div>
 <table id="datadisplaybox" class="display responsive" cellspacing="0" width="100%">
@@ -73,7 +73,7 @@ window.location.href="admin_add_users.php";
 </table>
 </div>
 
-<?
+<?php
 }
 html_footer_to_show();
 ?>
