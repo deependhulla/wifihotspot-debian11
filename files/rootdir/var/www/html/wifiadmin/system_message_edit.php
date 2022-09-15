@@ -128,7 +128,7 @@ if (!empty($_FILES["uploadedimage"]["name"])) {
 $uploads_dir = "/var/www/html/wifilogin/images/".rand().$pname;
 
 $cleanName = substr_replace($uploads_dir, "", 0, 24);
-//echo $cleanName;
+echo $cleanName;
 if(move_uploaded_file($tname, $uploads_dir)){
 		$sqly="UPDATE `config_info` SET `msg_data` = '$cleanName' WHERE `config_info`.`uid` ='".$getuid."'";
                 $mysqldblink->query($sqly);

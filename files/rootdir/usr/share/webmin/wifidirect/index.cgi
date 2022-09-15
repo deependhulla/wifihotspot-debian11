@@ -17,15 +17,15 @@ $activenow=$in{'activenow'};
 
 $sipupdate=$in{'sipupdate'};
 $wifiupdate=$in{'wifiupdate'};
-$ethx="enp2s0";
+$ethx="enp3s0";
 #print "dvdx : ".$macx;
 
 if($wifiupdate eq "yes")
 {
 $dbname="wifihotspot";
-$hostname="127.0.0.1";
+$hostname="localhost";
 $username="mydbadmin";
-$password='ogheiY3h';
+$password='Geng0yoo';
 $dbh=DBI->connect("dbi:mysql:$dbname:$hostname",$username,$password) or die("cannot connect to  database");
 
 
@@ -127,9 +127,9 @@ $cmdx="iptables -t nat -A PREROUTING -i ".$ethx." -p tcp -m tcp --dport 80 -j RE
 if($sipupdate eq "yes")
 {
 $dbname="wifihotspot";
-$hostname="192.168.3.254";
-$username="wifihotspot";
-$password="n9Rxz9NRvdtWB5tG";
+$hostname="localhost";
+$username="mydbadmin";
+$password="Geng0yoo";
 $dbh=DBI->connect("dbi:mysql:$dbname:$hostname",$username,$password) or die("cannot connect to officedb database");
 
 $selquery="SELECT `sipexten`,`sipextpassword`,`sipcallerid`,`uid` FROM `voip_sip_info` WHERE `sipactive` =1";

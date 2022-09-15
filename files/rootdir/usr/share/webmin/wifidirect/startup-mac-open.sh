@@ -29,7 +29,7 @@ iptables -A FORWARD  -p udp -m udp --dport 130:150 -j DROP
 
 iptables -t nat -A POSTROUTING -s 172.16.0.0/16 -j MASQUERADE
 #iptables -t nat -A PREROUTING -i ens19 -d 111.125.234.24  -p tcp -m tcp --dport 80 -j RETURN
-iptables -t nat -A PREROUTING -i ens19 -d 172.16.0.254  -p tcp -m tcp --dport 80 -j RETURN
+iptables -t nat -A PREROUTING -i enp3s0 -d 172.16.0.254  -p tcp -m tcp --dport 80 -j RETURN
 #iptables -t nat -A PREROUTING -i ens19 -d 192.168.223.254  -p tcp -m tcp --dport 80 -j RETURN
 
 #iptables -t nat -A PREROUTING -d 111.125.234.24 -p tcp -m tcp --dport 80 -j DNAT --to-destination 192.168.3.254

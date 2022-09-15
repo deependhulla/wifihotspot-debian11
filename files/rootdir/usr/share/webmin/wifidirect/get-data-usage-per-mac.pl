@@ -1,9 +1,9 @@
 #!/usr/bin/perl
 
 $dbname="wifihotspot";
-$hostname="192.168.3.254";
-$username="wifihotspot";
-$password="n9Rxz9NRvdtWB5tG";
+$hostname="localhost";
+$username="mydbadmin";
+$password="Geng0yoo";
 
 $macdel=$ARGV[0];
 $macdel=~ s/\n//eg;
@@ -44,6 +44,9 @@ $userip=$datax[4];
 
 print "IP : ".$userip." MAC  : ".$usermac."--> Packet $userpacket Bytes --> $userbytes \n";
 ### if userbytes >0
+## DEEPEN dummy packaets
+#$userbytes=100000;
+
 if($userbytes>0)
 {
 
@@ -127,7 +130,7 @@ $createsql="CREATE TABLE IF NOT EXISTS ".$tablex." (
   KEY `user_mobile` (`user_mobile`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;";
 
-#print "\n $createsql \n";
+print "\n $createsql \n";
 $sth=$dbh->prepare($createsql);
 $sth->execute();
 
