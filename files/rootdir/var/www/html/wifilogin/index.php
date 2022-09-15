@@ -105,7 +105,8 @@ $cols=preg_split('/\s+/', trim($line));$cols[1]=str_replace("(","",$cols[1]);
 $cols[1]=str_replace(")","",$cols[1]); if ($cols[1]==$ipAddress){$macAddr=$cols[3]; }
 }
 $macAddr=strtoupper($macAddr);
-//print "IP : $ipAddress MAC : $macAddr";
+if($macAddr==""){$macAddr=strtoupper('e6:c7:e3:ff:11:b0'); $ipAddress="172.168.250.250";}
+print "IP : $ipAddress MAC : $macAddr";
 
 $gotuidx=0;
 $gotreg=0;
@@ -664,7 +665,7 @@ $error_sms_code="SMS Code Not matched. Please Enter the Proper Code";
 if($myfun=="internetactive")
 {
 ?>
-<center>Your Device Unique <br>ID : <b><font color=green><?php $gotuidx;?></font></b></center>
+<center>Your Device Unique <br>ID : <b><font color=green><?php echo $gotuidx;?></font></b></center>
 <?php
 $timeok=0;
 #print "$gotmobblock --> $gotmacblock --> $gotplan";
