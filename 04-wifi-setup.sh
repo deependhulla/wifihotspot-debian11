@@ -14,7 +14,7 @@ sysctl -w net.ipv4.tcp_max_syn_backlog=4096  1>/dev/null 2>/dev/null
 mysql < files/mysql-db.sql  1>/dev/null 2>/dev/null
 mysql wifihotspot < files/wifihotspot.sql  1>/dev/null 2>/dev/null
 mysql wifi_iptraf < files/iptraf.sql  1>/dev/null 2>/dev/null
-
+chown -R www-data:www-data /var/www/html/
 ## copy all default config files
 /bin/cp -pRv files/rootdir/* /
 systemctl disable unbound
