@@ -2,7 +2,7 @@
 
 $ebdbname="wifihotspot";
 $ebdbuser="mydbadmin";
-$ebdbhost="127.0.0.1";
+$ebdbhost="localhost";
 $ebdbpass="ogheiY3h";
 
 $mysqldblink = new mysqli($ebdbhost, $ebdbuser, $ebdbpass, $ebdbname);
