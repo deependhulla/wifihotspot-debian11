@@ -1,0 +1,7 @@
+readonly=1
+desc=wifidirect
+name=wifidirect
+risk=medium high
+version=1.710
+longdesc=WifiDirect
+depends=proc 1.710
