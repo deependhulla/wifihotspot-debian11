@@ -1,6 +1,8 @@
 #!/bin/bash
 sysctl -w net.ipv6.conf.all.disable_ipv6=1
 sysctl -w net.ipv6.conf.default.disable_ipv6=1
+
+systemc
 echo 1 >  /proc/sys/net/ipv4/ip_forward
 /usr/share/webmin/wifidirect/startup-mac-open.sh
 exit 0

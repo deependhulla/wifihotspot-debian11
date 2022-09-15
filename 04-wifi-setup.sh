@@ -17,11 +17,11 @@ mysql wifi_iptraf < files/iptraf.sql  1>/dev/null 2>/dev/null
 
 ## copy all default config files
 /bin/cp -pRv files/rootdir/* /
-systemctl stop named
-systemctl disable named
+systemctl disable unbound
+systemctl stop unbound
+systemctl start named
+systemctl enable named
 
-systemctl enable unbound
-systemctl start unbound
 
 
 systemctl enable isc-dhcp-server.service
