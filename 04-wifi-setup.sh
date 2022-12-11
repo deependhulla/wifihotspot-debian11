@@ -23,6 +23,14 @@ systemctl start named
 systemctl enable named
 
 
+sed -i "s/Geng0yoo/`cat /usr/local/src/mariadb-mydbadmin-pass`/" /var/www/html/wifiadmin/dbinfo.php
+sed -i "s/Geng0yoo/`cat /usr/local/src/mariadb-mydbadmin-pass`/" /var/www/html/wifilogin/dbconfig.php
+
+sed -i "s/Geng0yoo/`cat /usr/local/src/mariadb-mydbadmin-pass`/" /usr/share/webmin/wifidirect/index.cgi 
+sed -i "s/Geng0yoo/`cat /usr/local/src/mariadb-mydbadmin-pass`/" /usr/share/webmin/wifidirect/get-data-usage-per-mac.pl
+sed -i "s/Geng0yoo/`cat /usr/local/src/mariadb-mydbadmin-pass`/" /usr/share/webmin/wifidirect/update-daily-summmary-for-bytes.pl 
+
+
 
 systemctl enable isc-dhcp-server.service
 systemctl restart isc-dhcp-server.service
